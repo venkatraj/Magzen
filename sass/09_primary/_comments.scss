@@ -1,0 +1,212 @@
+.comment-content a {
+	word-wrap: break-word;
+}   
+.comment-navigation {
+	clear: both;
+}
+  
+.comment-content p {  
+	margin-top: 15px;
+}
+
+.bypostauthor {
+	display: block;   
+}
+
+h2.comments-title {      
+	margin-bottom: 30px;
+	padding-bottom: 10px;
+	line-height: normal;
+}
+
+ol.comment-list {
+	margin: 0;
+	list-style-type: none;
+}
+
+ol.comment-list ol.children {
+	list-style-type: none; 
+	margin-left: 10%;
+
+}
+
+ol.comment-list > li {
+	margin-bottom: 20px;
+}
+
+.comment-body {
+	position: relative;
+}
+
+ol.comment-list .reply {
+	text-align: left;
+    @include font-size(1.4);
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    color: $secondary;
+    z-index:100;
+    a {
+    	color: $secondary;
+    	opacity:0;
+    	padding: 10px;
+    }
+    &:hover {
+    	a,&:before  {
+    		color: $primary;
+    	}
+    }
+    &:before {
+    	position: relative;
+    	right: -40px;
+    	content:"\f064";
+    	font-family: "FontAwesome";
+    	color: $secondary;
+    	@include font-size(1.5);
+    	padding: 8px 10px 6px;
+    	border: 1px solid $c3;
+    	border-radius: 3px;
+    	
+    }
+}
+
+.byuser .reply a:hover {
+	color: $white;
+}
+
+
+.comment-author {
+	display: inline-block;
+	margin-right: 20px;
+	text-transform: uppercase;
+	color: $secondary;
+
+	 img {
+		position: absolute;
+		left: 0;
+		border-radius: 3px;
+	}
+
+	.fn {
+		font-style: normal;	
+		a {
+			color: $primary;
+			&:hover {
+				color: $secondary;
+			}
+		}
+	}
+}
+
+ol.comment-list article .comment-meta {
+	width: calc(100% - 140px);
+	float: right;
+	position: relative;
+	z-index:1;
+	min-height: 100px;
+	display: inline-block;
+
+	.fn {
+		color: $primary;
+		cursor: pointer;
+		&:hover {
+			color: $secondary;
+		}
+	}
+}
+
+
+ol.comment-list article .comment-author img {
+	top: -5px;
+	left: -120px;
+	width: 80px;
+	height: 80px;
+}
+
+.comment-content {
+	padding-top: 80px;
+}
+
+ol.comment-list article {}
+
+ol.comment-list li.byuser {
+	article {
+		//background-color: rgba($secondary, 0.1);
+	}
+
+	.comment-metadata a:hover {
+		color: $secondary;
+	}
+}
+
+.comment-metadata {
+	@include font-size(1.3);
+	margin-top:5px;
+	margin-bottom:20px;
+	display: inline-block;
+	a {
+		color: $c2;
+		&:hover {
+			color: $primary;
+		}
+	}
+}
+
+.byuser .comment-metadata a:hover,
+.byuser .comment-content a:hover {
+	color: $white;
+}
+
+
+ol.comment-list  {
+	.comment {
+		clear:both;
+		content:"";
+		display: table;
+		border: 1px solid $c3;
+		padding: 20px;
+		width: 100%;
+		border-radius: 3px;
+		.comment-body {
+			//border-bottom:1px solid $c1;
+		}
+		ol {
+			clear:both;
+			li {
+				clear:both;
+			}
+		}
+	}
+}
+
+.comment-form {
+	input[type="text"],input[type="email"] {
+		float:left;
+		width:32.5%;
+		margin-top:20px;
+		padding:15px 5px;
+		margin-bottom:20px;
+	}
+	input[type="email"] {
+		margin-right:8px !important;
+		margin-left:8px !important;
+	}
+	.form-submit {
+		float:right;
+		margin-top:15px;
+	}
+}
+
+.comment-respond {
+	h3 {
+		position:relative;
+		&:after {
+			position:absolute;
+			content:"";
+			border-bottom:3px solid $primary;
+			bottom:0px;
+			left:0px;
+			width:5%;
+		}
+	}
+}

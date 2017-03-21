@@ -1,0 +1,134 @@
+@media only screen and (max-width: 960px) {       
+ .main-navigation ul ul li:hover > ul {
+    left: 100%;
+  }
+ 
+  .top-nav {
+    .container .eight.columns {
+      width: 100%;
+      text-align: center;
+      li {
+        display: inline-block;
+        float: none;
+      }
+    }
+  } 
+  .comment-form input[type=text],
+  .comment-form input[type=email],
+  .comment-form input[type=text] {
+    width: 48%;
+  }
+ 
+}
+
+
+@media only screen and (max-width: 768px) {   
+  .breadcrumb-left,.breadcrumb-right {    
+    text-align: center!important;
+  }
+  .breadcrumb,.branding {
+    .container .eight.columns {
+       width: 100%;   
+       text-align: center;   
+    }
+    .site-title,.site-description {
+      text-align: center;
+    }
+    .top-right {
+      text-align: center;
+      ul {
+        float: none;
+      }
+      li {
+        float: none;
+        display: inline-block;
+      }
+      li:first-child {
+        margin-right: 10px;
+      }
+    }
+  }
+ 
+  .widget_calendar table th, .widget_calendar table td {
+    padding: 7px 2px;
+  }
+  table td {
+    padding:7px 2px;
+  }
+  .top-nav  {
+    padding-top: 10px;
+  }
+
+  .site-branding {
+    text-align: center;
+    img {
+      margin: 0 auto;
+    }
+  }
+
+  #secondary {
+    padding-left: 0;
+  }
+  
+  .copyright {
+    padding-bottom:0!important;
+    text-align: center;
+  }
+  .site-info .widget_nav_menu ul {
+     text-align: center;
+  }
+
+  .site-info .left-sidebar {
+    padding-bottom: 10px!important;
+  }
+  #secondary {
+    left:0!important;
+  }
+
+}
+
+@media only screen and (max-width: 700px) {
+  #commentform .comment-form-author,
+  #commentform .comment-form-email,
+  #commentform .comment-form-url {
+    width: 100%;
+    float: none;
+    margin-right: 0;
+  }
+
+ .comment-form input[type=text],
+  .comment-form input[type=email],
+  .comment-form input[type=text] {
+    width: 100%;
+  }
+   .comment-form input[type=email] {
+      margin-left:0px !important;
+      margin-right:0px !important;
+   }
+
+  .nav-links .nav-previous,
+  .nav-links .nav-next,
+  .comment-navigation .nav-previous,
+  .comment-navigation .nav-next {
+    width: 100%;
+    float: none;
+    margin:0px;
+    margin-bottom: 10px;
+  }
+
+  .post-navigation .nav-links a,.posts-navigation .nav-links a,
+  .comment-navigation .nav-previous a,
+  .comment-navigation .nav-next a {
+    display: block;
+    text-align:center;
+  }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+  ol.comment-list ol.children {
+    margin-left: 1em;
+  }
+
+}

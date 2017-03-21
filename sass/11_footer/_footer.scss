@@ -1,0 +1,123 @@
+.site-footer .footer-widgets {
+	margin-top: 0;
+}
+	
+.site-footer {
+	background: $secondary;
+	.footer-widgets {
+		padding: 90px 0 50px;
+		color:$c5;
+		h4.widget-title {
+			color: $white;
+			padding-bottom: 10px;
+			@include font-size(2.6);
+			text-transform: uppercase;
+			//border-bottom: 4px solid $primary;
+
+		}
+
+		
+		ul {
+		
+			li {
+				padding: 7px 7px 7px 0px;
+				border-bottom: 1px solid rgba($white,0.1);
+				list-style: none;
+				@include font-size(1.4); 																																		
+
+
+				li:last-child {
+					border-bottom: 0;
+					padding-bottom: 0;
+				}
+
+				ul.children,
+				.sub-menu {
+					padding-top: 5px;
+					li:last-child {
+						padding-bottom: 0;
+					}
+				}
+				.sub-menu,.children {
+					border-top: 1px solid rgba($white,0.1);
+				}
+			}
+
+		}
+		
+		.calendar_wrap {
+			td,th {
+				color: $white;
+			}
+			 a {
+				color: $white;
+				&:hover {
+					color: $primary;
+				}
+			}
+			tbody tr:nth-child(odd) {
+				th {
+					background-color:$secondary;
+					color:$white;
+				}
+				td {
+					background-color:$secondary;
+					color:$white;	
+				}
+			}
+			tbody tr:nth-child(even) {
+			th,td{
+					background-color:$secondary;
+					color:$white;
+				}
+			}
+			thead th{
+				color:$secondary;
+			}
+		}
+		.widget_calendar table caption {
+			background: $primary;
+		}
+
+		select {
+			width: 100%;
+			background: $white url('images/down.png') no-repeat 95% 50% white;
+			-moz-appearance: none;
+			border: 1px solid $c1;
+			padding: 5px 10% 5px 3%;
+
+		}
+		.widget_search .search-form input[type="search"] {
+			color: $white;
+		}
+
+		a {
+			color: $white;
+			&:hover{
+				color: $primary;
+			}
+		}
+
+		p {
+			margin-bottom: 0;
+		}
+		
+
+		.widget_tag_cloud a {
+		    color: $secondary;
+			&:hover {
+				color: $white;
+			}
+		}
+
+		.widget_rss ul li {
+			background: none;
+		}
+
+	}
+}
+
+
+
+
+@import "bottom-footer";

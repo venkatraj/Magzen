@@ -1,0 +1,83 @@
+.widget_calendar {
+    .calendar_wrap {
+        background-color: $secondary;
+    }
+
+	table {
+		th, td {
+			text-align: center;
+			padding: 7px 5px;
+			border-bottom:1px solid $white;
+			color: $white;
+			a {
+				display: block;
+				color: $white;  
+				&:hover {
+					color: $primary;
+				}
+			}
+		}
+		thead {
+			//border-bottom:1px solid $white;
+			background-color: $primary;
+			th {
+				border: none;
+				font-weight:400;
+			}
+
+		}
+		tfoot {
+			border:0;
+		}
+
+		tbody {
+           tr,th {
+           		background-color: $secondary;
+           		color: $white;
+           		border-color: $white;
+           }
+		}
+
+		tr {
+			border-bottom:1px solid $white;
+		}
+		th {
+			color:$white;
+			font-weight: 700;
+			
+		}
+		td {
+			color: $white;
+			
+		}
+		td#prev {
+			text-align: left;
+		}	
+
+		td#next {
+			text-align: right;
+		}
+		tfoot {
+			td:first-child,tr,td{
+				border:none;
+			}
+		}
+		
+		caption {
+			text-align: center;
+			//background-color: $primary;
+			color: $white;
+			padding: 5px 0;
+			position:relative;	
+		}
+
+	}
+}
+
+
+/* Footer */
+.site-footer .widget_calendar table {
+	a {
+		color: $primary;
+	}	
+}

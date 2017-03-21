@@ -1,0 +1,116 @@
+.widget-area  {
+
+		margin-top: 1.5em;
+
+		h4.widget-title { 
+			margin-bottom: 30px;
+			padding-bottom: 5px;
+			position:relative;
+			text-transform:uppercase;
+			border-bottom: 3px solid $c6;
+			&:after {
+				position:absolute;
+				content:"";
+				width:100px;
+				bottom:-3px;
+				left:0px;
+				border-bottom:3px solid $primary;
+			}
+		}
+		
+		ul {
+		
+			li {
+				padding: 7px 7px 7px 0px;
+				border-bottom: 1px solid $c3;
+				list-style: none;
+				@include font-size(1.4); 																																		
+
+				a {
+					color: $c2;
+					&:hover {
+					 color: $primary;
+					}
+				}
+
+				li:last-child {
+					border-bottom: 0;
+					padding-bottom: 0;
+				}
+
+				ul.children,
+				.sub-menu {
+					padding-top: 5px;
+					li:last-child {
+						padding-bottom: 0;
+					}
+				}
+				.sub-menu,.children {
+					border-top: 1px solid $c3;
+				}
+			}
+
+		}
+
+		select {
+			width: 100%;
+			background: url('images/down.png') no-repeat 95% 50%;
+			-moz-appearance: none;
+			border: 1px solid $c1;
+			padding: 5px 10% 5px 3%;
+
+		}
+
+}
+
+	
+
+#secondary .widget,.site-footer .widget,.site-header .widget {
+	margin: 0 0 3.5em 0;
+
+	ul, ol {
+		padding: 0;
+		margin: 0;
+		padding-left: 12px;
+	}
+
+
+	/* Make sure select elements fit in widgets */
+	select {
+		max-width: 100%;
+	}
+
+}
+.site-header .widget {
+	margin:0;
+}
+
+
+#secondary .left-sidebar aside {
+	margin: 0 0 5.5em 0;	
+	&:last-child {
+	     margin-bottom:0;
+	}
+}
+
+#secondary #recentcomments a {
+	color: $c2 ;
+	&:hover {
+		color: $primary;
+	}
+}
+.site-info .left-sidebar,.top-nav,.top-right {
+	.widget-title {
+		display: none;
+    }
+}
+
+@import "calendar";
+
+@import "rss";
+
+@import "search";
+
+@import "text";
+
+@import "tag_cloud";

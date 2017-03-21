@@ -1,0 +1,325 @@
+/* Common to blog home page and blog page */
+
+.hentry.sticky {
+	color: $white;
+	padding: 25px !important;
+	padding-bottom:50px !important;
+	@include border-radius(5px);
+	position: relative;
+	margin-bottom: 70px !important;
+	background-color: $primary;
+
+	.magazine-slider-top-meta {
+	    border-top-color: rgba($white,0.2);
+	    border-bottom-color: rgba($white,0.2);
+         span,i,a {
+         	color: $white;
+         	&:hover {
+         		color: $secondary;
+         	}
+         }
+	}
+
+	.entry-title { 
+		a {
+	 		color: $white;
+	 		&:hover {
+	 			color: $secondary;    
+	 		}	
+	 	}
+	 }
+	 .entry-content {
+	    color: $white;
+	 	ul {
+	 		li{
+	 			list-style:square;
+	 		}
+	 	}
+	 	p {
+	 	   color: $white;
+	 	}
+	 }
+	 a {
+	 	color: $secondary;
+
+	 	&:hover {
+	 		color: $white;
+	 	}
+	}
+
+	span i {
+		color: $c2;
+
+	}
+	span:hover {
+		i,a{
+			color: $secondary;
+		}
+	}
+
+	code {
+	 	color: $black;  
+	}
+	
+	
+}
+
+.hentry.post {
+	
+	h1 a {
+		color: $black;
+		&:hover {
+			color: $primary;
+		}
+	}
+}
+
+.byline,
+.updated:not(.published){}
+
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+
+.page-links {
+	margin: 0 0 1.5em;
+	padding: 12px;
+	text-align: center;  
+	color: $white;
+	background-color: $primary;
+	display: inline-block;
+	a {
+		padding: 5px 10px;
+		//color: $secondary;
+		&:hover {
+			color: $c1;
+		}
+	}
+}
+
+blockquote {
+	position: relative;
+	margin: 0;
+	display: inline-block;
+	margin-bottom: 20px;
+	margin-top: 30px;  
+	@include font-size(2);
+	font-family: $heading_font;
+	padding: 1% 10px 1% 40px;
+	border-radius: 3px;
+
+	&:before {
+		position: absolute;
+		content: "\f10d";
+		@include font-size(2.5);
+		font-family: 'FontAwesome';
+		left: 20px;
+		top: calc(1% + 25px );
+		color: $c2;	
+	}	
+
+	p {
+		margin-bottom: 0;
+		@include font-size(2);
+		padding: 20px;
+		color: $c2;
+		position: relative;
+	
+		cite {
+			font-style: normal;
+			text-transform: uppercase;
+			color: $white;
+		}
+		a, a:visited {
+			color: $white;
+			@include font-size(1.4);
+		}
+
+		a:hover {
+			color: $c2;
+		}
+	}
+}
+
+.related-posts {
+	padding: 20px 0;
+	ul#magzen-related-posts {
+		list-style-type: none;
+		margin: 0;
+		li {
+			width: 18%;
+			float: left;
+			margin: 1%;
+			line-height: normal;
+			a {
+				line-height: normal;
+			}
+		}
+	}
+}
+
+
+.hentry.sticky {
+    .entry-meta,
+	.entry-footer {
+		background : none;
+		padding: 0;
+	}
+	.entry-footer,
+	.entry-meta {
+		margin-bottom: 0;
+	 	border: 0;
+	 	a {
+	 		color: $c2;
+	 		&:hover {
+	 			color: $secondary;
+	 		}
+	 	}
+	 }
+
+}
+
+.post .magazine-post-wrapper {
+	margin-bottom: 20px;
+}
+  
+.magazine-post-wrapper.horizontal {
+	h4.entry-title {
+		margin-top:-10px;
+	}
+}
+
+.magazine-post-wrapper {
+	position: relative;
+	margin-bottom: 50px;
+	.image-date {
+		position: absolute;
+		top:0;
+		color: $white;
+		left:0;
+		background-color: $primary;
+		padding: 0 18px 8px 18px;
+		font-weight:700;
+		a {
+			color: $white;
+			text-transform: uppercase;
+			@include font-size(2.5);
+			span {
+				display: block;
+				@include font-size(1.2);
+				margin-top: -7px;
+			}
+		}
+	}
+	.image-date.horizontal-date {
+	    padding: 0px 10px;
+		a {
+          @include font-size(1.4);
+          span {
+          	@include font-size(1.2);
+          }
+		}
+	}
+	h4.entry-title {
+		color: $secondary;
+		font-weight: 400;
+		margin-top: 15px;
+		&:hover {
+			color: $primary;
+		}
+	}
+	.magazine-content {
+		@include font-size(1.8);
+	}
+	.image-date.post-date {
+	    display: none;
+	}
+	.magazine-slider-top-meta.img-post-date {
+		.date-structure {
+			display: none;
+		}
+	}
+}
+
+.horizontal-image {
+	margin-left:0;
+	margin-right: 2%;
+}
+
+.magazine-slider-top-meta {
+    margin: 5px 0px 25px 0px;
+    border-top: 1px solid $c3;
+    border-bottom: 1px solid $c3;
+	position: relative;
+	padding: 7px;
+	font-size: 14px;
+    .date-structure {
+		display: inline-block;
+		text-align: center;
+		.dd {
+			color: $c2;
+		}
+	}
+	span {
+		margin: 0 10px 0 0;
+		
+
+		span {
+			margin: 0;
+		}
+
+		i {
+			color: $c2;
+			padding-right: 5px;
+		}
+
+		a {
+			color: $c2;
+		}
+		&:hover {
+			i {
+				color: $primary;			
+			}
+			a {
+				color: $primary;
+			}
+		}
+	}
+}
+
+/* Read more */
+.portfolio-readmore {
+    a {
+    	padding: 8px 20px;
+        background-color: $c1;
+        color: $secondary;
+        &:hover {
+        	background-color: $primary;
+        	color: $white;
+        }
+    }
+
+}
+
+/* Blog page */
+
+.blog {
+	.sticky {
+		
+	}
+
+	.entry-title a {
+		font-weight: 700;
+		color: $secondary;
+		&:hover {
+			color: $primary;
+		}
+	}
+}

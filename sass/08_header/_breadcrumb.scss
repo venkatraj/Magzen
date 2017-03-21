@@ -1,0 +1,66 @@
+/* Breadcrumb */
+.breadcrumb-wrapper {
+    margin-top: 20px;
+		.breadcrumb {
+	  background: $c7;
+	  position: relative;
+	  margin-top: 0;
+	  @include font-size(1.4);
+	  a {
+	    color: $secondary;
+	    &:hover {
+	      color: $primary;
+	    }
+	  }
+	  .txt-bread {
+	     padding: 6px;
+	     background-color: $primary;
+	     color: $white;
+	  }
+	  .sixteen {
+	  	margin-left:0;
+	  }
+	  #crumbs {
+	  	 display: inline-block;
+	  	 padding: 4px;
+	  }
+	  
+	}
+}
+
+
+@import "top-header";
+
+/* BREAK NEWS */
+.breaknews {
+   
+	.recent-news-wrapper {
+		position: relative;
+	}
+
+	ul li,ul {
+		list-style: none;
+	}
+	
+	.bn-title  {
+		padding: 5px 10px;
+		color: $white;
+		background-color: $primary;
+		display: inline-block;
+		font-weight: 600;
+		float: left;
+	}
+	.breaknews-wrapper {
+	    margin: 20px 0px;
+	    @include font-size(1.4);
+	   li {
+	   	  margin-left: 15px;
+	   }
+	    a {
+	    	color: $secondary;
+	    	&:hover {
+	    		color: $primary;
+	    	}
+	    }
+	}
+}

@@ -1,0 +1,26 @@
+table {
+	margin: 0 0 1.5em;
+	width: 100%;
+	tr td:last-child,tr th:last-child {
+		border-right: 1px solid $c1;
+	}
+}
+
+table  tr th:hover a {
+	color: $secondary !important;
+}
+
+th a {
+	color: $primary !important;
+}
+
+table td,th {
+	border-bottom: 1px solid $c1;
+	border-left: 1px solid $c1;
+	padding:10px;
+}
+
+table th {
+	font-weight: 700;
+	text-transform: uppercase;
+}	
