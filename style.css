@@ -2450,19 +2450,6 @@ blockquote {
 
 .widget-area {
   margin-top: 1.5em; }
-  .widget-area h4.widget-title {
-    margin-bottom: 30px;
-    padding-bottom: 5px;
-    position: relative;
-    text-transform: uppercase;
-    border-bottom: 3px solid #cccccc; }
-    .widget-area h4.widget-title:after {
-      position: absolute;
-      content: "";
-      width: 100px;
-      bottom: -3px;
-      left: 0px;
-      border-bottom: 3px solid #f15c22; }
   .widget-area ul li {
     padding: 7px 7px 7px 0px;
     border-bottom: 1px solid #d7d7d7;
@@ -2490,6 +2477,20 @@ blockquote {
     -moz-appearance: none;
     border: 1px solid #c6c2ce;
     padding: 5px 10% 5px 3%; }
+
+.widget .widget-title, .title-divider {
+  margin-bottom: 30px;
+  padding-bottom: 5px;
+  position: relative;
+  text-transform: uppercase;
+  border-bottom: 3px solid #cccccc; }
+  .widget .widget-title:after, .title-divider:after {
+    position: absolute;
+    content: "";
+    width: 100px;
+    bottom: -3px;
+    left: 0px;
+    border-bottom: 3px solid #f15c22; }
 
 #secondary .widget, .site-footer .widget, .site-header .widget {
   margin: 0 0 3.5em 0;

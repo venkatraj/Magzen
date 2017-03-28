@@ -14,27 +14,27 @@
 /**
  * Set up the WordPress core custom header feature.
  *
- * @uses simple_header_style()
+ * @uses magzen_header_style()
  */
-function simple_custom_header_setup() {
-	add_theme_support( 'custom-header', apply_filters( 'simple_custom_header_args', array(
+function magzen_custom_header_setup() {
+	add_theme_support( 'custom-header', apply_filters( 'magzen_custom_header_args', array(
 		'default-image'          => '',
 		'default-text-color'     => '000000',
 		'width'                  => 1000,
 		'height'                 => 250,
 		'flex-height'            => true,
-		'wp-head-callback'       => 'simple_header_style',
+		'wp-head-callback'       => 'magzen_header_style',
 	) ) );
 }
-add_action( 'after_setup_theme', 'simple_custom_header_setup' );
+add_action( 'after_setup_theme', 'magzen_custom_header_setup' );
 
-if ( ! function_exists( 'simple_header_style' ) ) :
+if ( ! function_exists( 'magzen_header_style' ) ) :
 /**
  * Styles the header image and text displayed on the blog.
  *
- * @see simple_custom_header_setup().
+ * @see magzen_custom_header_setup().
  */
-function simple_header_style() {
+function magzen_header_style() {
 	$header_text_color = get_header_textcolor();
 
 	/*

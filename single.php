@@ -33,9 +33,9 @@ get_header(); ?>
 				</section>
 			<?php endif; ?>
 
-			<?php if( get_theme_mod('related_posts') && function_exists( 'simple_related_posts' ) ) : ?>
+			<?php if( get_theme_mod('related_posts') && function_exists( 'magzen_related_posts' ) ) : ?>
 				<section class="related-posts clearfix">
-					<?php simple_related_posts(); ?>
+					<?php magzen_related_posts(); ?>
 				</section>
 			<?php endif; 
 

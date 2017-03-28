@@ -1,141 +1,141 @@
 <?php
-$simple_page_builder = __( 'Page Builder', 'magzen' );
-$simple_page_builder_details = __('Magzen Pro supports Page Builder. All our shortcodes can be used as widgets too. You can drag and drop our widgets with page builder visual editor.', 'magzen' );
-$simple_page_layout = __( 'Page Layout', 'magzen' );
-$simple_page_layout_details = __('Magzen Pro offers many different page layouts so you can quickly and easily create your pages with various layout without any hassle!', 'magzen' );
-$simple_unlimited_sidebar = __( 'Unlimited Sidebar', 'magzen' );
-$simple_unlimited_sidebar_details = __( 'Unlimited sidebars allows you to create multiple sidebars. Check out our demo site to see how different pages displays different sidebars!', 'magzen' );
-$simple_shortcode_builder = __( 'Shortcode Builder', 'magzen' );
-$simple_shortcode_builder_details = __( 'With our shortcode builder and lots of shortcodes, you can easily create nested shortcodes and build custom pages!', 'magzen' );
-$simple_portfolio = __( 'Multi Portfolio', 'magzen' );
-$simple_portfolio_details = __( '7 portfolio layouts with Isotope filtering, 3 blog layouts and multiple other alternate layouts for interior pages!', 'magzen' );
-$simple_typography = __( 'Typography', 'magzen' );
-$simple_typography_details = __('Magzen Pro loves typography, you can choose from over 500+ Google Fonts and Standard Fonts to customize your site!', 'magzen' );
-$simple_slider = __( 'Awesome Sliders', 'magzen' );
-$simple_slider_details = __('Magzen Pro includes two types of slider. You can use both Flex and Elastic sliders anywhere in your site.', 'magzen' );
-$simple_woocommerce = __( 'Woo Commerce', 'magzen' );
-$simple_woocommerce_details = __('Magzen Pro has full design/code integration for WooCommerce, your shop will look as good as the rest of your site!', 'magzen' );
-$simple_custom_widget = __( 'Custom Widget', 'magzen' );
-$simple_custom_widget_details = __( 'We offer many custom widgets that are stylized and ready for use. Simply drag &amp; drop into place to activate!', 'magzen' );
-$simple_advanced_admin = __( 'Advanced Admin', 'magzen' );
-$simple_advanced_admin_details = __( ' you can customize any part of your site quickly and easily using customize options!', 'magzen' );
-$simple_font_awesome = __( 'Font Awesome', 'magzen' );
-$simple_font_awesome_details = __( 'Font Awesome icons are fully integrated into the theme. Use them anywhere in your site in 6 different sizes!', 'magzen' );
-$simple_responsive_layout = __( 'Responsive Layout', 'magzen' );
-$simple_responsive_layout_details = __('Magzen Pro is fully responsive and can adapt to any screen size. Resize your browser window to view it!', 'magzen' );
-$simple_testimonials = __( 'Testimonials', 'magzen' );
-$simple_testimonials_details = __( 'With our testimonial post type, shortcode and widget, Displaying testimonials is a breeze.', 'magzen' );
-$simple_social_media = __( 'Social Media', 'magzen' );
-$simple_social_media_details = __( 'Want your users to stay in touch? No problem, magzen Pro has Social Media icons all throughout the theme!', 'magzen' );
-$simple_google_map = __( 'Google Map', 'magzen' );
-$simple_google_map_details = __('Magzen Pro includes Goole Map as shortcode and widget. So, you can use it anywhere in your site!', 'magzen' );
-$simple_view_demo = __( 'View Demo', 'magzen');
-$simple_upgrade_to_pro = __( 'Upgrade To Pro', 'magzen' );
+$magzen_page_builder = __( 'Page Builder', 'magzen' );
+$magzen_page_builder_details = __('Magzen Pro supports Page Builder. All our shortcodes can be used as widgets too. You can drag and drop our widgets with page builder visual editor.', 'magzen' );
+$magzen_page_layout = __( 'Page Layout', 'magzen' );
+$magzen_page_layout_details = __('Magzen Pro offers many different page layouts so you can quickly and easily create your pages with various layout without any hassle!', 'magzen' );
+$magzen_unlimited_sidebar = __( 'Unlimited Sidebar', 'magzen' );
+$magzen_unlimited_sidebar_details = __( 'Unlimited sidebars allows you to create multiple sidebars. Check out our demo site to see how different pages displays different sidebars!', 'magzen' );
+$magzen_shortcode_builder = __( 'Shortcode Builder', 'magzen' );
+$magzen_shortcode_builder_details = __( 'With our shortcode builder and lots of shortcodes, you can easily create nested shortcodes and build custom pages!', 'magzen' );
+$magzen_portfolio = __( 'Multi Portfolio', 'magzen' );
+$magzen_portfolio_details = __( '7 portfolio layouts with Isotope filtering, 3 blog layouts and multiple other alternate layouts for interior pages!', 'magzen' );
+$magzen_typography = __( 'Typography', 'magzen' );
+$magzen_typography_details = __('Magzen Pro loves typography, you can choose from over 500+ Google Fonts and Standard Fonts to customize your site!', 'magzen' );
+$magzen_slider = __( 'Awesome Sliders', 'magzen' );
+$magzen_slider_details = __('Magzen Pro includes two types of slider. You can use both Flex and Elastic sliders anywhere in your site.', 'magzen' );
+$magzen_woocommerce = __( 'Woo Commerce', 'magzen' );
+$magzen_woocommerce_details = __('Magzen Pro has full design/code integration for WooCommerce, your shop will look as good as the rest of your site!', 'magzen' );
+$magzen_custom_widget = __( 'Custom Widget', 'magzen' );
+$magzen_custom_widget_details = __( 'We offer many custom widgets that are stylized and ready for use. Simply drag &amp; drop into place to activate!', 'magzen' );
+$magzen_advanced_admin = __( 'Advanced Admin', 'magzen' );
+$magzen_advanced_admin_details = __( ' you can customize any part of your site quickly and easily using customize options!', 'magzen' );
+$magzen_font_awesome = __( 'Font Awesome', 'magzen' );
+$magzen_font_awesome_details = __( 'Font Awesome icons are fully integrated into the theme. Use them anywhere in your site in 6 different sizes!', 'magzen' );
+$magzen_responsive_layout = __( 'Responsive Layout', 'magzen' );
+$magzen_responsive_layout_details = __('Magzen Pro is fully responsive and can adapt to any screen size. Resize your browser window to view it!', 'magzen' );
+$magzen_testimonials = __( 'Testimonials', 'magzen' );
+$magzen_testimonials_details = __( 'With our testimonial post type, shortcode and widget, Displaying testimonials is a breeze.', 'magzen' );
+$magzen_social_media = __( 'Social Media', 'magzen' );
+$magzen_social_media_details = __( 'Want your users to stay in touch? No problem, magzen Pro has Social Media icons all throughout the theme!', 'magzen' );
+$magzen_google_map = __( 'Google Map', 'magzen' );
+$magzen_google_map_details = __('Magzen Pro includes Goole Map as shortcode and widget. So, you can use it anywhere in your site!', 'magzen' );
+$magzen_view_demo = __( 'View Demo', 'magzen');
+$magzen_upgrade_to_pro = __( 'Upgrade To Pro', 'magzen' );
 
 
-$simple_why_upgrade = <<< FEATURES
+$magzen_why_upgrade = <<< FEATURES
 
 <div class="one-third column clear">
 	<div class="icon-wrap"><i class="fa  fa-5x fa-cog"></i></div>
-	<h3>$simple_page_builder</h3>
-	<p>$simple_page_builder_details</p>
+	<h3>$magzen_page_builder</h3>
+	<p>$magzen_page_builder_details</p>
 </div>
 <div class="one-third column">
 	<div class="icon-wrap"><i class="fa  fa-5x fa-th-large"></i></div>
-	<h3>$simple_page_layout</h3>
-	<p>$simple_page_layout_details</p>
+	<h3>$magzen_page_layout</h3>
+	<p>$magzen_page_layout_details</p>
 </div>
 <div class="one-third column">
 	<div class="icon-wrap"><i class="fa  fa-5x fa-th"></i></div>
-	<h3>$simple_unlimited_sidebar</h3>
-	<p>$simple_unlimited_sidebar_details</p>
+	<h3>$magzen_unlimited_sidebar</h3>
+	<p>$magzen_unlimited_sidebar_details</p>
 </div>
 <div class="one-third column clear">
 	<div class="icon-wrap"><i class="fa  fa-5x fa-code-fork"></i></div>
-	<h3>$simple_shortcode_builder</h3>
-	<p>$simple_shortcode_builder_details</p>
+	<h3>$magzen_shortcode_builder</h3>
+	<p>$magzen_shortcode_builder_details</p>
 </div>
 <div class="one-third column">
 	<div class="icon-wrap"><i class="fa  fa-5x fa-camera"></i></div>
-	<h3>$simple_portfolio</h3>
-	<p>$simple_portfolio_details</p>
+	<h3>$magzen_portfolio</h3>
+	<p>$magzen_portfolio_details</p>
 </div>
 <div class="one-third column">
 	<div class="icon-wrap"><i class="fa  fa-5x fa-font"></i></div>
-	<h3>$simple_typography</h3>
-	<p>$simple_typography_details</p>
+	<h3>$magzen_typography</h3>
+	<p>$magzen_typography_details</p>
 </div>
 <div class="one-third column clear">
 	<div class="icon-wrap"><i class="fa  fa-5x fa-slideshare"></i></div>
-	<h3>$simple_slider</h3>
-	<p>$simple_slider_details</p>
+	<h3>$magzen_slider</h3>
+	<p>$magzen_slider_details</p>
 </div>
 <div class="one-third column">
 	<div class="icon-wrap"><i class="fa  fa-5x fa-leaf"></i></div>
-	<h3>$simple_woocommerce</h3>
-	<p>$simple_woocommerce_details</p>
+	<h3>$magzen_woocommerce</h3>
+	<p>$magzen_woocommerce_details</p>
 </div>
 <div class="one-third column">
 	<div class="icon-wrap"><i class="fa  fa-5x fa-tasks"></i></div>
-	<h3>$simple_custom_widget</h3>
-	<p>$simple_custom_widget_details</p>
+	<h3>$magzen_custom_widget</h3>
+	<p>$magzen_custom_widget_details</p>
 </div>
 <div class="one-third column clear">
 	<div class="icon-wrap"><i class="fa  fa-5x fa-dashboard"></i></div>
-	<h3>$simple_advanced_admin</h3>
-	<p>$simple_advanced_admin_details</p>
+	<h3>$magzen_advanced_admin</h3>
+	<p>$magzen_advanced_admin_details</p>
 </div>
 <div class="one-third column">
 	<div class="icon-wrap"><i class="fa  fa-5x fa-magic"></i></div>
-	<h3>$simple_font_awesome</h3>
-	<p>$simple_font_awesome_details</p>
+	<h3>$magzen_font_awesome</h3>
+	<p>$magzen_font_awesome_details</p>
 </div>
 <div class="one-third column">
 	<div class="icon-wrap"><i class="fa  fa-5x fa-arrows"></i></div>
-	<h3>$simple_responsive_layout</h3>
-	<p>$simple_responsive_layout_details</p>
+	<h3>$magzen_responsive_layout</h3>
+	<p>$magzen_responsive_layout_details</p>
 </div>
 <div class="one-third column clear">
 	<div class="icon-wrap"><i class="fa  fa-5x fa-magic"></i></div>
-	<h3>$simple_testimonials</h3>
-	<p>$simple_testimonials_details</p>
+	<h3>$magzen_testimonials</h3>
+	<p>$magzen_testimonials_details</p>
 </div>
 <div class="one-third column">
 	<div class="icon-wrap"><i class="fa  fa-5x fa-twitter"></i></div>
-	<h3>$simple_social_media</h3>
-	<p>$simple_social_media_details</p>
+	<h3>$magzen_social_media</h3>
+	<p>$magzen_social_media_details</p>
 </div>
 <div class="one-third column">
 	<div class="icon-wrap"><i class="fa  fa-5x fa-map-marker"></i></div>
-	<h3>$simple_google_map</h3>
-	<p>$simple_google_map_details</p>
+	<h3>$magzen_google_map</h3>
+	<p>$magzen_google_map_details</p>
 </div>
 FEATURES;
 
-function simple_theme_page() {
+function magzen_theme_page() {
 	add_theme_page( 
 		__( 'Upgrade To magzen Pro','magzen'),
 		__( 'Theme Upgrade','magzen'),
 		'edit_theme_options',
-		'simple_upgrade',
-		'simple_display_upgrade'
+		'magzen_upgrade',
+		'magzen_display_upgrade'
 	);
 }
 
-add_action('admin_menu','simple_theme_page');
+add_action('admin_menu','magzen_theme_page');
 
 
-function simple_display_upgrade() {
-	global $simple_why_upgrade;
+function magzen_display_upgrade() {
+	global $magzen_why_upgrade;
 	echo '<div class="wrap">';
-	echo $simple_why_upgrade;
+	echo $magzen_why_upgrade;
 	echo '</div>';
 }
 
 	$options = array(
 		'capability' => 10,
 		'type' => 'theme_mod',
-		'panels' => apply_filters( 'simple_customizer_options', array(
+		'panels' => apply_filters( 'magzen_customizer_options', array(
 			'magzen' => array(
 				'priority'       => 9,
 				'title'          => __('Theme Options', 'magzen'),
@@ -149,7 +149,7 @@ function simple_display_upgrade() {
 								'type' => 'checkbox',
 								'label' => __('Enable Breadcrumb', 'magzen'),
 								'default' => 0,
-								'sanitize_callback' => 'simple_boolean',
+								'sanitize_callback' => 'magzen_boolean',
 							),
 							'breadcrumb_char' => array(
 								'type' => 'select',
@@ -159,7 +159,7 @@ function simple_display_upgrade() {
 									'2' => ' // ',
 									'3' => ' > '
 								),
-								'sanitize_callback' => 'simple_breadcrumb_char_choices',
+								'sanitize_callback' => 'magzen_breadcrumb_char_choices',
 								'default' => '1',
 							),
 							'numeric_pagination' => array(
@@ -178,25 +178,25 @@ function simple_display_upgrade() {
 								'type' => 'checkbox',
 								'label' => __('Logo as Title', 'magzen'),
 								'default' => 0,
-								'sanitize_callback' => 'simple_boolean',
+								'sanitize_callback' => 'magzen_boolean',
 							),
 							'tagline' => array(
 								'type' => 'checkbox',
 								'label' => __('Show site Tagline', 'magzen'),
 								'default' => 1,
-								'sanitize_callback' => 'simple_boolean',
+								'sanitize_callback' => 'magzen_boolean',
 							),
 							'header_search' => array(
                                 'type' => 'checkbox',
                                 'label' => __('Show Search box in Navigation', 'magzen'),
                                 'default' => 1,
-                                'sanitize_callback' => 'simple_boolean', 
+                                'sanitize_callback' => 'magzen_boolean', 
                             ),
                             'header_breaking_news' => array(
                                 'type' => 'checkbox',
                                 'label' => __('Enable Breaking News', 'magzen'),
                                 'default' => 1,
-                                'sanitize_callback' => 'simple_boolean', 
+                                'sanitize_callback' => 'magzen_boolean', 
                             ),
                             'header_breaking_news_title' => array(
                                 'type' => 'text',
@@ -215,7 +215,7 @@ function simple_display_upgrade() {
 								'type' => 'checkbox',
 								'label' => __('Footer Widget Area', 'magzen'),
 								'default' => 1,
-								'sanitize_callback' => 'simple_boolean',
+								'sanitize_callback' => 'magzen_boolean',
 							),
 							'copyright' => array(
                                 'type' => 'textarea',
@@ -233,7 +233,7 @@ function simple_display_upgrade() {
 								'type' => 'checkbox',
 								'label' => __('Enable Home Page Slider Section', 'magzen'),
 								'default' => 1,
-								'sanitize_callback' => 'simple_boolean',
+								'sanitize_callback' => 'magzen_boolean',
 							),
 							'slider_cat' => array(
 								'type' => 'category',
@@ -305,7 +305,7 @@ function simple_display_upgrade() {
 	)
 	);
 
-function simple_boolean($value) {
+function magzen_boolean($value) {
 	if(is_bool($value)) {
 		return $value;
 	} else {
@@ -313,7 +313,7 @@ function simple_boolean($value) {
 	}
 }
 
-function simple_breadcrumb_char_choices($value='') {
+function magzen_breadcrumb_char_choices($value='') {
 	$choices = array('1','2','3');
 
 	if( in_array($value, $choices)) {

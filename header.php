@@ -94,7 +94,7 @@
 			</div>
 		</div>     
 		<?php if( get_theme_mod('header_breaking_news',true) && is_front_page() ): 
-		    do_action('simple_header_breaking_news');
+		    do_action('magzen_header_breaking_news');
 		endif; ?>
 
 	</header><!-- #masthead --> 

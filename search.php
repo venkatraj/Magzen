@@ -32,8 +32,8 @@ get_header(); ?>
 
 			endwhile;
 
-			if(  get_theme_mod ('numeric_pagination',true) && function_exists( 'simple_pagination' ) ) : 
-					simple_pagination();
+			if(  get_theme_mod ('numeric_pagination',true) && function_exists( 'magzen_pagination' ) ) : 
+					magzen_pagination();
 				else :
 					the_posts_navigation();    
 			endif; 

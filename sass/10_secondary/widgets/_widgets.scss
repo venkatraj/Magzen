@@ -1,22 +1,6 @@
 .widget-area  {
 
 		margin-top: 1.5em;
-
-		h4.widget-title { 
-			margin-bottom: 30px;
-			padding-bottom: 5px;
-			position:relative;
-			text-transform:uppercase;
-			border-bottom: 3px solid $c6;
-			&:after {
-				position:absolute;
-				content:"";
-				width:100px;
-				bottom:-3px;
-				left:0px;
-				border-bottom:3px solid $primary;
-			}
-		}
 		
 		ul {
 		
@@ -63,7 +47,21 @@
 
 }
 
-	
+.widget .widget-title,.title-divider { 
+	margin-bottom: 30px;
+	padding-bottom: 5px;
+	position:relative;
+	text-transform:uppercase;
+	border-bottom: 3px solid $c6;
+	&:after {
+		position:absolute;
+		content:"";
+		width:100px;
+		bottom:-3px;
+		left:0px;
+		border-bottom:3px solid $primary;
+	}
+}	
 
 #secondary .widget,.site-footer .widget,.site-header .widget {
 	margin: 0 0 3.5em 0;

@@ -13,7 +13,7 @@
 				<?php if( $breadcrumb ) : ?>
 					<div class="sixteen columns">
 					<span class="txt-bread"><?php _e('You are here','magzen');?></span>
-						<?php simple_breadcrumbs(); ?>
+						<?php magzen_breadcrumbs(); ?>
 					</div>
 				<?php endif; ?>
 			</div>

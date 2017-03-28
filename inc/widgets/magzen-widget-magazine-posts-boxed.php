@@ -43,12 +43,12 @@ class Magzen_Magazine_Post_Boxed_Widget extends WP_Widget {
 		) );
 
         if( isset($post_model) && $post_model == 'latest' ) {
-        	$simple_args = array(
+        	$magzen_args = array(
         		'posts_per_page'        => $post_count,
 	            'post_type'             => 'post',
         	);
         }else {
-            $simple_args = array(
+            $magzen_args = array(
         		'posts_per_page'        => $post_count,
 	            'post_type'             => 'post',
 	            'category__in'          => $post_cat
@@ -60,7 +60,7 @@ class Magzen_Magazine_Post_Boxed_Widget extends WP_Widget {
            $post_cat_name = get_the_category_by_ID($post_cat);
           
         }else{
-        	$post_cat_name = apply_filters('gem_simple_recent_post_title', __('Latest Post','magzen') );
+        	$post_cat_name = apply_filters('gem_magzen_recent_post_title', __('Latest Post','magzen') );
         }
 
         $title = apply_filters( 'widget_title', $post_cat_name );
@@ -89,15 +89,15 @@ class Magzen_Magazine_Post_Boxed_Widget extends WP_Widget {
 		echo $before_widget;
 
 		
-		$simple_featured_posts = new WP_Query( $simple_args );
+		$magzen_featured_posts = new WP_Query( $magzen_args );
 		
-        if( $simple_featured_posts->have_posts() ) :
+        if( $magzen_featured_posts->have_posts() ) :
 
             if ( ! empty( $title ) ) {
 			   echo $before_title .'<span class="mag-divider">'. $title .'</span>'. $after_title;
 		    }
-        	while( $simple_featured_posts->have_posts() ) : 
-        		$simple_featured_posts->the_post(); ?>
+        	while( $magzen_featured_posts->have_posts() ) : 
+        		$magzen_featured_posts->the_post(); ?>
                 <div class="<?php echo $col_class; ?>">
 	                <div class="magazine-post-wrapper clearfix <?php echo $post_layout; ?>">
 		                <div class="magazine-image <?php echo $post_image_class; ?>">					
@@ -109,11 +109,13 @@ class Magzen_Magazine_Post_Boxed_Widget extends WP_Widget {
 							<img src="' .get_template_directory_uri() . '/images/thumbnail-default.png" alt="" >
 						<?php endif; ?>
 						</div><!-- .entry-header -->
-						<span class="image-date <?php echo $post_date_class; echo $post_date; ?>"><a class="url fn n" href="<?php echo get_day_link(get_the_time('Y'), get_the_time('m'),get_the_time('d')); ?>"><?php the_time('j'); ?><span><?php the_time('M');?></span></a></span>		
+						<?php  if( $post_layout == 'vertical') : ?>
+						     <span class="image-date <?php echo $post_date_class; echo $post_date; ?>"><a class="url fn n" href="<?php echo get_day_link(get_the_time('Y'), get_the_time('m'),get_the_time('d')); ?>"><?php the_time('j'); ?><span><?php the_time('M');?></span></a></span>		
+						<?php endif; ?>	
 						<div class="magazine-content-wrapper <?php echo $post_content_class; ?>">
 							<a href="<?php the_permalink() ?>"><?php the_title('<h4 class="entry-title">','</h4>'); ?></a>
 							<div class="magazine-slider-top-meta <?php echo $post_date; ?>">
-		                       <?php simple_entry_top_meta(); ?>
+		                       <?php magzen_entry_top_meta(); ?>
 							</div>
 							<div class="magazine-content">
 							   <?php  the_content(); ?>

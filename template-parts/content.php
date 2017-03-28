@@ -26,7 +26,7 @@
 				<?php the_title( sprintf( '<h4 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h4>' ); ?>
 				<?php if ( 'post' == get_post_type() ) : ?>
 				<div class="magazine-slider-top-meta <?php echo $post_date; ?>">
-					<?php simple_entry_top_meta(); ?> 
+					<?php magzen_entry_top_meta(); ?> 
 				</div><!-- .entry-meta -->
 				<?php endif; ?>
 			

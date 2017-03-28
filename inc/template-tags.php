@@ -7,11 +7,11 @@
  * @package magzen
  */
 
-if ( ! function_exists( 'simple_posted_on' ) ) :
+if ( ! function_exists( 'magzen_posted_on' ) ) :
 /**
  * Prints HTML with meta information for the current post-date/time and author.
  */ 	
-function simple_posted_on() {
+function magzen_posted_on() {
 	$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
 	if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
 		$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
@@ -39,16 +39,16 @@ function simple_posted_on() {
 }
 endif;
 
-if ( ! function_exists( 'simple_entry_footer' ) ) :
+if ( ! function_exists( 'magzen_entry_footer' ) ) :
 /**
  * Prints HTML with meta information for the categories, tags and comments.
  */
-function simple_entry_footer() {
+function magzen_entry_footer() {
 	// Hide category and tag text for pages.
 	if ( 'post' === get_post_type() ) {
 		/* translators: used between list items, there is a space after the comma */
 		$categories_list = get_the_category_list( esc_html__( ', ', 'magzen' ) );
-		if ( $categories_list && simple_categorized_blog() ) {
+		if ( $categories_list && magzen_categorized_blog() ) {
 			printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'magzen' ) . '</span>', $categories_list ); // WPCS: XSS OK.
 		}
 
@@ -83,8 +83,8 @@ endif;
  *
  * @return bool
  */
-function simple_categorized_blog() {
-	if ( false === ( $all_the_cool_cats = get_transient( 'simple_categories' ) ) ) {
+function magzen_categorized_blog() {
+	if ( false === ( $all_the_cool_cats = get_transient( 'magzen_categories' ) ) ) {
 		// Create an array of all the categories that are attached to posts.
 		$all_the_cool_cats = get_categories( array(
 			'fields'     => 'ids',
@@ -96,38 +96,38 @@ function simple_categorized_blog() {
 		// Count the number of categories that are attached to the posts.
 		$all_the_cool_cats = count( $all_the_cool_cats );
 
-		set_transient( 'simple_categories', $all_the_cool_cats );
+		set_transient( 'magzen_categories', $all_the_cool_cats );
 	}
 
 	if ( $all_the_cool_cats > 1 ) {
-		// This blog has more than 1 category so simple_categorized_blog should return true.
+		// This blog has more than 1 category so magzen_categorized_blog should return true.
 		return true;
 	} else {
-		// This blog has only 1 category so simple_categorized_blog should return false.
+		// This blog has only 1 category so magzen_categorized_blog should return false.
 		return false;
 	}
 }
 
 /**
- * Flush out the transients used in simple_categorized_blog.
+ * Flush out the transients used in magzen_categorized_blog.
  */
-function simple_category_transient_flusher() {
+function magzen_category_transient_flusher() {
 	if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
 		return;
 	}
 	// Like, beat it. Dig?
-	delete_transient( 'simple_categories' );
+	delete_transient( 'magzen_categories' );
 }
-add_action( 'edit_category', 'simple_category_transient_flusher' );
-add_action( 'save_post',     'simple_category_transient_flusher' );
+add_action( 'edit_category', 'magzen_category_transient_flusher' );
+add_action( 'save_post',     'magzen_category_transient_flusher' );
 
 
 /* Theme Related Functions */
-if ( ! function_exists( 'simple_post_nav' ) ) :
+if ( ! function_exists( 'magzen_post_nav' ) ) :
 /**
  * Display navigation to next/previous post when applicable.
  */
-function simple_post_nav() {
+function magzen_post_nav() {
 	// Don't print empty markup if there's nowhere to navigate.
 	$previous = ( is_attachment() ) ? get_post( get_post()->post_parent ) : get_adjacent_post( false, '', true );
 	$next     = get_adjacent_post( false, '', false );
@@ -153,9 +153,9 @@ endif;
   * Generates Breadcrumb Navigation
   */
  
- if( ! function_exists( 'simple_breadcrumbs' )) {
+ if( ! function_exists( 'magzen_breadcrumbs' )) {
  
-	function simple_breadcrumbs() {
+	function magzen_breadcrumbs() {
 		/* === OPTIONS === */
 		$text['home']     = __( 'Home','magzen' ); // text for the 'Home' link
 		$text['category'] = __( 'Archive by Category "%s"','magzen' ); // text for a category page
@@ -296,15 +296,15 @@ endif;
 
 		}
 	
-	} // end simple_breadcrumbs()
+	} // end magzen_breadcrumbs()
 
 }
 
 
 
-// Related Posts Function by Tags (call using simple_related_posts(); ) /NecessarY/ May be write a shortcode?
-if ( ! function_exists( 'simple_related_posts' ) ) :
-	function simple_related_posts() {
+// Related Posts Function by Tags (call using magzen_related_posts(); ) /NecessarY/ May be write a shortcode?
+if ( ! function_exists( 'magzen_related_posts' ) ) :
+	function magzen_related_posts() {
 		echo '<ul id="magzen-related-posts">';
 		global $post;
 		$post_hierarchy = get_theme_mod('related_posts_hierarchy','1');
@@ -357,13 +357,13 @@ endif;
 
 
 
-if( ! function_exists( 'simple_pagination' )) {
+if( ! function_exists( 'magzen_pagination' )) {
 
 	/**
 	 * Generates Pagination without WP-PageNavi Plugin
 	 */
 	
-	function simple_pagination($before = '', $after = '') {
+	function magzen_pagination($before = '', $after = '') {
 		global $wpdb, $wp_query;
 		$request = $wp_query->request;
 		$posts_per_page = intval(get_query_var('posts_per_page'));
@@ -417,24 +417,24 @@ if( ! function_exists( 'simple_pagination' )) {
 		}
 		echo '</ol></nav>'.$after."";
 	}
-} /* simple_pagination */
+} /* magzen_pagination */
 
 
 /* More tag wrapper */
-add_action( 'the_content_more_link', 'simple_add_more_link_class', 10, 2 );
-if ( ! function_exists( 'simple_add_more_link_class' ) ) :
-	function simple_add_more_link_class($link, $text ) {
+add_action( 'the_content_more_link', 'magzen_add_more_link_class', 10, 2 );
+if ( ! function_exists( 'magzen_add_more_link_class' ) ) :
+	function magzen_add_more_link_class($link, $text ) {
 		return '<p class="portfolio-readmore"><a class="btn btn-mini more-link" href="'. get_permalink() .'">'.__('ReadMore','magzen').'</a></p>';
 	}
 endif;
 
 
 /* Magazine Post meta details */
-if ( ! function_exists( 'simple_entry_top_meta' ) ) : 
+if ( ! function_exists( 'magzen_entry_top_meta' ) ) : 
 /**
  * Prints HTML with meta information for the categories, tags and comments.
  */
-function simple_entry_top_meta() {    
+function magzen_entry_top_meta() {    
 	// Post meta data 	
     if ( 'post' == get_post_type() ) {  
 	    // Date
@@ -476,9 +476,9 @@ function simple_entry_top_meta() {
 endif;
 
 /* Header Breaking News */
-add_action('simple_header_breaking_news','simple_header_breaking_news');
-if(! function_exists('simple_header_breaking_news') ) {  
-	function simple_header_breaking_news() { ?>
+add_action('magzen_header_breaking_news','magzen_header_breaking_news');
+if(! function_exists('magzen_header_breaking_news') ) {  
+	function magzen_header_breaking_news() { ?>
 		<div class="breaknews">  
 			<div class="container">
 				 <div class="recent-news-wrapper">

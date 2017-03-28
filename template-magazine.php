@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-    <?php do_action('simple_before_content'); ?>
+    <?php do_action('magzen_before_content'); ?>
 
 		<div class="container">  
 
