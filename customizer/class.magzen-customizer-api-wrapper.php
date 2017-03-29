@@ -5,8 +5,8 @@
 	 * Also, adds custom controls for Customizer by extending it.
 	 */
 
-if( ! class_exists('Wbls_Customizer_API_Wrapper') ) {
-	class Wbls_Customizer_API_Wrapper {
+if( ! class_exists('Magzen_Customizer_API_Wrapper') ) {
+	class Magzen_Customizer_API_Wrapper {
 
 		private static $_instance;
 
@@ -51,7 +51,7 @@ if( ! class_exists('Wbls_Customizer_API_Wrapper') ) {
 
 		public static function getInstance($options) {
 			if(! self::$_instance) {
-				self::$_instance = new Wbls_Customizer_API_Wrapper($options);
+				self::$_instance = new Magzen_Customizer_API_Wrapper($options);
 			}
 			return self::$_instance;
 		}

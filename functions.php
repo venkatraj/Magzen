@@ -153,14 +153,14 @@ function magzen_widgets_init() {
 	) );
 
 	register_sidebar( array(
-		'name'          => __( 'Magazine Page', 'magzen' ),
-		'id'            => 'magazine-page', 
-		'description'   => __( 'Appears on Magazine Page template only. You can use the Magazine Posts widgets here.','magzen' ),
+		'name'          => __( 'Magzen: Content Area', 'magzenpro' ),
+		'id'            => 'magzen-content-area', 
+		'description'   => __( 'Appears on Front Page and Magazine Page template only. You can use the Magzen widgets here.','magzenpro' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h4 class="widget-title">',
-		'after_title'   => '</h4>',
-	) ); 
+		'after_title'   => '</h4>', 
+	) );
 }
 add_action( 'widgets_init', 'magzen_widgets_init' );
 

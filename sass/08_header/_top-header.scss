@@ -1,11 +1,10 @@
 .top-nav {
 	background: $primary;
 	margin-bottom: 0px;
-	font-size:14px;
-	.eight{
-		padding: 7px 0px;
-		color: $white;    
-	}
+	@include font-size(1.4);
+	padding: 7px 0px;
+	color: $white;
+
 	aside {
 		margin-bottom: 10px;
 	}
@@ -49,7 +48,10 @@
 	
 }
 
-.cart-right {	     
+.cart-right {	 
+    text-align: right;
+    color: $white;
+    
     li { 
 			float: right;
 			margin-left: 25px;

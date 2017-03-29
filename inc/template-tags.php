@@ -434,44 +434,56 @@ if ( ! function_exists( 'magzen_entry_top_meta' ) ) :
 /**
  * Prints HTML with meta information for the categories, tags and comments.
  */
-function magzen_entry_top_meta() {    
+
+function magzen_entry_top_meta($date = 'date',$author = 'author', $comment = 'comment', $cat = 'cat', $tag = 'tag', $edit = 'edit' ) {    
 	// Post meta data 	
     if ( 'post' == get_post_type() ) {  
 	    // Date
-	    	global $post; ?>
-	  	    <span class="date-structure">				
-				<span class="dd"><a class="url fn n" href="<?php echo get_day_link(get_the_time('Y'), get_the_time('m'),get_the_time('d')); ?>"><i class="fa fa-clock-o"></i><?php the_time('j M Y'); ?></a></span>		
-			</span><?php  
-	    // Author   
-			printf(
-				_x( '%s', 'post author', 'magzen' ),
-				'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '"><i class="fa fa-user"></i> ' . esc_html( get_the_author() ) . '</a></span>'
-			);	
-        // Comments
-			if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
-				echo ' <span class="comments-link"><i class="fa fa-comments"></i>';
-				comments_popup_link( __( 'Leave a comment', 'magzen' ), __( '1 Comment', 'magzen' ), __( '% Comments', 'magzen' ) );
-				echo '</span>';
+	    	global $post;
+	    	if ( 'date' == $date ) {   ?>
+		  	    <span class="date-structure">				
+					<span class="dd"><a class="url fn n" href="<?php echo get_day_link(get_the_time('Y'), get_the_time('m'),get_the_time('d')); ?>"><i class="fa fa-clock-o"></i><?php the_time('j M Y'); ?></a></span>		
+				</span><?php 
+			} 
+	    // Author  
+	        if ( 'author' == $author ) {  
+				printf(
+					_x( '%s', 'post author', 'magzen' ),
+					'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '"><i class="fa fa-user"></i> ' . esc_html( get_the_author() ) . '</a></span>'
+				);	
+		    }
+		// Comments
+		    if ( 'comment' == $comment ) {  
+				if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
+					echo ' <span class="comments-link"><i class="fa fa-comments"></i>';
+					comments_popup_link( __( 'Leave a comment', 'magzen' ), __( '1 Comment', 'magzen' ), __( '% Comments', 'magzen' ) );
+					echo '</span>';
+			    }
 		    }
 	   
 	     // Category list
-			$categories_list = get_the_category_list( __( ', ', 'magzen' ) );
-			if ( $categories_list ) {
-				printf( '<span class="cat-links"><i class="fa fa-folder-open"></i> ' . __( '%1$s ', 'magzen' ) . '</span>', $categories_list );
-			}	
+		    if ( 'cat' == $cat ) {  
+				$categories_list = get_the_category_list( __( ', ', 'magzen' ) );
+				if ( $categories_list ) {
+					printf( '<span class="cat-links"><i class="fa fa-folder-open"></i> ' . __( '%1$s ', 'magzen' ) . '</span>', $categories_list );
+				}	
+		    }
 	    // Tags
-    		
-			$tags_list = get_the_tag_list( '', __( ', ', 'magzen' ) );
-			if ( $tags_list ) {
-				printf( '<span class="tags-links"><i class="fa fa-tags"></i> ' . __( '%1$s ', 'magzen' ) . '</span>', $tags_list );
-			}
+    		if ( 'tag' == $tag ) {  
+				$tags_list = get_the_tag_list( '', __( ', ', 'magzen' ) );
+				if ( $tags_list ) {
+					printf( '<span class="tags-links"><i class="fa fa-tags"></i> ' . __( '%1$s ', 'magzen' ) . '</span>', $tags_list );
+				}
+		    }
 			
-		// Edit  
-	        edit_post_link( __( 'Edit', 'magzen' ), '<span class="edit-link"><i class="fa fa-pencil"></i> ', '</span>' );
-	    	
+		// Edit 
+			if ( 'edit' == $edit ) {   
+		        edit_post_link( __( 'Edit', 'magzen' ), '<span class="edit-link"><i class="fa fa-pencil"></i> ', '</span>' );
+		    }
 	}
 
 }
+
 
 endif;
 

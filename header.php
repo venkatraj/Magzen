@@ -8,7 +8,7 @@
  *
  * @package magzen
  */
-
+  
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
@@ -24,23 +24,35 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'magzen' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
-		<?php if( is_active_sidebar( 'top-left' )  || is_active_sidebar( 'top-right' ) ): ?>
-			<div class="top-nav">  
-				<div class="container">		
-						<div class="eight columns">
-							<div class="cart-left">
-								<?php dynamic_sidebar('top-left' ); ?>
-							</div>
+        <?php if( is_active_sidebar( 'top-left' )  || get_theme_mod('header_show_date',true) || is_active_sidebar( 'top-right' ) ): ?>
+			<div class="top-nav">   
+				<div class="container">	  	
+					<div class="eight columns alpha">
+						<div class="cart-left"> 
+							<?php dynamic_sidebar('top-left' ); ?>
 						</div>
-
-						<div class="eight columns">
-							<div class="cart-right">
-								<?php dynamic_sidebar('top-right' ); ?>  
+					</div>
+					<?php
+                    if( get_theme_mod('header_show_date',true) ): ?>
+	                    <div class="three columns">
+	                        <div class="cart-right"><?php
+							    echo date('l, M j, Y'); ?>
 							</div>
+	                    </div><?php
+                    endif;
+                    if( get_theme_mod('header_show_date',true) ): ?>
+					    <div class="five columns omega"> <?php
+					else: ?>
+						<div class="eight columns omega"><?php
+					endif; ?>
+						<div class="cart-right">
+							<?php dynamic_sidebar('top-right' ); ?>  
 						</div>
+					</div>
 				</div>
 			</div> <!-- .top-nav -->
 		<?php endif;?>
+
 
 		<div class="branding header-image">
 			<div class="container">

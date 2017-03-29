@@ -1210,10 +1210,10 @@ object {
 .top-nav {
   background: #f15c22;
   margin-bottom: 0px;
-  font-size: 14px; }
-  .top-nav .eight {
-    padding: 7px 0px;
-    color: #fff; }
+  font-size: 14px;
+  font-size: 1.4rem;
+  padding: 7px 0px;
+  color: #fff; }
   .top-nav aside {
     margin-bottom: 10px; }
   .top-nav .textwidget {
@@ -1245,25 +1245,28 @@ object {
         padding-right: 5px;
         display: inline-block; }
 
-.cart-right li {
-  float: right;
-  margin-left: 25px;
+.cart-right {
+  text-align: right;
   color: #fff; }
-  .cart-right li:first-child {
-    margin-right: 0; }
-  .cart-right li:hover a {
-    color: #2c3e50; }
-  .cart-right li a .fa {
-    display: inline-block;
+  .cart-right li {
+    float: right;
+    margin-left: 25px;
     color: #fff; }
-  .cart-right li a:hover .fa {
+    .cart-right li:first-child {
+      margin-right: 0; }
+    .cart-right li:hover a {
+      color: #2c3e50; }
+    .cart-right li a .fa {
+      display: inline-block;
+      color: #fff; }
+    .cart-right li a:hover .fa {
+      color: #2c3e50; }
+  .cart-right a:hover {
     color: #2c3e50; }
-.cart-right a:hover {
-  color: #2c3e50; }
-.cart-right ul {
-  float: right; }
-.cart-right aside {
-  margin: 0; }
+  .cart-right ul {
+    float: right; }
+  .cart-right aside {
+    margin: 0; }
 
 .header-right {
   text-align: right;
@@ -1295,10 +1298,10 @@ object {
 .top-nav {
   background: #f15c22;
   margin-bottom: 0px;
-  font-size: 14px; }
-  .top-nav .eight {
-    padding: 7px 0px;
-    color: #fff; }
+  font-size: 14px;
+  font-size: 1.4rem;
+  padding: 7px 0px;
+  color: #fff; }
   .top-nav aside {
     margin-bottom: 10px; }
   .top-nav .textwidget {
@@ -1330,25 +1333,28 @@ object {
         padding-right: 5px;
         display: inline-block; }
 
-.cart-right li {
-  float: right;
-  margin-left: 25px;
+.cart-right {
+  text-align: right;
   color: #fff; }
-  .cart-right li:first-child {
-    margin-right: 0; }
-  .cart-right li:hover a {
-    color: #2c3e50; }
-  .cart-right li a .fa {
-    display: inline-block;
+  .cart-right li {
+    float: right;
+    margin-left: 25px;
     color: #fff; }
-  .cart-right li a:hover .fa {
+    .cart-right li:first-child {
+      margin-right: 0; }
+    .cart-right li:hover a {
+      color: #2c3e50; }
+    .cart-right li a .fa {
+      display: inline-block;
+      color: #fff; }
+    .cart-right li a:hover .fa {
+      color: #2c3e50; }
+  .cart-right a:hover {
     color: #2c3e50; }
-.cart-right a:hover {
-  color: #2c3e50; }
-.cart-right ul {
-  float: right; }
-.cart-right aside {
-  margin: 0; }
+  .cart-right ul {
+    float: right; }
+  .cart-right aside {
+    margin: 0; }
 
 .header-right {
   text-align: right;
@@ -2783,12 +2789,17 @@ blockquote {
   .main-navigation ul ul li:hover > ul {
     left: 100%; }
 
-  .top-nav .container .eight.columns {
+  .top-nav .container .columns {
     width: 100%;
     text-align: center; }
-    .top-nav .container .eight.columns li {
+    .top-nav .container .columns li {
       display: inline-block;
       float: none; }
+  .top-nav .columns {
+    padding: 2px 0px; }
+  .top-nav .cart-right ul, .top-nav .cart-right {
+    float: none;
+    text-align: center; }
 
   .comment-form input[type=text],
   .comment-form input[type=email],

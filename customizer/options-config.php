@@ -186,6 +186,12 @@ function magzen_display_upgrade() {
 								'default' => 1,
 								'sanitize_callback' => 'magzen_boolean',
 							),
+							'header_show_date' => array( 
+                                'type' => 'checkbox',
+                                'label' => __('Show Date in Header', 'magzen'),
+                                'default' => 1,
+                                'sanitize_callback' => 'magzen_boolean',
+                            ),
 							'header_search' => array(
                                 'type' => 'checkbox',
                                 'label' => __('Show Search box in Navigation', 'magzen'),

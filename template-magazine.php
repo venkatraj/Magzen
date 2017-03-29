@@ -18,11 +18,11 @@ get_header(); ?>
 			<main id="main" class="site-main" role="main"> 
 
 				<?php // Display Magazine Homepage Widgets
-					if( is_active_sidebar( 'magazine-page' ) ) : ?> 
+					if( is_active_sidebar( 'magzen-content-area' ) ) : ?> 
 
 						<div id="magazine-page-widgets" class="widget-area clearfix">
 
-							<?php dynamic_sidebar( 'magazine-page' ); ?>
+							<?php dynamic_sidebar( 'magzen-content-area' ); ?>
 
 						</div><!-- #magazine-page-widgets -->
 
@@ -33,7 +33,7 @@ get_header(); ?>
 						if ( current_user_can( 'edit_theme_options' ) ) : ?>
 
 							<p class="empty-widget-area">
-								<?php esc_html_e( 'Please go to Appearance &#8594; Widgets and add widget to the "Magazine Page" widget area. You can use the Magzen : Magazine Posts Boxed widgets to set up magazine page.', 'magzen' ); ?>
+								<?php esc_html_e( 'Please go to Appearance &#8594; Widgets and add widget to the "Magzen: content area". You can use the Magzen widget to set up magazine page.', 'magzen' ); ?>
 							</p> 
 							
 						<?php endif;

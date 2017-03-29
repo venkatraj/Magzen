@@ -4,16 +4,23 @@
   }
  
   .top-nav {
-    .container .eight.columns {
-      width: 100%;
-      text-align: center;
-      li {
-        display: inline-block;
-        float: none;
-      }
+    .container .columns {
+        width: 100%;
+        text-align: center;
+        li {
+          display: inline-block;
+          float: none;
+        }
     }
-  } 
-  .comment-form input[type=text],
+    .columns {
+        padding: 2px 0px;
+    }
+    .cart-right ul,.cart-right  {
+      float: none;
+      text-align: center;
+    }
+  }
+    .comment-form input[type=text],
   .comment-form input[type=email],
   .comment-form input[type=text] {
     width: 48%;

@@ -7,17 +7,17 @@
  *
  * @package Magzen
  */
-
-class Magzen_Magazine_Post_Boxed_Widget extends WP_Widget {  
+   
+class Magzen_Featured_Post_Widget extends WP_Widget {  
   
 	/**
 	 * Register widget with WordPress.
 	 */
 	function __construct() {
 		parent::__construct(
-			'magzen-magazine-post-boxed-widget', // Base ID
-			sprintf( esc_html__( '%s : Magazine Posts Boxed', 'magzen' ), wp_get_theme()->Name ), // Name
-			array( 'description' => __( 'Displays your posts from a selected category in a boxed layout. Please use this widget ONLY in the Magzen Page widget area.', 'magzen' ), ) // Args
+			'magzen-featured-post-widget', // Base ID
+			sprintf( esc_html__( '%s : Featured Post', 'magzen' ), wp_get_theme()->Name ), // Name
+			array( 'description' => __( 'Displays your latest posts or post from a selected category . Please use this widget  in the Magzen: Content Area.', 'magzen' ), ) // Args
 		);
 	}
 
@@ -46,11 +46,17 @@ class Magzen_Magazine_Post_Boxed_Widget extends WP_Widget {
         	$magzen_args = array(
         		'posts_per_page'        => $post_count,
 	            'post_type'             => 'post',
+	            'post_status'            => 'publish',
+	            'ignore_sticky_posts'    => true,
+			    'order'                  => 'DESC',
         	);
         }else {
             $magzen_args = array(
         		'posts_per_page'        => $post_count,
 	            'post_type'             => 'post',
+	            'post_status'            => 'publish',
+	            'ignore_sticky_posts'    => true,
+			    'order'                  => 'DESC',
 	            'category__in'          => $post_cat
         	);
         }
@@ -60,7 +66,7 @@ class Magzen_Magazine_Post_Boxed_Widget extends WP_Widget {
            $post_cat_name = get_the_category_by_ID($post_cat);
           
         }else{
-        	$post_cat_name = apply_filters('gem_magzen_recent_post_title', __('Latest Post','magzen') );
+        	$post_cat_name = apply_filters('magzen_recent_post_title', __('Latest Post','magzen') );
         }
 
         $title = apply_filters( 'widget_title', $post_cat_name );
@@ -106,7 +112,6 @@ class Magzen_Magazine_Post_Boxed_Widget extends WP_Widget {
 						   <a href="<?php the_permalink() ?>" rel="bookmark"><?php the_post_thumbnail('magzen-highlighted-post', array( 'title' => esc_attr( $title ), 'alt' => esc_attr( $title ) )); ?></a>
 						<?php else: 
 						   $post_date = 'post-date'; ?>
-							<img src="' .get_template_directory_uri() . '/images/thumbnail-default.png" alt="" >
 						<?php endif; ?>
 						</div><!-- .entry-header -->
 						<?php  if( $post_layout == 'vertical') : ?>
@@ -118,7 +123,7 @@ class Magzen_Magazine_Post_Boxed_Widget extends WP_Widget {
 		                       <?php magzen_entry_top_meta(); ?>
 							</div>
 							<div class="magazine-content">
-							   <?php  the_content(); ?>
+							   <?php the_content(); ?>
 							</div>
 						</div>
 					</div>
@@ -164,7 +169,7 @@ class Magzen_Magazine_Post_Boxed_Widget extends WP_Widget {
 
 		<p>
 			<label for="<?php echo $this->get_field_id('post_cat') ?>"><?php _e(' Select Category ', 'magzen') ?></label>
-			<?php wp_dropdown_categories( array( 'name' => $this->get_field_name( 'post_cat' ), 'selected' =>  $instance['post_cat'] ) ); ?>
+			<?php wp_dropdown_categories( array( 'name' => $this->get_field_name( 'post_cat' ), 'show_option_all'  => __('All Category','magzen'), 'show_count' => true, 'selected' =>  $instance['post_cat'] ) ); ?>
 		</p>
 
 		<p>
