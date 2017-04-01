@@ -10,7 +10,11 @@ select {
 			background:  $white url('images/down.png') no-repeat 95% 50%;
 			border: 1px solid $c1;
 			padding: 5px 10% 5px 3%;
-			-moz-appearance: none;
+			 -webkit-appearance: none;
+		    -moz-appearance: none;
+		    -ms-appearance: none;
+		    -o-appearance: none;
+		    appearance: none;
 		
 }
 

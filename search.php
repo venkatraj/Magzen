@@ -9,7 +9,7 @@
 
 get_header(); ?>
 <div class="container">
-	<section id="primary" class="content-area eleven columns">
+	<section id="primary" class="content-area eleven columns alpha">
 		<main id="main" class="site-main" role="main">
 
 		<?php

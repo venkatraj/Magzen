@@ -9,7 +9,7 @@
         &.column {
             @include column-width(4.1%);
         }
-    }
+    }  
     .two.columns {
         @include column-width(10.4%);
     }
@@ -64,6 +64,74 @@
     .two-thirds.column {
         @include column-width(64.5%);
     }
+
+    /* margin-left and right with use of alpha & omega */
+
+   .one {
+        &.column.alpha {
+            @include column-width(5.1%);
+        }
+         &.column.omega {
+            @include column-width(5.1%);
+        }
+    }  
+    .two.columns.alpha,.two.columns.omega {
+        @include column-width(11.4%);
+    }
+    .three.columns.alpha,.three.columns.omega {
+        @include column-width(17.6%);
+    }
+    .four.columns.alpha,.four.columns.omega {
+        @include column-width(23.9%);
+    }
+    .five.columns.alpha,.five.columns.omega {
+        @include column-width(30.16%);
+    }
+    .six.columns.alpha,.six.columns.omega {
+        @include column-width(36%);
+    }
+    .seven.columns.alpha,.seven.columns.omega {
+        @include column-width(42.6%);
+    }
+    .eight.columns.alpha,.eight.columns.omega {
+        @include column-width(48.9%);
+    }
+    .nine.columns.alpha,.nine.columns.omega {
+        @include column-width(55.16%);
+    }
+    .ten.columns.alpha,.ten.columns.omega {
+        @include column-width(61%);
+    }
+    .eleven.columns.alpha,.eleven.columns.omega {
+        @include column-width(67.66%);
+    }
+    .twelve.columns.alpha,.twelve.columns.omega {
+        @include column-width(73.9%);
+    }
+    .thirteen.columns.alpha,.thirteen.columns.omega {
+        @include column-width(80.16%);
+    }
+    .fourteen.columns.alpha,.fourteen.columns.omega {
+        @include column-width(86%);
+    }
+    .fifteen.columns.alpha,.fifteen.columns.omega {
+        @include column-width(92.66%);
+    }
+    .sixteen.columns.alpha,.sixteen.columns.omega {
+        @include column-width(98.9%);
+    }
+
+    .one-third.column.alpha,.one-third.column.omega {
+        @include column-width(32.25%);
+    }
+    .one-fourth.column.alpha,.one-fourth.column.omega {
+        @include column-width(24%);
+    }
+    .two-thirds.column.alpha,.two-thirds.column.omega {
+        @include column-width(65.5%);
+    }
+
+
     .offset-by-one { 
         padding-left: 6.25%;
          }
@@ -123,11 +191,27 @@
         margin-right: 0;
     }
 }
+
+.column.alpha, .columns.alpha { 
+   margin-left: 0;
+}
+.column.omega, .columns.omega { 
+   margin-right: 0;
+}
+
+
 .row { 
     margin-bottom: 2%;
 }
+.alpha {
+    margin-left: 0;
+}
+.omega {
+    margin-right: 0;
+}
 
 @media only screen and (min-width: 768px) and (max-width: 959px) {
+
     .container { 
         width: 93%; 
         .column, .columns { 
@@ -141,6 +225,13 @@
                 margin-left: 1.3%;
                 margin-right: 0%;
             }
+        }
+
+        .column.alpha, .columns.alpha { 
+           margin-left: 0;
+        }
+        .column.omega, .columns.omega { 
+           margin-right: 0;
         }
         .one.column { 
             width: 3.64%;
@@ -200,6 +291,70 @@
         .two-thirds.column { 
             width: 64%;
         }
+
+
+        /* margin-left and right with use of alpha & omega */
+        .one.column.alpha,.one.column.omega { 
+            width: 4.94%;
+        }
+        .two.columns.alpha,.two.columns.omega { 
+            width: 11.19%;
+        }
+        .three.columns.alpha,.three.columns.omega { 
+            width: 17.4%;
+        }
+        .four.columns.alpha,.four.columns.omega { 
+            width: 23.69%;
+        }
+        .five.columns.alpha,.five.columns.omega { 
+            width: 29.94%;
+        }
+        .six.columns.alpha,.six.columns.omega { 
+            width: 36.19%;
+        }
+        .seven.columns.alpha,.seven.columns.omega { 
+            width: 42.44%;
+        }
+        .eight.columns.alpha,.eight.columns.omega { 
+            width: 48.69%;
+        }
+        .nine.columns.alpha,.nine.columns.omega { 
+            width: 54.94%;
+        }
+        .ten.columns.alpha,.ten.columns.omega { 
+            width: 61.19%;
+        }
+        .eleven.columns.alpha,.eleven.columns.omega { 
+            width: 67.44%;
+        }
+        .twelve.columns.alpha,.twelve.columns.omega { 
+            width: 73.69%;
+        }
+        .thirteen.columns.alpha,.thirteen.columns.omega { 
+            width: 79.94%;
+        }
+        .fourteen.columns.alpha,.fourteen.columns.omega { 
+            width: 86.19%;
+        }
+        .fifteen.columns.alpha,.fifteen.columns.omega { 
+            width: 92.44%;
+        }
+        .sixteen.columns.alpha,.sixteen.columns.omega { 
+            width: 98.69%;
+        }
+
+        .one-third.column.alpha,.one-third.column.omega { 
+            width: 32.02%;
+        }
+        .one-fourth.column.alpha,.one-fourth.column.omega {
+            width: 22.02%;
+        }
+        .two-thirds.column.alpha,.two-thirds.column.omega { 
+            width: 65.30%;
+        }
+
+
+
         .offset-by-one { 
             padding-left: 6.25%;
         }
@@ -248,7 +403,7 @@
     }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
     .container { 
         width: 93%; 
         .one.column,
@@ -269,7 +424,45 @@
         .sixteen.columns,
         .one-third.column,
         .one-fourth.column,
-        .two-thirds.column  { 
+        .two-thirds.column,
+        .one.column.alpha,
+        .two.columns.alpha,
+        .three.columns.alpha,
+        .four.columns.alpha,
+        .five.columns.alpha,
+        .six.columns.alpha,
+        .seven.columns.alpha,
+        .eight.columns.alpha,
+        .nine.columns.alpha,
+        .ten.columns.alpha,
+        .eleven.columns.alpha,
+        .twelve.columns.alpha,
+        .thirteen.columns.alpha,
+        .fourteen.columns.alpha,
+        .fifteen.columns.alpha,
+        .sixteen.columns.alpha,
+        .one-third.column.alpha,
+        .one-fourth.column.alpha,
+        .two-thirds.column,alpha,
+         .one.column.omega,
+        .two.columns.omega,
+        .three.columns.omega,
+        .four.columns.omega,
+        .five.columns.omega,
+        .six.columns.omega,
+        .seven.columns.omega,
+        .eight.columns.omega,
+        .nine.columns.omega,
+        .ten.columns.omega,
+        .eleven.columns.omega,
+        .twelve.columns.omega,
+        .thirteen.columns.omega,
+        .fourteen.columns.omega,
+        .fifteen.columns.omega,
+        .sixteen.columns.omega,
+        .one-third.column.omega,
+        .one-fourth.column.omega,
+        .two-thirds.column,omega, { 
             width: 100%; 
         }
         .offset-by-one,
@@ -294,35 +487,9 @@
 
 }
 
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-    .container { 
-        width: 93%;
-        .one.column,
-        .two.columns,
-        .three.columns,
-        .four.columns,
-        .five.columns,
-        .six.columns,
-        .seven.columns,
-        .eight.columns,
-        .nine.columns,
-        .ten.columns,
-        .eleven.columns,
-        .twelve.columns,
-        .thirteen.columns,
-        .fourteen.columns,
-        .fifteen.columns,
-        .sixteen.columns,
-        .one-third.column,
-        .one-fourth.column,
-        .two-thirds.column { 
-            width: 100%; 
-        }
-    }
-    .columns, .column { margin: 0; }
-}
 
 
+                
 /* #Clearing
 ================================================== */
 

@@ -13,7 +13,7 @@ get_header(); ?>
 
 		<div class="container">  
 
-		<div id="primary" class="content-area eleven columns">
+		<div id="primary" class="content-area eleven columns alpha">
 
 			<main id="main" class="site-main" role="main"> 
 
@@ -33,7 +33,7 @@ get_header(); ?>
 						if ( current_user_can( 'edit_theme_options' ) ) : ?>
 
 							<p class="empty-widget-area">
-								<?php esc_html_e( 'Please go to Appearance &#8594; Widgets and add widget to the "Magzen: content area". You can use the Magzen widget to set up magazine page.', 'magzen' ); ?>
+								<?php _e( "Please go to <strong>Appearance &#8594; Widgets and add widget to the 'Magzen: content area'.</strong> You can use the <strong>Magzen widget</strong> to set up magazine page.", 'magzen' ); ?>
 							</p> 
 							
 						<?php endif;

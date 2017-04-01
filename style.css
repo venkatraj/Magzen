@@ -1,16 +1,16 @@
 /*
 Theme Name: Magzen
-Theme URI: http://www.genexthemes.com/magzen/
-Author: V. Uma Rani
-Author URI: http://www.genexthemes.com/
-Description: Magzen comes with modern, stylish and responsive design. It uses skeleton framework for grids which keeps minimal css. Stylesheet is generated using SASS and so stays DRY. Best suited for Corporate/Business/Blog sites. There is no theme options panel, instead uses Customizer, core feature of WordPress and comes with lots of options to customize. Has 4 Footer Widget Areas.
+Theme URI: http://www.webulousthemes.com/magzen/  
+Author: N. Venkat Raj
+Author URI: http://www.webulousthemes.com/
+Description: Magzen is a perfect responsive magazine style WordPress theme. Suitable for news, newspaper, magazine, publishing, business and any kind of sites. core feature of WordPress  Has 3 Footer Widget Areas.
 Version: 1.0.0
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: magzen
-Tags: custom-menu, custom-background, featured-images, right-sidebar, sticky-post, threaded-comments, translation-ready, two-columns
-
-Magzen WordPress Theme, Copyright (C) 2017, V. Uma Rani
+Tags: featured-images, right-sidebar, sticky-post, translation-ready, custom-background,  custom-menu,  threaded-comments , blog, news
+ 
+Magzen WordPress Theme, Copyright (C) 2017, N. Venkat Raj
 Magzen is distributed under the terms of the GNU GPL
 
 Magzen is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
@@ -137,7 +137,8 @@ a img {
   width: 93%;
   max-width: 1170px;
   margin: 0 auto;
-  padding: 0; }
+  padding: 0;
+  /* margin-left and right with use of alpha & omega */ }
   .container .one.column {
     width: 4.1%; }
   .container .two.columns {
@@ -176,6 +177,46 @@ a img {
     width: 23%; }
   .container .two-thirds.column {
     width: 64.5%; }
+  .container .one.column.alpha {
+    width: 5.1%; }
+  .container .one.column.omega {
+    width: 5.1%; }
+  .container .two.columns.alpha, .container .two.columns.omega {
+    width: 11.4%; }
+  .container .three.columns.alpha, .container .three.columns.omega {
+    width: 17.6%; }
+  .container .four.columns.alpha, .container .four.columns.omega {
+    width: 23.9%; }
+  .container .five.columns.alpha, .container .five.columns.omega {
+    width: 30.16%; }
+  .container .six.columns.alpha, .container .six.columns.omega {
+    width: 36%; }
+  .container .seven.columns.alpha, .container .seven.columns.omega {
+    width: 42.6%; }
+  .container .eight.columns.alpha, .container .eight.columns.omega {
+    width: 48.9%; }
+  .container .nine.columns.alpha, .container .nine.columns.omega {
+    width: 55.16%; }
+  .container .ten.columns.alpha, .container .ten.columns.omega {
+    width: 61%; }
+  .container .eleven.columns.alpha, .container .eleven.columns.omega {
+    width: 67.66%; }
+  .container .twelve.columns.alpha, .container .twelve.columns.omega {
+    width: 73.9%; }
+  .container .thirteen.columns.alpha, .container .thirteen.columns.omega {
+    width: 80.16%; }
+  .container .fourteen.columns.alpha, .container .fourteen.columns.omega {
+    width: 86%; }
+  .container .fifteen.columns.alpha, .container .fifteen.columns.omega {
+    width: 92.66%; }
+  .container .sixteen.columns.alpha, .container .sixteen.columns.omega {
+    width: 98.9%; }
+  .container .one-third.column.alpha, .container .one-third.column.omega {
+    width: 32.25%; }
+  .container .one-fourth.column.alpha, .container .one-fourth.column.omega {
+    width: 24%; }
+  .container .two-thirds.column.alpha, .container .two-thirds.column.omega {
+    width: 65.5%; }
   .container .offset-by-one {
     padding-left: 6.25%; }
   .container .offset-by-two {
@@ -217,12 +258,25 @@ a img {
   .column .omega, .columns .omega {
     margin-right: 0; }
 
+.column.alpha, .columns.alpha {
+  margin-left: 0; }
+
+.column.omega, .columns.omega {
+  margin-right: 0; }
+
 .row {
   margin-bottom: 2%; }
 
+.alpha {
+  margin-left: 0; }
+
+.omega {
+  margin-right: 0; }
+
 @media only screen and (min-width: 768px) and (max-width: 959px) {
   .container {
-    width: 93%; }
+    width: 93%;
+    /* margin-left and right with use of alpha & omega */ }
     .container .column, .container .columns {
       margin-left: 1.3%;
       margin-right: 1.3%; }
@@ -232,6 +286,10 @@ a img {
       .container .column .omega, .container .columns .omega {
         margin-left: 1.3%;
         margin-right: 0%; }
+    .container .column.alpha, .container .columns.alpha {
+      margin-left: 0; }
+    .container .column.omega, .container .columns.omega {
+      margin-right: 0; }
     .container .one.column {
       width: 3.64%; }
     .container .two.columns {
@@ -270,6 +328,44 @@ a img {
       width: 20.72%; }
     .container .two-thirds.column {
       width: 64%; }
+    .container .one.column.alpha, .container .one.column.omega {
+      width: 4.94%; }
+    .container .two.columns.alpha, .container .two.columns.omega {
+      width: 11.19%; }
+    .container .three.columns.alpha, .container .three.columns.omega {
+      width: 17.4%; }
+    .container .four.columns.alpha, .container .four.columns.omega {
+      width: 23.69%; }
+    .container .five.columns.alpha, .container .five.columns.omega {
+      width: 29.94%; }
+    .container .six.columns.alpha, .container .six.columns.omega {
+      width: 36.19%; }
+    .container .seven.columns.alpha, .container .seven.columns.omega {
+      width: 42.44%; }
+    .container .eight.columns.alpha, .container .eight.columns.omega {
+      width: 48.69%; }
+    .container .nine.columns.alpha, .container .nine.columns.omega {
+      width: 54.94%; }
+    .container .ten.columns.alpha, .container .ten.columns.omega {
+      width: 61.19%; }
+    .container .eleven.columns.alpha, .container .eleven.columns.omega {
+      width: 67.44%; }
+    .container .twelve.columns.alpha, .container .twelve.columns.omega {
+      width: 73.69%; }
+    .container .thirteen.columns.alpha, .container .thirteen.columns.omega {
+      width: 79.94%; }
+    .container .fourteen.columns.alpha, .container .fourteen.columns.omega {
+      width: 86.19%; }
+    .container .fifteen.columns.alpha, .container .fifteen.columns.omega {
+      width: 92.44%; }
+    .container .sixteen.columns.alpha, .container .sixteen.columns.omega {
+      width: 98.69%; }
+    .container .one-third.column.alpha, .container .one-third.column.omega {
+      width: 32.02%; }
+    .container .one-fourth.column.alpha, .container .one-fourth.column.omega {
+      width: 22.02%; }
+    .container .two-thirds.column.alpha, .container .two-thirds.column.omega {
+      width: 65.30%; }
     .container .offset-by-one {
       padding-left: 6.25%; }
     .container .offset-by-two {
@@ -300,7 +396,7 @@ a img {
       padding-left: 87.5%; }
     .container .offset-by-fifteen {
       padding-left: 93.75%; } }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .container {
     width: 93%; }
     .container .one.column,
@@ -321,7 +417,45 @@ a img {
     .container .sixteen.columns,
     .container .one-third.column,
     .container .one-fourth.column,
-    .container .two-thirds.column {
+    .container .two-thirds.column,
+    .container .one.column.alpha,
+    .container .two.columns.alpha,
+    .container .three.columns.alpha,
+    .container .four.columns.alpha,
+    .container .five.columns.alpha,
+    .container .six.columns.alpha,
+    .container .seven.columns.alpha,
+    .container .eight.columns.alpha,
+    .container .nine.columns.alpha,
+    .container .ten.columns.alpha,
+    .container .eleven.columns.alpha,
+    .container .twelve.columns.alpha,
+    .container .thirteen.columns.alpha,
+    .container .fourteen.columns.alpha,
+    .container .fifteen.columns.alpha,
+    .container .sixteen.columns.alpha,
+    .container .one-third.column.alpha,
+    .container .one-fourth.column.alpha,
+    .container .two-thirds.column, .container alpha,
+    .container .one.column.omega,
+    .container .two.columns.omega,
+    .container .three.columns.omega,
+    .container .four.columns.omega,
+    .container .five.columns.omega,
+    .container .six.columns.omega,
+    .container .seven.columns.omega,
+    .container .eight.columns.omega,
+    .container .nine.columns.omega,
+    .container .ten.columns.omega,
+    .container .eleven.columns.omega,
+    .container .twelve.columns.omega,
+    .container .thirteen.columns.omega,
+    .container .fourteen.columns.omega,
+    .container .fifteen.columns.omega,
+    .container .sixteen.columns.omega,
+    .container .one-third.column.omega,
+    .container .one-fourth.column.omega,
+    .container .two-thirds.column, .container omega {
       width: 100%; }
     .container .offset-by-one,
     .container .offset-by-two,
@@ -339,32 +473,6 @@ a img {
     .container .offset-by-fourteen,
     .container .offset-by-fifteen {
       padding-left: 0; }
-
-  .columns, .column {
-    margin: 0; } }
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  .container {
-    width: 93%; }
-    .container .one.column,
-    .container .two.columns,
-    .container .three.columns,
-    .container .four.columns,
-    .container .five.columns,
-    .container .six.columns,
-    .container .seven.columns,
-    .container .eight.columns,
-    .container .nine.columns,
-    .container .ten.columns,
-    .container .eleven.columns,
-    .container .twelve.columns,
-    .container .thirteen.columns,
-    .container .fourteen.columns,
-    .container .fifteen.columns,
-    .container .sixteen.columns,
-    .container .one-third.column,
-    .container .one-fourth.column,
-    .container .two-thirds.column {
-      width: 100%; }
 
   .columns, .column {
     margin: 0; } }
@@ -631,7 +739,11 @@ select {
   background: #fff url("images/down.png") no-repeat 95% 50%;
   border: 1px solid #c6c2ce;
   padding: 5px 10% 5px 3%;
-  -moz-appearance: none; }
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none; }
 
 button,
 input[type="button"],
@@ -1105,7 +1217,7 @@ object {
 8.0 Header
 --------------------------------------------------------------*/
 .branding {
-  margin: 20px 0px 20px; }
+  margin: 40px 0px 30px; }
   .branding .site-branding {
     text-align: left;
     position: relative; }
@@ -1160,7 +1272,7 @@ object {
     margin: 3px 0;
     padding: 3px 34px 3px 10px;
     position: relative;
-    width: 20px;
+    width: 15px;
     transition: width 1s;
     z-index: 2;
     color: transparent; }
@@ -1224,6 +1336,8 @@ object {
     list-style: none; }
     .top-nav li a:hover {
       color: #2c3e50; }
+  .top-nav .header-date {
+    margin-right: 20px; }
   .top-nav ul {
     margin: 0; }
     .top-nav ul li {
@@ -1312,6 +1426,8 @@ object {
     list-style: none; }
     .top-nav li a:hover {
       color: #2c3e50; }
+  .top-nav .header-date {
+    margin-right: 20px; }
   .top-nav ul {
     margin: 0; }
     .top-nav ul li {
@@ -1374,6 +1490,9 @@ object {
 
 .single .site-main article.post {
   padding-top: 0; }
+
+#comments {
+  margin-top: 60px; }
 
 .comment-content a {
   word-wrap: break-word; }
@@ -1665,11 +1784,32 @@ blockquote {
 
 .magazine-post-wrapper.horizontal h4.entry-title {
   margin-top: -10px; }
+.magazine-post-wrapper.horizontal .magazine-slider-top-meta {
+  font-size: 13px;
+  padding: 5px; }
+.magazine-post-wrapper.horizontal .magazine-content {
+  font-size: 16px;
+  font-size: 1.6rem; }
+
+.widget_magzen-featured-post-widget div:last-child .magazine-post-wrapper.horizontal {
+  border-bottom: none; }
+.widget_magzen-featured-post-widget div:nth-of-type(2n-1) .magazine-post-wrapper.vertical {
+  margin-left: 0; }
+.widget_magzen-featured-post-widget div:nth-of-type(2n) .magazine-post-wrapper.vertical {
+  margin-right: 0; }
+.widget_magzen-featured-post-widget .eight:nth-of-type(2n+1) {
+  clear: both;
+  margin-left: 0;
+  margin-right: 2%; }
+.widget_magzen-featured-post-widget .eight:nth-of-type(2n) {
+  margin-right: 0;
+  margin-left: 2%; }
 
 .magazine-post-wrapper {
   position: relative;
   margin-bottom: 50px; }
   .magazine-post-wrapper .image-date {
+    display: none;
     position: absolute;
     top: 0;
     color: #fff;
@@ -1708,13 +1848,31 @@ blockquote {
     display: none; }
   .magazine-post-wrapper .magazine-slider-top-meta.img-post-date .date-structure {
     display: none; }
+  .magazine-post-wrapper .magazine-image a, .magazine-post-wrapper .magazine-image img {
+    display: block; }
 
 .horizontal-image {
   margin-left: 0;
   margin-right: 2%; }
 
+.magazine-post-wrapper.magzen-horizontal-one {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #c6c2ce; }
+
+.magazine-post-wrapper.magzen-vertical-one .magazine-slider-top-meta.img-post-date .date-structure {
+  display: inline-block; }
+
+.magazine-post-wrapper.magzen-vertical-two .image-date.img-post-date {
+  display: block; }
+.magazine-post-wrapper.magzen-vertical-two .magazine-slider-top-meta.img-post-date .date-structure {
+  display: none; }
+
+.magazine-post-wrapper.vertical h4.entry-title {
+  margin-top: 15px; }
+
 .magazine-slider-top-meta {
-  margin: 5px 0px 25px 0px;
+  margin: 5px 0px 18px 0px;
   border-top: 1px solid #d7d7d7;
   border-bottom: 1px solid #d7d7d7;
   position: relative;
@@ -1726,7 +1884,7 @@ blockquote {
     .magazine-slider-top-meta .date-structure .dd {
       color: #757575; }
   .magazine-slider-top-meta span {
-    margin: 0 10px 0 0; }
+    margin: 0 25px 0 0; }
     .magazine-slider-top-meta span span {
       margin: 0; }
     .magazine-slider-top-meta span i {
@@ -2445,11 +2603,11 @@ blockquote {
 10.0 Secondary
 --------------------------------------------------------------*/
 #secondary {
-  padding-left: 50px; }
+  padding-left: 20px; }
 
 .right-sidebar {
   padding-left: 0px !important;
-  padding-right: 50px; }
+  padding-right: 20px; }
 
 #secondary .left-sidebar {
   padding: 0px 10px 40px; }
@@ -2480,12 +2638,16 @@ blockquote {
   .widget-area select {
     width: 100%;
     background: url("images/down.png") no-repeat 95% 50%;
+    -webkit-appearance: none;
     -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
     border: 1px solid #c6c2ce;
     padding: 5px 10% 5px 3%; }
 
 .widget .widget-title, .title-divider {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   padding-bottom: 5px;
   position: relative;
   text-transform: uppercase;
@@ -2503,8 +2665,9 @@ blockquote {
   /* Make sure select elements fit in widgets */ }
   #secondary .widget ul, #secondary .widget ol, .site-footer .widget ul, .site-footer .widget ol, .site-header .widget ul, .site-header .widget ol {
     padding: 0;
-    margin: 0;
-    padding-left: 12px; }
+    margin: 0; }
+    #secondary .widget ul ul, #secondary .widget ul ol, #secondary .widget ol ul, #secondary .widget ol ol, .site-footer .widget ul ul, .site-footer .widget ul ol, .site-footer .widget ol ul, .site-footer .widget ol ol, .site-header .widget ul ul, .site-header .widget ul ol, .site-header .widget ol ul, .site-header .widget ol ol {
+      padding-left: 12px; }
   #secondary .widget select, .site-footer .widget select, .site-header .widget select {
     max-width: 100%; }
 
@@ -2644,6 +2807,16 @@ blockquote {
   background-color: transparent;
   border: 1px solid #c6c2ce; }
 
+.site-footer .widget_text a {
+  display: block;
+  padding: 5px;
+  background-color: #f15c22;
+  color: #fff;
+  text-align: center;
+  margin: 15px 0px; }
+  .site-footer .widget_text a:hover {
+    background-color: #2c3e50; }
+
 .wp-caption .wp-caption-text {
   margin: 0; }
 
@@ -2652,10 +2825,50 @@ blockquote {
   color: #2c3e50;
   margin: 3px;
   display: inline-block;
-  background-color: #cccccc; }
+  background-color: #eee;
+  font-size: 14px !important; }
   .widget_tag_cloud a:hover {
     background: #f15c22;
     color: #fff; }
+
+#secondary .widget_magzen-featured-post-widget .eight:nth-of-type(2n+1) {
+  clear: both;
+  margin-left: 0;
+  margin-right: 0; }
+#secondary .widget_magzen-featured-post-widget .eight:nth-of-type(2n) {
+  margin-right: 0;
+  margin-left: 0; }
+#secondary .widget_magzen-featured-post-widget .eight.columns {
+  width: 100% !important; }
+
+.magazine-post-wrapper.magzen-horizontal-two .magazine-content {
+  display: none; }
+.magazine-post-wrapper.magzen-horizontal-two h4.entry-title {
+  margin: 0;
+  font-size: 18px;
+  font-size: 1.8rem; }
+.magazine-post-wrapper.magzen-horizontal-two .magazine-slider-top-meta {
+  border: none;
+  padding: 0;
+  margin: 0; }
+  .magazine-post-wrapper.magzen-horizontal-two .magazine-slider-top-meta span {
+    margin-right: 15px; }
+
+.magazine-post-wrapper.magzen-horizontal-one {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #c6c2ce; }
+  .magazine-post-wrapper.magzen-horizontal-one .portfolio-readmore {
+    display: inline-block; }
+    .magazine-post-wrapper.magzen-horizontal-one .portfolio-readmore a {
+      padding: 0;
+      background-color: transparent;
+      color: #f15c22; }
+      .magazine-post-wrapper.magzen-horizontal-one .portfolio-readmore a:hover {
+        color: #2c3e50;
+        background-color: transparent; }
+  .magazine-post-wrapper.magzen-horizontal-one p {
+    display: inline; }
 
 /*--------------------------------------------------------------
 11.0 Footer
@@ -2667,13 +2880,14 @@ blockquote {
   background: #2c3e50; }
   .site-footer .footer-widgets {
     padding: 90px 0 50px;
-    color: #dfdfdf; }
+    color: #dfdfdf;
+    font-size: 16px;
+    font-size: 1.6rem; }
     .site-footer .footer-widgets h4.widget-title {
       color: #fff;
       padding-bottom: 10px;
-      font-size: 26px;
-      font-size: 2.6rem;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      font-weight: 400; }
     .site-footer .footer-widgets ul li {
       padding: 7px 7px 7px 0px;
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -2713,7 +2927,11 @@ blockquote {
     .site-footer .footer-widgets select {
       width: 100%;
       background: #fff url("images/down.png") no-repeat 95% 50% white;
+      -webkit-appearance: none;
       -moz-appearance: none;
+      -ms-appearance: none;
+      -o-appearance: none;
+      appearance: none;
       border: 1px solid #c6c2ce;
       padding: 5px 10% 5px 3%; }
     .site-footer .footer-widgets .widget_search .search-form input[type="search"] {
@@ -2734,7 +2952,8 @@ blockquote {
 .site-info {
   background: rgba(0, 0, 0, 0.5); }
   .site-info .copyright {
-    padding: 20px 0px; }
+    padding: 20px 0px;
+    text-align: center; }
   .site-info .left-sidebar {
     text-align: rigth;
     padding-top: 12px; }

@@ -1,6 +1,6 @@
 <?php
 /**
- * The main template file
+ * The main template file 
  *
  * This is the most generic template file in a WordPress theme
  * and one of the two required files for a theme (the other being style.css).
@@ -14,7 +14,7 @@
 
 get_header(); ?>
 <div class="container">
-	<div id="primary" class="content-area eleven columns">
+	<div id="primary" class="content-area eleven columns alpha">
 		<main id="main" class="site-main" role="main">
 
 		<?php

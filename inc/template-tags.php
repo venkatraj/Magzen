@@ -424,7 +424,7 @@ if( ! function_exists( 'magzen_pagination' )) {
 add_action( 'the_content_more_link', 'magzen_add_more_link_class', 10, 2 );
 if ( ! function_exists( 'magzen_add_more_link_class' ) ) :
 	function magzen_add_more_link_class($link, $text ) {
-		return '<p class="portfolio-readmore"><a class="btn btn-mini more-link" href="'. get_permalink() .'">'.__('ReadMore','magzen').'</a></p>';
+		return '<p class="portfolio-readmore"><a class="btn btn-mini more-link" href="'. get_permalink() .'">'.__('Read More','magzen').'</a></p>';
 	}
 endif;
 
@@ -442,11 +442,11 @@ function magzen_entry_top_meta($date = 'date',$author = 'author', $comment = 'co
 	    	global $post;
 	    	if ( 'date' == $date ) {   ?>
 		  	    <span class="date-structure">				
-					<span class="dd"><a class="url fn n" href="<?php echo get_day_link(get_the_time('Y'), get_the_time('m'),get_the_time('d')); ?>"><i class="fa fa-clock-o"></i><?php the_time('j M Y'); ?></a></span>		
+					<span class="dd"><a class="url fn n" href="<?php echo get_day_link(get_the_time('Y'), get_the_time('m'),get_the_time('d')); ?>"><i class="fa fa-calendar"></i><?php the_time('j M Y'); ?></a></span>		
 				</span><?php 
 			} 
 	    // Author  
-	        if ( 'author' == $author ) {  
+	        if ( 'author' == $author ) {    
 				printf(
 					_x( '%s', 'post author', 'magzen' ),
 					'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '"><i class="fa fa-user"></i> ' . esc_html( get_the_author() ) . '</a></span>'
@@ -455,7 +455,7 @@ function magzen_entry_top_meta($date = 'date',$author = 'author', $comment = 'co
 		// Comments
 		    if ( 'comment' == $comment ) {  
 				if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
-					echo ' <span class="comments-link"><i class="fa fa-comments"></i>';
+					echo ' <span class="comments-link"><i class="fa fa-comment"></i>';
 					comments_popup_link( __( 'Leave a comment', 'magzen' ), __( '1 Comment', 'magzen' ), __( '% Comments', 'magzen' ) );
 					echo '</span>';
 			    }

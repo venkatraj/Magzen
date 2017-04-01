@@ -8,7 +8,7 @@
 	position: relative;
 	margin-bottom: 70px !important;
 	background-color: $primary;
-
+   
 	.magazine-slider-top-meta {
 	    border-top-color: rgba($white,0.2);
 	    border-bottom-color: rgba($white,0.2);
@@ -194,12 +194,41 @@ blockquote {
 	h4.entry-title {
 		margin-top:-10px;
 	}
+	.magazine-slider-top-meta {
+		font-size: 13px;
+		padding: 5px;
+	}
+	.magazine-content {
+		@include font-size(1.6);
+	}
 }
 
-.magazine-post-wrapper {
+.widget_magzen-featured-post-widget {    
+    div:last-child .magazine-post-wrapper.horizontal {
+       border-bottom: none;
+    }
+    div:nth-of-type(2n-1) .magazine-post-wrapper.vertical {
+        margin-left:0; 
+    }
+    div:nth-of-type(2n) .magazine-post-wrapper.vertical {
+        margin-right:0;
+    }
+    .eight:nth-of-type(2n+1) {
+    	clear: both;
+    	margin-left:0;
+    	margin-right: 2%;
+    } 
+    .eight:nth-of-type(2n) {
+        margin-right:0;
+        margin-left: 2%;
+    }
+}  
+
+.magazine-post-wrapper {  
 	position: relative;
 	margin-bottom: 50px;
 	.image-date {
+	    display: none;
 		position: absolute;
 		top:0;
 		color: $white;
@@ -241,10 +270,15 @@ blockquote {
 	.image-date.post-date {
 	    display: none;
 	}
-	.magazine-slider-top-meta.img-post-date {
+    .magazine-slider-top-meta.img-post-date { 
 		.date-structure {
-			display: none;
+			display: none;  
 		}
+	}
+	.magazine-image {
+		a,img {
+			display: block;
+		}  
 	}
 }
 
@@ -253,8 +287,41 @@ blockquote {
 	margin-right: 2%;
 }
 
-.magazine-slider-top-meta {
-    margin: 5px 0px 25px 0px;
+.magazine-post-wrapper.magzen-horizontal-one {
+	margin-bottom: 30px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid $c1;
+}
+
+.magazine-post-wrapper.magzen-vertical-one { 	
+    .magazine-slider-top-meta.img-post-date { 
+		.date-structure {
+			display: inline-block;  
+		}
+	}
+}
+
+.magazine-post-wrapper.magzen-vertical-two { 	
+	.image-date.img-post-date {
+        display: block;
+	}
+	.magazine-slider-top-meta.img-post-date { 
+		.date-structure {
+			display: none;  
+		}
+	}
+	
+} 
+
+.magazine-post-wrapper.vertical {
+	//margin: 10px;
+	h4.entry-title {
+	   margin-top: 15px;
+	}
+} 
+
+.magazine-slider-top-meta {  
+    margin: 5px 0px 18px 0px;
     border-top: 1px solid $c3;
     border-bottom: 1px solid $c3;
 	position: relative;
@@ -268,7 +335,7 @@ blockquote {
 		}
 	}
 	span {
-		margin: 0 10px 0 0;
+		margin: 0 25px 0 0;
 		
 
 		span {
@@ -293,6 +360,8 @@ blockquote {
 		}
 	}
 }
+
+
 
 /* Read more */
 .portfolio-readmore {

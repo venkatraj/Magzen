@@ -6,7 +6,7 @@
  *
  * @package magzen
  */
-
+ 
 if ( ! function_exists( 'magzen_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
@@ -73,6 +73,17 @@ function magzen_setup() {
 
 	// Add theme support for selective refresh for widgets.
 	add_theme_support( 'customize-selective-refresh-widgets' );
+
+	/*
+	 * Enable support for Post Thumbnails on posts and pages.
+	 *
+	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
+	 */ 
+	add_image_size( 'magzen-vertical-one', 800,350, true );  
+	add_image_size( 'magzen-vertical-two', 380,350,  true );
+	add_image_size( 'magzen-horizontal-one', 200,200, true );
+	add_image_size( 'magzen-horizontal-two', 200,200, true ); 
+
 }
 endif;
 add_action( 'after_setup_theme', 'magzen_setup' );
@@ -142,20 +153,10 @@ function magzen_widgets_init() {
 		'after_title'   => '</h4>',
 	) );
 
-	register_sidebar( array( 
-		'name'          => __( 'Footer Nav', 'magzen' ),
-		'id'            => 'footer-nav',
-		'description'   => '',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</aside>', 
-		'before_title'  => '<h4 class="widget-title">',
-		'after_title'   => '</h4>',
-	) );
-
 	register_sidebar( array(
-		'name'          => __( 'Magzen: Content Area', 'magzenpro' ),
+		'name'          => __( 'Magzen: Content Area', 'magzen' ),
 		'id'            => 'magzen-content-area', 
-		'description'   => __( 'Appears on Front Page and Magazine Page template only. You can use the Magzen widgets here.','magzenpro' ),
+		'description'   => __( 'Appears on Front Page and Magazine Page template only. You can use the Magzen widgets here.','magzen' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h4 class="widget-title">',

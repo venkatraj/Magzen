@@ -1,0 +1,57 @@
+#secondary {
+	.widget_magzen-featured-post-widget {    
+	    .eight:nth-of-type(2n+1) {
+	    	clear: both;
+	    	margin-left:0;
+	    	margin-right: 0;
+	    } 
+	    .eight:nth-of-type(2n) {
+	        margin-right:0;
+	        margin-left: 0;
+	    }
+	    .eight.columns {
+			width: 100%!important;
+		}  
+	} 
+}
+
+
+.magazine-post-wrapper.magzen-horizontal-two {
+    .magazine-content {
+      display: none;
+	}
+	h4.entry-title {
+		//margin-top:0;
+		margin:0;
+		@include font-size(1.8);
+	}
+	.magazine-slider-top-meta {
+       border: none;
+       padding:0;
+       margin:0;
+       span {
+       	  margin-right: 15px;
+       }
+	}
+} 
+
+.magazine-post-wrapper.magzen-horizontal-one {
+	margin-bottom: 30px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid $c1;
+	.portfolio-readmore {
+		display: inline-block;
+		a {
+			padding:0;
+			background-color: transparent;
+			color: $primary;
+			&:hover {
+				color: $secondary;
+				background-color: transparent;
+			}
+		}
+	}
+	p {
+		display: inline;
+	}
+}

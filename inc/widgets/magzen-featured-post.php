@@ -9,7 +9,7 @@
  */
    
 class Magzen_Featured_Post_Widget extends WP_Widget {  
-  
+   
 	/**
 	 * Register widget with WordPress.
 	 */
@@ -77,20 +77,33 @@ class Magzen_Featured_Post_Widget extends WP_Widget {
         		$col_class = 'eight columns';
         		break;
         	default:
-        		$col_class = 'sixteen columns';
+        		$col_class = 'single-post-full-vertical';
         		break;
         }
 
         //Post layout
         if( $post_layout == 'horizontal') {
-           $post_image_class = 'five columns horizontal-image';	
-           $post_content_class = 'eleven columns';
-           $post_date_class = "horizontal-date ";
+           $post_image_class = 'four columns horizontal-image';	
+           $post_content_class = 'twelve columns';
+           $post_date_class = "horizontal-date ";  
 
         }else{
            $post_image_class = '';
            $post_content_class = '';
-        }
+           $post_date_class = '';
+        } 
+
+        /* Image cropping size */
+        if($post_layout == 'horizontal' && $post_col == 2 ) {
+             $image_size = 'magzen-horizontal-two'; 
+        }elseif($post_layout == 'horizontal' && $post_col == 1 ) {
+            $image_size = 'magzen-horizontal-one';
+        }elseif($post_layout == 'vertical' && $post_col == 2 ) {
+            $image_size = 'magzen-vertical-two';
+        }elseif($post_layout == 'vertical' && $post_col == 1 ) {
+            $image_size = 'magzen-vertical-one';
+        }   
+
 
 		echo $before_widget;
 
@@ -105,11 +118,11 @@ class Magzen_Featured_Post_Widget extends WP_Widget {
         	while( $magzen_featured_posts->have_posts() ) : 
         		$magzen_featured_posts->the_post(); ?>
                 <div class="<?php echo $col_class; ?>">
-	                <div class="magazine-post-wrapper clearfix <?php echo $post_layout; ?>">
+	                <div class="magazine-post-wrapper clearfix <?php echo $post_layout .' '. $image_size; ?>">
 		                <div class="magazine-image <?php echo $post_image_class; ?>">					
 						<?php  if( has_post_thumbnail() ) :
 						   $post_date = 'img-post-date'; ?>
-						   <a href="<?php the_permalink() ?>" rel="bookmark"><?php the_post_thumbnail('magzen-highlighted-post', array( 'title' => esc_attr( $title ), 'alt' => esc_attr( $title ) )); ?></a>
+						   <a href="<?php the_permalink() ?>" rel="bookmark"><?php the_post_thumbnail($image_size, array( 'title' => esc_attr( $title ), 'alt' => esc_attr( $title ) )); ?></a>
 						<?php else: 
 						   $post_date = 'post-date'; ?>
 						<?php endif; ?>
@@ -120,9 +133,9 @@ class Magzen_Featured_Post_Widget extends WP_Widget {
 						<div class="magazine-content-wrapper <?php echo $post_content_class; ?>">
 							<a href="<?php the_permalink() ?>"><?php the_title('<h4 class="entry-title">','</h4>'); ?></a>
 							<div class="magazine-slider-top-meta <?php echo $post_date; ?>">
-		                       <?php magzen_entry_top_meta(); ?>
+		                       <?php magzen_entry_top_meta('date','author','comment',false,false,false); ?>
 							</div>
-							<div class="magazine-content">
+							<div class="magazine-content">  
 							   <?php the_content(); ?>
 							</div>
 						</div>
@@ -135,8 +148,6 @@ class Magzen_Featured_Post_Widget extends WP_Widget {
         wp_reset_postdata();   
 		echo $after_widget;
 	}
-
-
 
 	/**
 	 * Display the flexcount widget form.
@@ -154,7 +165,7 @@ class Magzen_Featured_Post_Widget extends WP_Widget {
 		) );
 
 	?>
-
+      <?php echo '<p style="display:block; margin: 20px 0px;">Layout will be as below:<br><img  src="'. get_template_directory_uri() .'/images/mag-featured-post.png"></p>';?>
 
 		<p>
 			<label for="<?php echo $this->get_field_id('post_count') ?>"><?php _e('No. of Posts to display', 'magzen') ?></label>

@@ -2,14 +2,15 @@
 	background: rgba($black,0.5);
 	.copyright {
 		padding: 20px 0px;
+		text-align: center;
 	}
 	.left-sidebar {
 		text-align: rigth;
 		padding-top: 12px;
 		li  a {
-			font-family: $copy_font;
+			font-family: $copy_font;  
 		}
-		.textwidget {
+		.textwidget {  
 			ul {
 				text-align:right;
 				li {

@@ -6,6 +6,20 @@
 	}
 }
 
+.site-footer .widget_text {
+	a {
+		display: block;
+		padding: 5px;
+		background-color: $primary;
+		color: $white;
+		text-align: center;
+		margin: 15px 0px;
+		&:hover {
+			background-color: $secondary;
+		}
+	}
+}
+
 .wp-caption .wp-caption-text {
 	margin: 0;
 }

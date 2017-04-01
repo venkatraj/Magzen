@@ -9,7 +9,7 @@
 
 get_header(); ?>
 <div class="container">
-	<div id="primary" class="content-area eleven columns">
+	<div id="primary" class="content-area eleven columns alpha">
 		<main id="main" class="site-main" role="main">
 
 		<?php
@@ -17,7 +17,7 @@ get_header(); ?>
 
 			<header class="page-header">
 				<?php
-					the_archive_title( '<h3 class="page-title title-divider">', '</h3>' );
+					the_archive_title( '<h4 class="page-title title-divider">', '</h4>' );
 					the_archive_description( '<div class="archive-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->

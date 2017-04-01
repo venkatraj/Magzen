@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package magzen
+ * @package magzen 
  */
   
 ?><!DOCTYPE html>
@@ -31,22 +31,14 @@
 						<div class="cart-left"> 
 							<?php dynamic_sidebar('top-left' ); ?>
 						</div>
-					</div>
-					<?php
-                    if( get_theme_mod('header_show_date',true) ): ?>
-	                    <div class="three columns">
-	                        <div class="cart-right"><?php
-							    echo date('l, M j, Y'); ?>
-							</div>
-	                    </div><?php
-                    endif;
-                    if( get_theme_mod('header_show_date',true) ): ?>
-					    <div class="five columns omega"> <?php
-					else: ?>
-						<div class="eight columns omega"><?php
-					endif; ?>
-						<div class="cart-right">
-							<?php dynamic_sidebar('top-right' ); ?>  
+					</div>                  
+
+					<div class="eight columns omega">
+						<div class="cart-right clearfix"><?php
+							 dynamic_sidebar('top-right' );  
+							 if( get_theme_mod('header_show_date',true) ):			                   
+			                    echo '<span class="header-date">'. date('l, M j, Y').'</span>'; 
+	                        endif; ?>
 						</div>
 					</div>
 				</div>
@@ -56,7 +48,7 @@
 
 		<div class="branding header-image">
 			<div class="container">
-				<div class="four columns">
+				<div class="five columns alpha">
 					<div class="site-branding">
 						<?php 
 							$logo_title = get_theme_mod( 'logo_title' );   
@@ -71,7 +63,7 @@
 						<?php endif; ?>
 					</div><!-- .site-branding -->
 				</div>
-				<div class="twelve columns">
+				<div class="eleven columns omega">
 					<div class="header-right">
 	                     <?php if ( is_active_sidebar('header-right') ) {
 	                          dynamic_sidebar('header-right');

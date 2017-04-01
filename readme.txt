@@ -1,37 +1,46 @@
-=== magzen ===
-
-Contributors: automattic
-Tags: translation-ready, custom-background, theme-options, custom-menu, post-formats, threaded-comments
+=== Magzen ===
+Contributors: Webulous
+Tags:  featured-images, right-sidebar, sticky-post, translation-ready, custom-background,  custom-menu,  threaded-comments , blog, news
 Requires at least: 4.0
 Tested up to: 4.7.3
 Stable tag: 1.0.0
-License: GNU General Public License v2 or later
-License URI: LICENSE
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-A starter theme called magzen, or underscores.
+Magzen is best suited for all types of site and uses Theme Customizer.
+
+Magzen WordPress Theme, Copyright 2017 Webulousthemes
 
 == Description ==
+Magzen is a perfect responsive magazine style WordPress theme. Suitable for news, newspaper, magazine, publishing, business and any kind of sites. core feature of WordPress  Has 3 Footer Widget Areas.
 
-Hi. I'm a starter theme called magzen, or underscores, if you like. I'm a theme meant for hacking so don't use me as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
-
+== Frequently Asked Questions == 
 == Installation ==
 
 1. In your admin panel, go to Appearance > Themes and click the Add New button.
 2. Click Upload and Choose File, then select the magzen.zip file. Click Install Now.
 3. Click Activate to use your new theme right away. 
 
-== Frequently Asked Questions ==
-
-= Does this theme support any plugins? =
-
-magzen includes support for Infinite Scroll in Jetpack.
+= Theme Features Usage =
+All available options can be used from Appearance->Customize
 
 == Changelog ==
 
 = 1.0 =
 * Initial release
 
-== Credits ==
+== Upgrade Notice ==
 
-* Based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
-* normalize.css http://necolas.github.io/normalize.css/, (C) 2012-2016 Nicolas Gallagher and Jonathan Neal, [MIT](http://opensource.org/licenses/MIT)
+= 1.0.0 =
+* Initial Release
+
+
+== Resources ==
+* {_s}, GPLv3, http://underscores.me/
+* {Skeleton}, MIT, https://github.com/dhg/Skeleton#license
+* {Flexslider} © 2015 Woo Themes, GPLv2 ,https://github.com/woothemes/FlexSlider
+* {FontAwesome} © Dave Gandy, SIL OFL 1.1 and MIT ,https://fortawesome.github.io/Font-Awesome
+* screenshot.png © 2015 Pixabay, CC0,
+https://pixabay.com/en/girl-music-pink-fashion-listen-1990347/
+https://pixabay.com/en/girl-looking-away-1995624/
+https://pixabay.com/en/above-adventure-aerial-air-amazing-736879/

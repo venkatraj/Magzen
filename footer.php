@@ -22,18 +22,16 @@
 	<?php endif; ?>
 		<div class="site-info">
 			<div class="container">
-				<div class="copyright eight columns">   
+				<div class="copyright sixteen columns">   
 				<?php if( get_theme_mod('copyright') ) : ?>
 							<p><?php echo do_shortcode(get_theme_mod('copyright')); ?></p>
 						<?php else : 
 								printf( __('<p>Powered by <a href="%1$s">WordPress</a>', 'magzen'), esc_url( 'http://wordpress.org/') );
 								printf( '<span class="sep"> .</span>' );
-								printf( __( 'Theme: Magzen by <a href="%1$s" rel="designer">Genex Themes</a></p>', 'magzen' ), esc_url('http://www.genexthemes.com/') );
+								printf( __( 'Theme: Magzen by <a href="%1$s" rel="designer">Webulous Themes</a></p>', 'magzen' ), esc_url('http://www.webulousthemes.com/') );
 					 endif;  ?>
 				</div>
-				<div class="left-sidebar eight columns">
-					<?php dynamic_sidebar( 'footer-nav' ); ?>
-				</div>
+				
 			</div>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->

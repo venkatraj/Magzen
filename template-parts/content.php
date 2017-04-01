@@ -12,7 +12,7 @@
 			if ( has_post_thumbnail() ) : 
 				 $post_date = 'img-post-date'; ?>
 					<div class="magazine-image"><?php
-					    the_post_thumbnail('magzen-blog-full-width'); ?>
+					    the_post_thumbnail('magzen-vertical-one'); ?>
 		            </div><?php
 		    else: 
 		       $post_date = 'post-date';
@@ -26,7 +26,7 @@
 				<?php the_title( sprintf( '<h4 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h4>' ); ?>
 				<?php if ( 'post' == get_post_type() ) : ?>
 				<div class="magazine-slider-top-meta <?php echo $post_date; ?>">
-					<?php magzen_entry_top_meta(); ?> 
+					<?php magzen_entry_top_meta('date','author','comment',false,false,false); ?> 
 				</div><!-- .entry-meta -->
 				<?php endif; ?>
 			

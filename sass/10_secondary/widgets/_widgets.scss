@@ -39,7 +39,11 @@
 		select {
 			width: 100%;
 			background: url('images/down.png') no-repeat 95% 50%;
-			-moz-appearance: none;
+			-webkit-appearance: none;
+		    -moz-appearance: none;
+		    -ms-appearance: none;
+		    -o-appearance: none;
+		    appearance: none;
 			border: 1px solid $c1;
 			padding: 5px 10% 5px 3%;
 
@@ -48,7 +52,7 @@
 }
 
 .widget .widget-title,.title-divider { 
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 	padding-bottom: 5px;
 	position:relative;
 	text-transform:uppercase;
@@ -61,7 +65,8 @@
 		left:0px;
 		border-bottom:3px solid $primary;
 	}
-}	
+}
+
 
 #secondary .widget,.site-footer .widget,.site-header .widget {
 	margin: 0 0 3.5em 0;
@@ -69,7 +74,10 @@
 	ul, ol {
 		padding: 0;
 		margin: 0;
-		padding-left: 12px;
+		//padding-left: 12px;
+		ul,ol {
+			padding-left: 12px;
+		}
 	}
 
 
@@ -112,3 +120,5 @@
 @import "text";
 
 @import "tag_cloud";
+
+@import "featured-post";

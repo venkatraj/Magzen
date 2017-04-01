@@ -16,7 +16,7 @@ if( is_front_page() ):
 else:
 get_header(); ?>
 <div class="container">
-	<div id="primary" class="content-area eleven columns">
+	<div id="primary" class="content-area eleven columns alpha">
 		<main id="main" class="site-main" role="main">
 
 			<?php
