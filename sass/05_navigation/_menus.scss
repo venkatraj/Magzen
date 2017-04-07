@@ -196,37 +196,45 @@
 }
 
 
-ol.wbls_page_navi {
+
+.navigation.pagination {
 	margin: 0;
 	list-style-type: none;  
 	position: relative;
+	.nav-links {
+	   border: none!important;
+	}
 	
-	li {
+	 
+	.page-numbers {
 		display: inline-block;
 		margin-right: 10px;
 		color: $secondary;
 		border:2px solid $secondary;
 		padding: 3px 8px;
-		border-radius: 3px;
-		a {      
-			display: inline-block;
-			text-align: center;
-			@include font-size(1.4);
-			color: $secondary;
-			//padding: 10px;	
-			//width: 30px;
-		}
+		border-radius: 3px;     
+		text-align: center;
+		@include font-size(1.4);
+	
 		
 	}
-	li.bpn-current {
+	.page-numbers.current {
 		color: $secondary;
 		border:2px solid $primary;
 		text-align: center;
 		@include font-size(1.4);	
 		border-radius: 3px;
 		width:30px;	
+    }
+
+	.next.page-numbers {
+
 	}
-	li.bpn-prev-link,li.bpn-next-link {
-	   border: none;
+	.prev.page-numbers {
+
 	}
+	.prev.page-numbers,.next.page-numbers {
+        //border: none;
+	}
+
 }

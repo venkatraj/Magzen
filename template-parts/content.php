@@ -1,6 +1,6 @@
 <?php
 /**
- * @package Magzen
+ * @package MagZen
  */
 ?>
 
@@ -42,7 +42,7 @@
 
 					<?php
 						wp_link_pages( array(
-							'before' => '<div class="page-links">' . __( 'Pages: ', 'magzen' ),
+							'before' => '<div class="page-links">' . esc_html__( 'Pages: ', 'magzen' ),
 							'after'  => '</div>',
 						) );  
 					?>

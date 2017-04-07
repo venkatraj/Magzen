@@ -1,20 +1,18 @@
 <?php
-$magzen_page_builder = __( 'Page Builder', 'magzen' );
-$magzen_page_builder_details = __('Magzen Pro supports Page Builder. All our shortcodes can be used as widgets too. You can drag and drop our widgets with page builder visual editor.', 'magzen' );
+$magzen_page_builder = __( 'Page Builder', 'magzen' );      
+$magzen_page_builder_details = __('MagZen Pro supports Page Builder.  You can drag and drop our MagZenPro widgets with page builder visual editor.', 'magzen' );
 $magzen_page_layout = __( 'Page Layout', 'magzen' );
-$magzen_page_layout_details = __('Magzen Pro offers many different page layouts so you can quickly and easily create your pages with various layout without any hassle!', 'magzen' );
+$magzen_page_layout_details = __('MagZenPro offers many different page layouts so you can quickly and easily create your pages with various layout without any hassle!', 'magzen' );
 $magzen_unlimited_sidebar = __( 'Unlimited Sidebar', 'magzen' );
 $magzen_unlimited_sidebar_details = __( 'Unlimited sidebars allows you to create multiple sidebars. Check out our demo site to see how different pages displays different sidebars!', 'magzen' );
-$magzen_shortcode_builder = __( 'Shortcode Builder', 'magzen' );
-$magzen_shortcode_builder_details = __( 'With our shortcode builder and lots of shortcodes, you can easily create nested shortcodes and build custom pages!', 'magzen' );
-$magzen_portfolio = __( 'Multi Portfolio', 'magzen' );
-$magzen_portfolio_details = __( '7 portfolio layouts with Isotope filtering, 3 blog layouts and multiple other alternate layouts for interior pages!', 'magzen' );
+$magzen_style_design = __( 'Magazine Style Design', 'magzen' );
+$magzen_style_design_details = __( 'MagZenPro comes with beautiful and well thought magazine style design that will make your blog or magazine site stand out and gain more visitors.', 'magzen' );
 $magzen_typography = __( 'Typography', 'magzen' );
-$magzen_typography_details = __('Magzen Pro loves typography, you can choose from over 500+ Google Fonts and Standard Fonts to customize your site!', 'magzen' );
+$magzen_typography_details = __('MagZen Pro loves typography, you can choose from over 500+ Google Fonts and Standard Fonts to customize your site!', 'magzen' );
 $magzen_slider = __( 'Awesome Sliders', 'magzen' );
-$magzen_slider_details = __('Magzen Pro includes two types of slider. You can use both Flex and Elastic sliders anywhere in your site.', 'magzen' );
+$magzen_slider_details = __('MagZen Pro includes two types of slider. You can use both Flex and Elastic sliders anywhere in your site.', 'magzen' );
 $magzen_woocommerce = __( 'Woo Commerce', 'magzen' );
-$magzen_woocommerce_details = __('Magzen Pro has full design/code integration for WooCommerce, your shop will look as good as the rest of your site!', 'magzen' );
+$magzen_woocommerce_details = __("MagZen Pro has full design/code integration for WooCommerce, your shop will look as good as the rest of your site! and <strong>Lot More Options are available in MagZenPro.</strong>", 'magzen' );
 $magzen_custom_widget = __( 'Custom Widget', 'magzen' );
 $magzen_custom_widget_details = __( 'We offer many custom widgets that are stylized and ready for use. Simply drag &amp; drop into place to activate!', 'magzen' );
 $magzen_advanced_admin = __( 'Advanced Admin', 'magzen' );
@@ -22,65 +20,56 @@ $magzen_advanced_admin_details = __( ' you can customize any part of your site q
 $magzen_font_awesome = __( 'Font Awesome', 'magzen' );
 $magzen_font_awesome_details = __( 'Font Awesome icons are fully integrated into the theme. Use them anywhere in your site in 6 different sizes!', 'magzen' );
 $magzen_responsive_layout = __( 'Responsive Layout', 'magzen' );
-$magzen_responsive_layout_details = __('Magzen Pro is fully responsive and can adapt to any screen size. Resize your browser window to view it!', 'magzen' );
-$magzen_testimonials = __( 'Testimonials', 'magzen' );
-$magzen_testimonials_details = __( 'With our testimonial post type, shortcode and widget, Displaying testimonials is a breeze.', 'magzen' );
+$magzen_responsive_layout_details = __('MagZen Pro is fully responsive and can adapt to any screen size. Resize your browser window to view it!', 'magzen' );
 $magzen_social_media = __( 'Social Media', 'magzen' );
-$magzen_social_media_details = __( 'Want your users to stay in touch? No problem, magzen Pro has Social Media icons all throughout the theme!', 'magzen' );
-$magzen_google_map = __( 'Google Map', 'magzen' );
-$magzen_google_map_details = __('Magzen Pro includes Goole Map as shortcode and widget. So, you can use it anywhere in your site!', 'magzen' );
+$magzen_social_media_details = __( 'Want your users to stay in touch? No problem, magzen Pro has Social Media icons all throughout the theme!', 'magzen' ); 
 $magzen_view_demo = __( 'View Demo', 'magzen');
-$magzen_upgrade_to_pro = __( 'Upgrade To Pro', 'magzen' );
+$magzen_upgrade_to_pro = __( 'Upgrade To Pro', 'magzen' );  
 
 
 $magzen_why_upgrade = <<< FEATURES
+<div class="one-third column">
+	<div class="icon-wrap"><i class="fa  fa-5x fa-camera"></i></div>
+	<h3>$magzen_style_design</h3>
+	<p>$magzen_style_design_details</p>
+</div>
 
-<div class="one-third column clear">
+<div class="one-third column">
 	<div class="icon-wrap"><i class="fa  fa-5x fa-cog"></i></div>
 	<h3>$magzen_page_builder</h3>
 	<p>$magzen_page_builder_details</p>
 </div>
+
 <div class="one-third column">
 	<div class="icon-wrap"><i class="fa  fa-5x fa-th-large"></i></div>
 	<h3>$magzen_page_layout</h3>
 	<p>$magzen_page_layout_details</p>
 </div>
-<div class="one-third column">
+
+<div class="one-third column clear">
 	<div class="icon-wrap"><i class="fa  fa-5x fa-th"></i></div>
 	<h3>$magzen_unlimited_sidebar</h3>
 	<p>$magzen_unlimited_sidebar_details</p>
 </div>
-<div class="one-third column clear">
-	<div class="icon-wrap"><i class="fa  fa-5x fa-code-fork"></i></div>
-	<h3>$magzen_shortcode_builder</h3>
-	<p>$magzen_shortcode_builder_details</p>
-</div>
-<div class="one-third column">
-	<div class="icon-wrap"><i class="fa  fa-5x fa-camera"></i></div>
-	<h3>$magzen_portfolio</h3>
-	<p>$magzen_portfolio_details</p>
-</div>
+
 <div class="one-third column">
 	<div class="icon-wrap"><i class="fa  fa-5x fa-font"></i></div>
 	<h3>$magzen_typography</h3>
 	<p>$magzen_typography_details</p>
 </div>
-<div class="one-third column clear">
+
+<div class="one-third column">
 	<div class="icon-wrap"><i class="fa  fa-5x fa-slideshare"></i></div>
 	<h3>$magzen_slider</h3>
 	<p>$magzen_slider_details</p>
 </div>
-<div class="one-third column">
-	<div class="icon-wrap"><i class="fa  fa-5x fa-leaf"></i></div>
-	<h3>$magzen_woocommerce</h3>
-	<p>$magzen_woocommerce_details</p>
-</div>
-<div class="one-third column">
+
+<div class="one-third column clear">
 	<div class="icon-wrap"><i class="fa  fa-5x fa-tasks"></i></div>
 	<h3>$magzen_custom_widget</h3>
 	<p>$magzen_custom_widget_details</p>
 </div>
-<div class="one-third column clear">
+<div class="one-third column">
 	<div class="icon-wrap"><i class="fa  fa-5x fa-dashboard"></i></div>
 	<h3>$magzen_advanced_admin</h3>
 	<p>$magzen_advanced_admin_details</p>
@@ -90,31 +79,28 @@ $magzen_why_upgrade = <<< FEATURES
 	<h3>$magzen_font_awesome</h3>
 	<p>$magzen_font_awesome_details</p>
 </div>
-<div class="one-third column">
+<div class="one-third column clear">
 	<div class="icon-wrap"><i class="fa  fa-5x fa-arrows"></i></div>
 	<h3>$magzen_responsive_layout</h3>
 	<p>$magzen_responsive_layout_details</p>
 </div>
-<div class="one-third column clear">
-	<div class="icon-wrap"><i class="fa  fa-5x fa-magic"></i></div>
-	<h3>$magzen_testimonials</h3>
-	<p>$magzen_testimonials_details</p>
-</div>
+
 <div class="one-third column">
 	<div class="icon-wrap"><i class="fa  fa-5x fa-twitter"></i></div>
 	<h3>$magzen_social_media</h3>
 	<p>$magzen_social_media_details</p>
 </div>
 <div class="one-third column">
-	<div class="icon-wrap"><i class="fa  fa-5x fa-map-marker"></i></div>
-	<h3>$magzen_google_map</h3>
-	<p>$magzen_google_map_details</p>
+	<div class="icon-wrap"><i class="fa  fa-5x fa-leaf"></i></div>
+	<h3>$magzen_woocommerce</h3>
+	<p>$magzen_woocommerce_details</p>
 </div>
+
 FEATURES;
 
 function magzen_theme_page() {
 	add_theme_page( 
-		__( 'Upgrade To magzen Pro','magzen'),
+		__( 'Upgrade To MagZenPro','magzen'),
 		__( 'Theme Upgrade','magzen'),
 		'edit_theme_options',
 		'magzen_upgrade',
@@ -208,7 +194,7 @@ function magzen_display_upgrade() {
                                 'type' => 'text',
                                 'label' => __('Breaking News Title', 'magzen'),
                                 'description' => __('BREAKING NEWS', 'magzen'),
-                                'sanitize_callback' => 'wbls_footer_copyright',
+                                'sanitize_callback' => 'magzen_footer_copyright',
                             ),
 
 						),
@@ -227,13 +213,13 @@ function magzen_display_upgrade() {
                                 'type' => 'textarea',
                                 'label' => __('Footer Copyright Text (Validated that it\'s HTML Allowed)', 'magzen'),
                                 'description' => __('HTML Allowed. <b>This field is even HTML validated! </b>', 'magzen'),
-                                'sanitize_callback' => 'wbls_footer_copyright',
+                                'sanitize_callback' => 'magzen_footer_copyright',
                             ),
 						),
 					),
 					'home' => array(
 						'title' => __('Home', 'magzen'),
-						'description' => __('Please go to Appearance &#8594; Widgets and add widget to the "Magazine Page" widget area. You can use the Magzen : Magazine Posts Boxed widgets to set up magazine page.', 'magzen'),
+						'description' => __('Please go to Appearance &#8594; Widgets and add widget to the "Magazine Page" widget area. You can use the MagZen : Magazine Posts Boxed widgets to set up magazine page.', 'magzen'),
 						'fields' => array(
 							/* 'slider_field' => array(   
 								'type' => 'checkbox',
@@ -329,9 +315,9 @@ function magzen_breadcrumb_char_choices($value='') {
 	}
 }
 
-if ( ! function_exists( 'wbls_footer_copyright' ) ) {
+if ( ! function_exists( 'magzen_footer_copyright' ) ) {
 
-    function wbls_footer_copyright($string) {
+    function magzen_footer_copyright($string) {
         $allowed_tags = array(    
                             'a' => array(
                             	'href' => array(),

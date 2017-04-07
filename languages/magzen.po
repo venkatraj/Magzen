@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Magzen\n"
-"POT-Creation-Date: 2017-04-01 12:20+0530\n"
-"PO-Revision-Date: 2017-04-01 12:20+0530\n"
+"Project-Id-Version: MagZen\n"
+"POT-Creation-Date: 2017-04-06 10:08+0530\n"
+"PO-Revision-Date: 2017-04-07 11:34+0530\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: English\n"
@@ -28,7 +28,7 @@ msgstr ""
 #: ../footer.php:31
 #, php-format
 msgid ""
-"Theme: Magzen by <a href=\"%1$s\" rel=\"designer\">Webulous Themes</a></p>"
+"Theme: MagZen by <a href=\"%1$s\" rel=\"designer\">Webulous Themes</a></p>"
 msgstr ""
 
 #: ../functions.php:119
@@ -49,19 +49,19 @@ msgid "Footer %d"
 msgstr ""
 
 #: ../functions.php:157
-msgid "Magzen: Content Area"
+msgid "MagZen: Content Area"
 msgstr ""
 
 #: ../functions.php:159
 msgid ""
 "Appears on Front Page and Magazine Page template only. You can use the "
-"Magzen widgets here."
+"MagZen widgets here."
 msgstr ""
 
 #: ../template-magazine.php:36
 msgid ""
 "Please go to <strong>Appearance &#8594; Widgets and add widget to the "
-"'Magzen: content area'.</strong> You can use the <strong>Magzen widget</"
+"'MagZen: content area'.</strong> You can use the <strong>MagZen widget</"
 "strong> to set up magazine page."
 msgstr ""
 
@@ -176,7 +176,7 @@ msgstr ""
 #: ../inc/widgets/magzen-featured-post.php:20
 msgid ""
 "Displays your latest posts or post from a selected category . Please use "
-"this widget  in the Magzen: Content Area."
+"this widget  in the MagZen: Content Area."
 msgstr ""
 
 #: ../inc/widgets/magzen-featured-post.php:40
@@ -241,7 +241,7 @@ msgstr ""
 
 #: ../customizer/options-config.php:3
 msgid ""
-"Magzen Pro supports Page Builder. All our shortcodes can be used as widgets "
+"MagZen Pro supports Page Builder. All our shortcodes can be used as widgets "
 "too. You can drag and drop our widgets with page builder visual editor."
 msgstr ""
 
@@ -251,7 +251,7 @@ msgstr ""
 
 #: ../customizer/options-config.php:5
 msgid ""
-"Magzen Pro offers many different page layouts so you can quickly and easily "
+"MagZen Pro offers many different page layouts so you can quickly and easily "
 "create your pages with various layout without any hassle!"
 msgstr ""
 
@@ -291,7 +291,7 @@ msgstr ""
 
 #: ../customizer/options-config.php:13
 msgid ""
-"Magzen Pro loves typography, you can choose from over 500+ Google Fonts and "
+"MagZen Pro loves typography, you can choose from over 500+ Google Fonts and "
 "Standard Fonts to customize your site!"
 msgstr ""
 
@@ -301,7 +301,7 @@ msgstr ""
 
 #: ../customizer/options-config.php:15
 msgid ""
-"Magzen Pro includes two types of slider. You can use both Flex and Elastic "
+"MagZen Pro includes two types of slider. You can use both Flex and Elastic "
 "sliders anywhere in your site."
 msgstr ""
 
@@ -311,7 +311,7 @@ msgstr ""
 
 #: ../customizer/options-config.php:17
 msgid ""
-"Magzen Pro has full design/code integration for WooCommerce, your shop will "
+"MagZen Pro has full design/code integration for WooCommerce, your shop will "
 "look as good as the rest of your site!"
 msgstr ""
 
@@ -351,7 +351,7 @@ msgstr ""
 
 #: ../customizer/options-config.php:25
 msgid ""
-"Magzen Pro is fully responsive and can adapt to any screen size. Resize your "
+"MagZen Pro is fully responsive and can adapt to any screen size. Resize your "
 "browser window to view it!"
 msgstr ""
 
@@ -381,7 +381,7 @@ msgstr ""
 
 #: ../customizer/options-config.php:31
 msgid ""
-"Magzen Pro includes Goole Map as shortcode and widget. So, you can use it "
+"MagZen Pro includes Goole Map as shortcode and widget. So, you can use it "
 "anywhere in your site!"
 msgstr ""
 
@@ -490,7 +490,7 @@ msgstr ""
 #: ../customizer/options-config.php:236
 msgid ""
 "Please go to Appearance &#8594; Widgets and add widget to the \"Magazine Page"
-"\" widget area. You can use the Magzen : Magazine Posts Boxed widgets to set "
+"\" widget area. You can use the MagZen : Magazine Posts Boxed widgets to set "
 "up magazine page."
 msgstr ""
 

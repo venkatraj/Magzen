@@ -2,7 +2,7 @@
 /**
  * The template used for displaying page breadcrumb
  *
- * @package Magzen
+ * @package MagZen
  */
 
  $breadcrumb = get_theme_mod( 'breadcrumb',true ); ?>    

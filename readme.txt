@@ -1,4 +1,4 @@
-=== Magzen ===
+=== MagZen ===
 Contributors: Webulous
 Tags:  featured-images, right-sidebar, sticky-post, translation-ready, custom-background,  custom-menu,  threaded-comments , blog, news
 Requires at least: 4.0
@@ -7,12 +7,12 @@ Stable tag: 1.0.0
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Magzen is best suited for all types of site and uses Theme Customizer.
+MagZen is best suited for all types of site and uses Theme Customizer.
 
-Magzen WordPress Theme, Copyright 2017 Webulousthemes
+MagZen WordPress Theme, Copyright 2017 Webulousthemes
 
 == Description ==
-Magzen is a perfect responsive magazine style WordPress theme. Suitable for news, newspaper, magazine, publishing, business and any kind of sites. core feature of WordPress  Has 3 Footer Widget Areas.
+MagZen is a perfect responsive magazine style WordPress theme. Suitable for news, newspaper, magazine, publishing, business and any kind of sites. core feature of WordPress  Has 3 Footer Widget Areas.
 
 == Frequently Asked Questions == 
 == Installation ==

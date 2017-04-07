@@ -28,12 +28,12 @@ get_header(); ?>
 				 * If you want to overload this in a child theme then include a file
 				 * called content-search.php and that will be used instead.
 				 */
-				get_template_part( 'template-parts/content', 'search' );
+				get_template_part( 'template-parts/content', get_post_format()  );
 
 			endwhile;
 
-			if(  get_theme_mod ('numeric_pagination',true) && function_exists( 'magzen_pagination' ) ) : 
-					magzen_pagination();
+			if(  get_theme_mod ('numeric_pagination',true) && function_exists( 'the_posts_pagination' ) ) : 
+					the_posts_pagination();
 				else :
 					the_posts_navigation();    
 			endif; 

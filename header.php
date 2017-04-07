@@ -103,15 +103,16 @@
 
 	</header><!-- #masthead --> 
 
-	<?php if ( ! is_home() && ! is_front_page() )  { 
+	<?php if ( ! is_home() && ! is_front_page() && ! is_search() && !is_archive() && !is_404() )  { 
 	    get_template_part( 'template-parts/breadcrumb' ); 
 	} ?>
 	
 <div id="content" class="site-content">
 
 	<?php if ( function_exists( 'is_woocommerce' ) || function_exists( 'is_cart' ) || function_exists( 'is_chechout' ) ) :
-	if ( is_woocommerce() || is_cart() || is_checkout() ) { ?>
-	   <?php $breadcrumb = get_theme_mod( 'breadcrumb',true ); ?>    
+	if ( is_woocommerce() || is_cart() || is_checkout() ) { 
+		if ( ! is_home() && ! is_front_page() && ! is_search() && !is_archive() && !is_404() )  { 
+	        $breadcrumb = get_theme_mod( 'breadcrumb',true ); ?>    
 		   <div class="breadcrumb">
 				<div class="container">
 					<div class="breadcrumb-left eight columns">
@@ -125,4 +126,5 @@
 				</div>
 			</div>
 	<?php } 
+}
 	endif; ?>

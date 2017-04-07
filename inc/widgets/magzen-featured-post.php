@@ -5,19 +5,19 @@
  * Display the latest posts from a selected category in a boxed layout. 
  * Intented to be used in the Magazine Homepage widget area to built a magzen layouted page.
  *
- * @package Magzen
+ * @package MagZen
  */
    
-class Magzen_Featured_Post_Widget extends WP_Widget {  
+class MagZen_Featured_Post_Widget extends WP_Widget {  
    
 	/**
 	 * Register widget with WordPress.
 	 */
 	function __construct() {
-		parent::__construct(
+		parent::__construct(  
 			'magzen-featured-post-widget', // Base ID
 			sprintf( esc_html__( '%s : Featured Post', 'magzen' ), wp_get_theme()->Name ), // Name
-			array( 'description' => __( 'Displays your latest posts or post from a selected category . Please use this widget  in the Magzen: Content Area.', 'magzen' ), ) // Args
+			array( 'description' => __( 'Displays your latest posts or post from a selected category . Please use this widget  in the MagZen: Content Area.', 'magzen' ), ) // Args
 		);
 	}
 

@@ -1,19 +1,19 @@
 /*
-Theme Name: Magzen
+Theme Name: MagZen
 Theme URI: http://www.webulousthemes.com/magzen/  
 Author: N. Venkat Raj
 Author URI: http://www.webulousthemes.com/
-Description: Magzen is a perfect responsive magazine style WordPress theme. Suitable for news, newspaper, magazine, publishing, business and any kind of sites. core feature of WordPress  Has 3 Footer Widget Areas.
+Description:  MagZen is a perfect responsive magazine style WordPress theme. Suitable for news, newspaper, magazine, publishing, business and any kind of sites. It uses skeleton framework for grids which keeps minimal css. Stylesheet is generated using SASS and so stays DRY. Core feature of WordPress  Has 3 Footer Widget Areas.
 Version: 1.0.0
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: magzen
-Tags: featured-images, right-sidebar, sticky-post, translation-ready, custom-background,  custom-menu,  threaded-comments , blog, news
+Tags:  featured-images, right-sidebar, sticky-post, translation-ready, custom-background,  custom-menu,  threaded-comments , blog, news
  
-Magzen WordPress Theme, Copyright (C) 2017, N. Venkat Raj
-Magzen is distributed under the terms of the GNU GPL
+MagZen WordPress Theme, Copyright (C) 2017, N. Venkat Raj
+MagZen is distributed under the terms of the GNU GPL
 
-Magzen is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
+MagZen is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
 
 Resetting and rebuilding styles have been helped along thanks to the fine work of
 Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
@@ -396,6 +396,7 @@ a img {
       padding-left: 87.5%; }
     .container .offset-by-fifteen {
       padding-left: 93.75%; } }
+
 @media only screen and (max-width: 768px) {
   .container {
     width: 93%; }
@@ -473,9 +474,9 @@ a img {
     .container .offset-by-fourteen,
     .container .offset-by-fifteen {
       padding-left: 0; }
-
   .columns, .column {
     margin: 0; } }
+
 /* #Clearing
 ================================================== */
 /* Self Clearing Goodness */
@@ -487,7 +488,7 @@ a img {
   visibility: hidden; }
 
 /* Use clearfix class on parent to clear nested columns,
-or wrap each row of columns in a <div class="row"> */
+    or wrap each row of columns in a <div class="row"> */
 .clearfix:before,
 .clearfix:after,
 .row:before,
@@ -761,9 +762,6 @@ input[type="submit"] {
   color: #fff;
   font-weight: 700;
   -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
   transition: all 0.5s ease; }
 
 button:hover,
@@ -885,9 +883,6 @@ a {
   color: #f15c22;
   text-decoration: none;
   -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
   transition: all 0.5s ease; }
   a:visited {
     color: #f15c22; }
@@ -978,9 +973,9 @@ a {
       display: block;
       border-top: 0;
       padding-left: 10px; }
-
   .main-navigation ul {
     display: none; } }
+
 .comment-navigation .nav-previous a,
 .paging-navigation .nav-previous a,
 .posts-navigation .nav-previous a, .post-navigation .nav-previous a, .comment-navigation .nav-next a,
@@ -1039,24 +1034,23 @@ a {
     .nav-links a:hover {
       color: #f15c22 !important; }
 
-ol.wbls_page_navi {
+.navigation.pagination {
   margin: 0;
   list-style-type: none;
   position: relative; }
-  ol.wbls_page_navi li {
+  .navigation.pagination .nav-links {
+    border: none !important; }
+  .navigation.pagination .page-numbers {
     display: inline-block;
     margin-right: 10px;
     color: #2c3e50;
     border: 2px solid #2c3e50;
     padding: 3px 8px;
-    border-radius: 3px; }
-    ol.wbls_page_navi li a {
-      display: inline-block;
-      text-align: center;
-      font-size: 14px;
-      font-size: 1.4rem;
-      color: #2c3e50; }
-  ol.wbls_page_navi li.bpn-current {
+    border-radius: 3px;
+    text-align: center;
+    font-size: 14px;
+    font-size: 1.4rem; }
+  .navigation.pagination .page-numbers.current {
     color: #2c3e50;
     border: 2px solid #f15c22;
     text-align: center;
@@ -1064,8 +1058,6 @@ ol.wbls_page_navi {
     font-size: 1.4rem;
     border-radius: 3px;
     width: 30px; }
-  ol.wbls_page_navi li.bpn-prev-link, ol.wbls_page_navi li.bpn-next-link {
-    border: none; }
 
 /*--------------------------------------------------------------
 6.0 Media
@@ -1273,6 +1265,7 @@ object {
     padding: 3px 34px 3px 10px;
     position: relative;
     width: 15px;
+    -webkit-transition: width 1s;
     transition: width 1s;
     z-index: 2;
     color: transparent; }
@@ -1389,8 +1382,10 @@ object {
 /* BREAK NEWS */
 .breaknews .recent-news-wrapper {
   position: relative; }
+
 .breaknews ul li, .breaknews ul {
   list-style: none; }
+
 .breaknews .bn-title {
   padding: 5px 10px;
   color: #fff;
@@ -1398,6 +1393,7 @@ object {
   display: inline-block;
   font-weight: 600;
   float: left; }
+
 .breaknews .breaknews-wrapper {
   margin: 20px 0px;
   font-size: 14px;
@@ -1630,9 +1626,11 @@ ol.comment-list .comment {
   margin-top: 20px;
   padding: 15px 5px;
   margin-bottom: 20px; }
+
 .comment-form input[type="email"] {
   margin-right: 8px !important;
   margin-left: 8px !important; }
+
 .comment-form .form-submit {
   float: right;
   margin-top: 15px; }
@@ -1654,7 +1652,6 @@ ol.comment-list .comment {
   padding-bottom: 50px !important;
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */
-  -webkit-border-radius: 5px;
   border-radius: 5px;
   position: relative;
   margin-bottom: 70px !important;
@@ -1731,7 +1728,7 @@ blockquote {
     font-size: 2.5rem;
     font-family: 'FontAwesome';
     left: 20px;
-    top: calc(1% + 25px );
+    top: calc(1% + 25px);
     color: #757575; }
   blockquote p {
     margin-bottom: 0;
@@ -1768,6 +1765,7 @@ blockquote {
 .hentry.sticky .entry-footer {
   background: none;
   padding: 0; }
+
 .hentry.sticky .entry-footer,
 .hentry.sticky .entry-meta {
   margin-bottom: 0;
@@ -1784,23 +1782,29 @@ blockquote {
 
 .magazine-post-wrapper.horizontal h4.entry-title {
   margin-top: -10px; }
+
 .magazine-post-wrapper.horizontal .magazine-slider-top-meta {
   font-size: 13px;
   padding: 5px; }
+
 .magazine-post-wrapper.horizontal .magazine-content {
   font-size: 16px;
   font-size: 1.6rem; }
 
 .widget_magzen-featured-post-widget div:last-child .magazine-post-wrapper.horizontal {
   border-bottom: none; }
+
 .widget_magzen-featured-post-widget div:nth-of-type(2n-1) .magazine-post-wrapper.vertical {
   margin-left: 0; }
+
 .widget_magzen-featured-post-widget div:nth-of-type(2n) .magazine-post-wrapper.vertical {
   margin-right: 0; }
+
 .widget_magzen-featured-post-widget .eight:nth-of-type(2n+1) {
   clear: both;
   margin-left: 0;
   margin-right: 2%; }
+
 .widget_magzen-featured-post-widget .eight:nth-of-type(2n) {
   margin-right: 0;
   margin-left: 2%; }
@@ -1865,6 +1869,7 @@ blockquote {
 
 .magazine-post-wrapper.magzen-vertical-two .image-date.img-post-date {
   display: block; }
+
 .magazine-post-wrapper.magzen-vertical-two .magazine-slider-top-meta.img-post-date .date-structure {
   display: none; }
 
@@ -1917,18 +1922,16 @@ blockquote {
   padding-top: 0; }
   .home .site-content .site-main {
     margin-top: 0; }
+
 .home .site-header {
   border-bottom: none; }
 
 .flexslider {
   border: 0 !important;
   margin-bottom: 0;
-  -webkit-box-shadow: inset 0 0 0 transparent !important;
-  -moz-box-shadow: inset 0 0 0 transparent !important;
   box-shadow: inset 0 0 0 transparent !important;
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */
-  -webkit-border-radius: 0px !important;
   border-radius: 0px !important;
   background: transparent !important; }
   .flexslider .slides > li {
@@ -1990,7 +1993,6 @@ blockquote {
         display: inline-block;
         background-clip: padding-box;
         /* stops bg color from leaking outside the border: */
-        -webkit-border-radius: 25px !important;
         border-radius: 25px !important;
         background-color: #fff;
         border: 1px solid #fff !important;
@@ -2055,6 +2057,7 @@ blockquote {
 .no-results input[type="search"], .not-found input[type="search"] {
   float: left;
   width: 75%; }
+
 .no-results input[type="submit"], .not-found input[type="submit"] {
   float: left;
   width: 20%;
@@ -2069,9 +2072,6 @@ blockquote {
 .woocommerce-page #content table.cart input,
 .woocommerce-page table.cart input {
   -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
   transition: all 0.5s ease; }
 
 .woocommerce #content input.button,
@@ -2113,15 +2113,12 @@ blockquote {
 .woocommerce-page input.button.alt {
   background: #272727 !important;
   /* Old browsers */
-  background: -moz-linear-gradient(top, #272727 0%, #45484d 100%) !important;
   /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #272727), color-stop(100%, #45484d)) !important;
   /* Chrome,Safari4+ */
   background: -webkit-linear-gradient(top, #272727 0%, #45484d 100%) !important;
   /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #272727 0%, #45484d 100%) !important;
   /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, #272727 0%, #45484d 100%) !important;
   /* IE10+ */
   background: linear-gradient(to bottom, #272727 0%, #45484d 100%) !important;
   /* W3C */
@@ -2142,15 +2139,12 @@ blockquote {
   border-color: #000;
   background: #666 !important;
   /* Old browsers */
-  background: -moz-linear-gradient(top, #666 0%, #45484d 100%) !important;
   /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #45484d), color-stop(100%, #45484d)) !important;
   /* Chrome,Safari4+ */
   background: -webkit-linear-gradient(top, #666 0%, #45484d 100%) !important;
   /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #666 0%, #45484d 100%) !important;
   /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, #666 0%, #45484d 100%) !important;
   /* IE10+ */
   background: linear-gradient(to bottom, #666 0%, #45484d 100%) !important;
   /* W3C */
@@ -2177,15 +2171,12 @@ blockquote {
 .woocommerce-page #payment div.payment_box {
   background: #f2f9fe;
   /* Old browsers */
-  background: -moz-linear-gradient(top, #f2f9fe 0%, #d6f0fd 100%);
   /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f2f9fe), color-stop(100%, #d6f0fd));
   /* Chrome,Safari4+ */
   background: -webkit-linear-gradient(top, #f2f9fe 0%, #d6f0fd 100%);
   /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #f2f9fe 0%, #d6f0fd 100%);
   /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, #f2f9fe 0%, #d6f0fd 100%);
   /* IE10+ */
   background: linear-gradient(to bottom, #f2f9fe 0%, #d6f0fd 100%);
   /* W3C */
@@ -2220,15 +2211,12 @@ blockquote {
 .woocommerce #content div.product .woocommerce-tabs ul.tabs li, .woocommerce div.product .woocommerce-tabs ul.tabs li, .woocommerce-page #content div.product .woocommerce-tabs ul.tabs li, .woocommerce-page div.product .woocommerce-tabs ul.tabs li {
   background: #f2f9fe;
   /* Old browsers */
-  background: -moz-linear-gradient(top, #f2f9fe 0%, #d6f0fd 100%);
   /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f2f9fe), color-stop(100%, #d6f0fd));
   /* Chrome,Safari4+ */
   background: -webkit-linear-gradient(top, #f2f9fe 0%, #d6f0fd 100%);
   /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #f2f9fe 0%, #d6f0fd 100%);
   /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, #f2f9fe 0%, #d6f0fd 100%);
   /* IE10+ */
   background: linear-gradient(to bottom, #f2f9fe 0%, #d6f0fd 100%);
   /* W3C */
@@ -2267,15 +2255,12 @@ blockquote {
 .woocommerce span.onsale, .woocommerce-page span.onsale {
   background: #fceabb;
   /* Old browsers */
-  background: -moz-linear-gradient(top, #fceabb 0%, #fccd4d 50%, #f8b500 51%, #fbdf93 100%);
   /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fceabb), color-stop(50%, #fccd4d), color-stop(51%, #f8b500), color-stop(100%, #fbdf93));
   /* Chrome,Safari4+ */
   background: -webkit-linear-gradient(top, #fceabb 0%, #fccd4d 50%, #f8b500 51%, #fbdf93 100%);
   /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #fceabb 0%, #fccd4d 50%, #f8b500 51%, #fbdf93 100%);
   /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, #fceabb 0%, #fccd4d 50%, #f8b500 51%, #fbdf93 100%);
   /* IE10+ */
   background: linear-gradient(to bottom, #fceabb 0%, #fccd4d 50%, #f8b500 51%, #fbdf93 100%);
   /* W3C */
@@ -2333,8 +2318,6 @@ blockquote {
   padding: 5px 12px;
   text-align: center;
   text-decoration: none;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
   border-radius: 0;
   text-shadow: 0 0 0;
   font-weight: 400; }
@@ -2363,7 +2346,6 @@ blockquote {
   padding: 2px 15px 1px 30px;
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */
-  -webkit-border-radius: 3px;
   border-radius: 3px; }
 
 .woocommerce .woocommerce-breadcrumb a,
@@ -2383,10 +2365,7 @@ blockquote {
   background-color: transparent;
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */
-  -webkit-border-radius: 0;
   border-radius: 0;
-  -webkit-box-shadow: 0 0 0;
-  -moz-box-shadow: 0 0 0;
   box-shadow: 0 0 0;
   border-top: 0;
   position: static; }
@@ -2502,8 +2481,6 @@ blockquote {
 .woocommerce div.product .woocommerce-tabs ul.tabs li.active:before,
 .woocommerce-page #content div.product .woocommerce-tabs ul.tabs li.active:before,
 .woocommerce-page div.product .woocommerce-tabs ul.tabs li.active:before {
-  -webkit-box-shadow: 0;
-  -moz-box-shadow: 0;
   box-shadow: 0; }
 
 .woocommerce #content div.product .woocommerce-tabs ul.tabs li.active:after,
@@ -2543,7 +2520,6 @@ blockquote {
 .woocommerce span.onsale, .woocommerce-page span.onsale {
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */
-  -webkit-border-radius: 50px;
   border-radius: 50px;
   padding: 10px 12px; }
 
@@ -2587,8 +2563,6 @@ blockquote {
 .woocommerce-page .footer-bottom,
 .woocommerce-page .woocommerce-breadcrumb {
   padding: 0 50%;
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
   box-sizing: content-box;
   margin: 0 -50%; }
 
@@ -2689,6 +2663,7 @@ blockquote {
 
 .widget_calendar .calendar_wrap {
   background-color: #2c3e50; }
+
 .widget_calendar table th, .widget_calendar table td {
   text-align: center;
   padding: 7px 5px;
@@ -2699,30 +2674,40 @@ blockquote {
     color: #fff; }
     .widget_calendar table th a:hover, .widget_calendar table td a:hover {
       color: #f15c22; }
+
 .widget_calendar table thead {
   background-color: #f15c22; }
   .widget_calendar table thead th {
     border: none;
     font-weight: 400; }
+
 .widget_calendar table tfoot {
   border: 0; }
+
 .widget_calendar table tbody tr, .widget_calendar table tbody th {
   background-color: #2c3e50;
   color: #fff;
   border-color: #fff; }
+
 .widget_calendar table tr {
   border-bottom: 1px solid #fff; }
+
 .widget_calendar table th {
   color: #fff;
   font-weight: 700; }
+
 .widget_calendar table td {
   color: #fff; }
+
 .widget_calendar table td#prev {
   text-align: left; }
+
 .widget_calendar table td#next {
   text-align: right; }
+
 .widget_calendar table tfoot td:first-child, .widget_calendar table tfoot tr, .widget_calendar table tfoot td {
   border: none; }
+
 .widget_calendar table caption {
   text-align: center;
   color: #fff;
@@ -2738,19 +2723,24 @@ blockquote {
   display: block;
   color: #c6c2ce;
   margin: 5px 0; }
+
 .widget-area .widget_rss span {
   color: #f15c22; }
+
 .widget-area .widget_rss cite {
   color: #757575; }
+
 .widget-area .widget_rss a {
   color: #2c3e50;
   font-family: "Poppins", sans-serif; }
   .widget-area .widget_rss a:hover {
     color: #f15c22; }
+
 .widget-area .widget_rss .widget-title .rsswidget {
   color: #2c3e50; }
   .widget-area .widget_rss .widget-title .rsswidget img {
     margin: 0; }
+
 .widget-area .widget_rss ul {
   padding-left: 0px !important; }
   .widget-area .widget_rss ul li {
@@ -2763,6 +2753,7 @@ blockquote {
       border-bottom: 0; }
     .widget-area .widget_rss ul li a {
       font-size: 16px; }
+
 .widget-area .rssSummary {
   font-size: .95em;
   padding-top: 5px; }
@@ -2835,18 +2826,22 @@ blockquote {
   clear: both;
   margin-left: 0;
   margin-right: 0; }
+
 #secondary .widget_magzen-featured-post-widget .eight:nth-of-type(2n) {
   margin-right: 0;
   margin-left: 0; }
+
 #secondary .widget_magzen-featured-post-widget .eight.columns {
   width: 100% !important; }
 
 .magazine-post-wrapper.magzen-horizontal-two .magazine-content {
   display: none; }
+
 .magazine-post-wrapper.magzen-horizontal-two h4.entry-title {
   margin: 0;
   font-size: 18px;
   font-size: 1.8rem; }
+
 .magazine-post-wrapper.magzen-horizontal-two .magazine-slider-top-meta {
   border: none;
   padding: 0;
@@ -2891,9 +2886,7 @@ blockquote {
     .site-footer .footer-widgets ul li {
       padding: 7px 7px 7px 0px;
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-      list-style: none;
-      font-size: 14px;
-      font-size: 1.4rem; }
+      list-style: none; }
       .site-footer .footer-widgets ul li li:last-child {
         border-bottom: 0;
         padding-bottom: 0; }
@@ -3007,7 +3000,6 @@ blockquote {
 @media only screen and (max-width: 960px) {
   .main-navigation ul ul li:hover > ul {
     left: 100%; }
-
   .top-nav .container .columns {
     width: 100%;
     text-align: center; }
@@ -3019,15 +3011,14 @@ blockquote {
   .top-nav .cart-right ul, .top-nav .cart-right {
     float: none;
     text-align: center; }
-
   .comment-form input[type=text],
   .comment-form input[type=email],
   .comment-form input[type=text] {
     width: 48%; } }
+
 @media only screen and (max-width: 768px) {
   .breadcrumb-left, .breadcrumb-right {
     text-align: center !important; }
-
   .breadcrumb .container .eight.columns, .branding .container .eight.columns {
     width: 100%;
     text-align: center; }
@@ -3042,36 +3033,28 @@ blockquote {
       display: inline-block; }
     .breadcrumb .top-right li:first-child, .branding .top-right li:first-child {
       margin-right: 10px; }
-
   .widget_calendar table th, .widget_calendar table td {
     padding: 7px 2px; }
-
   table td {
     padding: 7px 2px; }
-
   .top-nav {
     padding-top: 10px; }
-
   .site-branding {
     text-align: center; }
     .site-branding img {
       margin: 0 auto; }
-
   #secondary {
     padding-left: 0; }
-
   .copyright {
     padding-bottom: 0 !important;
     text-align: center; }
-
   .site-info .widget_nav_menu ul {
     text-align: center; }
-
   .site-info .left-sidebar {
     padding-bottom: 10px !important; }
-
   #secondary {
     left: 0 !important; } }
+
 @media only screen and (max-width: 700px) {
   #commentform .comment-form-author,
   #commentform .comment-form-email,
@@ -3079,16 +3062,13 @@ blockquote {
     width: 100%;
     float: none;
     margin-right: 0; }
-
   .comment-form input[type=text],
   .comment-form input[type=email],
   .comment-form input[type=text] {
     width: 100%; }
-
   .comment-form input[type=email] {
     margin-left: 0px !important;
     margin-right: 0px !important; }
-
   .nav-links .nav-previous,
   .nav-links .nav-next,
   .comment-navigation .nav-previous,
@@ -3097,14 +3077,12 @@ blockquote {
     float: none;
     margin: 0px;
     margin-bottom: 10px; }
-
   .post-navigation .nav-links a, .posts-navigation .nav-links a,
   .comment-navigation .nav-previous a,
   .comment-navigation .nav-next a {
     display: block;
     text-align: center; } }
+
 @media only screen and (max-width: 480px) {
   ol.comment-list ol.children {
     margin-left: 1em; } }
-
-/*# sourceMappingURL=style.css.map */

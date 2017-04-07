@@ -2,7 +2,7 @@
 /**
  * The sidebar containing the main widget area.
  *
- * @package Magzen
+ * @package MagZen
  */
 
 if ( ! is_dynamic_sidebar( ) ) {

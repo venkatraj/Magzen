@@ -154,9 +154,9 @@ function magzen_widgets_init() {
 	) );
 
 	register_sidebar( array(
-		'name'          => __( 'Magzen: Content Area', 'magzen' ),
+		'name'          => __( 'MagZen: Content Area', 'magzen' ),
 		'id'            => 'magzen-content-area', 
-		'description'   => __( 'Appears on Front Page and Magazine Page template only. You can use the Magzen widgets here.','magzen' ),
+		'description'   => __( 'Appears on Front Page and Magazine Page template only. You can use the MagZen widgets here.','magzen' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h4 class="widget-title">',
@@ -170,7 +170,7 @@ add_action( 'widgets_init', 'magzen_widgets_init' );
  */
 require get_template_directory() . '/inc/enqueue.php';
 /**
- * Magzen Widgets file
+ * MagZen Widgets file
  */
 require get_template_directory() . '/inc/widgets/widgets.php';
 
