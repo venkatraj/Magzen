@@ -5,8 +5,8 @@
  * @package MagZen
  */
 
- $breadcrumb = get_theme_mod( 'breadcrumb',true ); ?>    
-
+ $breadcrumb = get_theme_mod( 'breadcrumb',true );     
+if( !is_front_page() ): ?>
 	<div class="breadcrumb-wrapper"> 
 		<div class="container">
 			<div class="breadcrumb clearfix">
@@ -18,4 +18,5 @@
 				<?php endif; ?>
 			</div>
 		</div>
-	</div>
+	</div><?php 
+endif;

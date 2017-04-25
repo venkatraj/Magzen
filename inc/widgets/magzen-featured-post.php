@@ -44,7 +44,7 @@ class MagZen_Featured_Post_Widget extends WP_Widget {
 
         if( isset($post_model) && $post_model == 'latest' ) {
         	$magzen_args = array(
-        		'posts_per_page'        => $post_count,
+        		'posts_per_page'        => intval($post_count),
 	            'post_type'             => 'post',
 	            'post_status'            => 'publish',
 	            'ignore_sticky_posts'    => true,
@@ -52,12 +52,12 @@ class MagZen_Featured_Post_Widget extends WP_Widget {
         	);
         }else {
             $magzen_args = array(
-        		'posts_per_page'        => $post_count,
+        		'posts_per_page'        => intval($post_count),
 	            'post_type'             => 'post',
 	            'post_status'            => 'publish',
 	            'ignore_sticky_posts'    => true,
 			    'order'                  => 'DESC',
-	            'category__in'          => $post_cat
+	            'category__in'          => absint($post_cat)
         	);
         }
 

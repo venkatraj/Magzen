@@ -2,8 +2,8 @@
 Contributors: Webulous
 Tags:  featured-images, right-sidebar, sticky-post, translation-ready, custom-background,  custom-menu,  threaded-comments , blog, news
 Requires at least: 4.0
-Tested up to: 4.7.3
-Stable tag: 1.0.0
+Tested up to: 4.7.4
+Stable tag: 1.0.1
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -26,21 +26,27 @@ All available options can be used from Appearance->Customize
 
 == Changelog ==
 
-= 1.0 =
+= 1.0.1 =
+* Fix some issue
+
+= 1.0.0 =
 * Initial release
 
 == Upgrade Notice ==
 
-= 1.0.0 =
-* Initial Release
+= 1.0.1 =
+* Fix some issue
 
-
+ 
 == Resources ==
 * {_s}, GPLv3, http://underscores.me/
 * {Skeleton}, MIT, https://github.com/dhg/Skeleton#license
-* {Flexslider} © 2015 Woo Themes, GPLv2 ,https://github.com/woothemes/FlexSlider
+* {NewsTicker}, GNU General Public License v2.0 ,http://risq.github.io/jquery-advanced-news-ticker/
 * {FontAwesome} © Dave Gandy, SIL OFL 1.1 and MIT ,https://fortawesome.github.io/Font-Awesome
-* screenshot.png © 2015 Pixabay, CC0,
-https://pixabay.com/en/girl-music-pink-fashion-listen-1990347/
-https://pixabay.com/en/girl-looking-away-1995624/
-https://pixabay.com/en/above-adventure-aerial-air-amazing-736879/
+* Screenshot Images is licensed under CC0 Public Domain License.
+   * image © 2015 Pixabay, CC0 1.0 ,https://pixabay.com/en/girl-music-pink-fashion-listen-1990347/
+   * image © 2015 Pixabay, CC0 1.0 ,https://pixabay.com/en/girl-looking-away-1995624/
+   * image © 2015 Pixabay, CC0 1.0 ,https://pixabay.com/en/above-adventure-aerial-air-amazing-736879/
+
+
+

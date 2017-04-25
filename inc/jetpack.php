@@ -16,7 +16,7 @@
 function magzen_jetpack_setup() {
 	// Add theme support for Infinite Scroll.
 	add_theme_support( 'infinite-scroll', array(
-		'container' => 'main',
+		'container' => 'content',
 		'render'    => 'magzen_infinite_scroll_render',
 		'footer'    => 'page',
 	) );

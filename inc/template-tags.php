@@ -229,8 +229,7 @@ endif;
 			} elseif ( is_single() && !is_attachment() ) {
 				if ( get_post_type() != 'post' ) {
 					$post_type = get_post_type_object(get_post_type());
-					$slug = $post_type->rewrite;
-					printf($link, $homeLink . '/' . $slug['slug'] . '/', $post_type->labels->singular_name);
+					printf($link, get_post_type_archive_link(get_post_type()), $post_type->labels->singular_name);
 					if ($showCurrent == 1) echo $delimiter . $before . get_the_title() . $after;
 				} else {
 					$cat = get_the_category(); $cat = $cat[0];
@@ -315,8 +314,8 @@ if ( ! function_exists( 'magzen_related_posts' ) ) :
 			if($related_post_type) {
 				foreach($related_post_type as $tag) { $tag_arr .= $tag->slug . ','; }
 		        $args = array(
-		        	'tag' => $tag_arr,
-		        	'numberposts' => $relatedposts_per_page, /* you can change this to show more */
+		        	'tag' => esc_html($tag_arr),
+		        	'numberposts' => intval( $relatedposts_per_page ), /* you can change this to show more */
 		        	'post__not_in' => array($post->ID)
 		     	);
 		   }
@@ -328,9 +327,9 @@ if ( ! function_exists( 'magzen_related_posts' ) ) :
 				     $category_ids = $category->term_id; 
 				}  
 				$args = array(
-					'category__in' => $category_ids,
+					'category__in' => absint($category_ids),
 					'post__not_in' => array($post->ID),
-					'numberposts' => $relatedposts_per_page,
+					'numberposts' => intval( $relatedposts_per_page ),
 		        );
 		    }
 		}
@@ -349,7 +348,7 @@ if ( ! function_exists( 'magzen_related_posts' ) ) :
 		}else{
 			echo '<li class="no_related_post">' . __( 'No Related Posts Yet!', 'magzen' ) . '</li>';
 		}
-		wp_reset_query();
+		wp_reset_postdata();
 		
 		echo '</ul>';
 	}
@@ -384,7 +383,7 @@ function magzen_entry_top_meta($date = 'date',$author = 'author', $comment = 'co
 	    // Author  
 	        if ( 'author' == $author ) {    
 				printf(
-					_x( '%s', 'post author', 'magzen' ),
+					_x( ' %s', 'post author', 'magzen' ),
 					'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '"><i class="fa fa-user"></i> ' . esc_html( get_the_author() ) . '</a></span>'
 				);	
 		    }
@@ -432,11 +431,11 @@ if(! function_exists('magzen_header_breaking_news') ) {
 				 <div class="recent-news-wrapper">
 				    <div class="breaknews-wrapper">
 						<span class="bn-title mag-divider">
-						    <?php $breaking_news_title = get_theme_mod('header_breaking_news_title','BREAKING NEWS');
+						    <?php $breaking_news_title = esc_html(get_theme_mod('header_breaking_news_title','BREAKING NEWS') );
 						        if( $breaking_news_title ) {
-						    		printf(__('%1$s','magzen'), $breaking_news_title ); 
+						    		printf(__(' %1$s','magzen'), $breaking_news_title ); 
 						    	}else{
-						    		printf(__('%1$s','magzen'), 'BREAKING NEWS' ); 
+						    		printf(__(' %1$s','magzen'), 'BREAKING NEWS' ); 
 						    	} ?></span>
 							<ul class="bn-list newsticker"><?php 
 						        $recent_posts = wp_get_recent_posts();
@@ -454,4 +453,29 @@ if(! function_exists('magzen_header_breaking_news') ) {
 	       </div>
 	    </div><?php     
 	}
+}
+
+
+/* Admin notice */
+/* Activation notice */
+add_action( 'load-themes.php',  'magzen_one_activation_admin_notice'  );
+
+if( !function_exists('magzen_one_activation_admin_notice') ) {   
+	function magzen_one_activation_admin_notice() {
+        global $pagenow;
+	    if ( is_admin() && ('themes.php' == $pagenow) && isset( $_GET['activated'] ) ) {
+	        add_action( 'admin_notices', 'magzen_admin_notice' );
+	    } 
+	} 
+}  
+
+/**
+ * Add admin notice when active theme
+ *
+ * @return bool|null
+ */
+function magzen_admin_notice() { ?>
+    <div class="updated notice notice-success notice-alt is-dismissible">
+        <p><?php printf( __( 'Welcome! Thank you for choosing %1$s! To fully take advantage of the best our theme can offer please make sure you visit our <a href="%2$s">Welcome page</a>', 'magzen' ), 'MagZen', admin_url( 'themes.php?page=magzen_upgrade' )  ); ?></p>
+    </div><?php
 }

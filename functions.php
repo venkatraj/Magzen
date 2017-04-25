@@ -53,7 +53,6 @@ function magzen_setup() {
 	 */
 	add_theme_support( 'html5', array(
 		'search-form',
-		'comment-form',
 		'comment-list',
 		'gallery',
 		'caption',
@@ -83,6 +82,9 @@ function magzen_setup() {
 	add_image_size( 'magzen-vertical-two', 380,350,  true );
 	add_image_size( 'magzen-horizontal-one', 200,200, true );
 	add_image_size( 'magzen-horizontal-two', 200,200, true ); 
+
+	/* Woocommerce support */    
+    add_theme_support('woocommerce');
 
 }
 endif;
@@ -206,7 +208,6 @@ require get_template_directory() . '/customizer/theme-options.php';
 
 /* Woocommerce support */    
 
-add_theme_support('woocommerce');
 
 remove_action('woocommerce_before_main_content', 'woocommerce_output_content_wrapper');
 add_action('woocommerce_before_main_content', 'magzen_output_content_wrapper');

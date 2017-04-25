@@ -16,14 +16,16 @@
 
 	<div class="entry-content">
 		<?php
-			the_content();
-
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'magzen' ),
-				'after'  => '</div>',
-			) );
-		?>
+			the_content(); ?>
 	</div><!-- .entry-content -->
+	
+    <?php
+		wp_link_pages( array(
+			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'magzen' ),
+			'after'  => '</div>',
+		) );
+	?>
+
 
 	<?php if ( get_edit_post_link() ) : ?>
 		<footer class="entry-footer">

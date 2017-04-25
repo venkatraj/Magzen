@@ -33,7 +33,7 @@ get_header(); ?>
 						if ( current_user_can( 'edit_theme_options' ) ) : ?>
 
 							<p class="empty-widget-area">
-								<?php _e( "Please go to <strong>Appearance &#8594; Widgets and add widget to the 'MagZen: content area'.</strong> You can use the <strong>MagZen widget</strong> to set up magazine page.", 'magzen' ); ?>
+								<?php _e( "Please go to <strong>Customize  &#8594; Widgets &#8594; 'MagZen: Content Area'.</strong> You can use the <strong>MagZen widget</strong> to set up magazine page.", 'magzen' ); ?>
 							</p> 
 							
 						<?php endif;

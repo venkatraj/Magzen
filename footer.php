@@ -24,11 +24,11 @@
 			<div class="container">
 				<div class="copyright sixteen columns">   
 				<?php if( get_theme_mod('copyright') ) : ?>
-							<p><?php echo do_shortcode(get_theme_mod('copyright')); ?></p>
+							<p><?php echo magzen_footer_copyright(get_theme_mod('copyright')); ?></p>
 						<?php else : 
-								printf( __('<p>Powered by <a href="%1$s">WordPress</a>', 'magzen'), esc_url( 'http://wordpress.org/') );
+								printf( __('<p>Powered by <a href="%1$s" target="_blank">WordPress</a>', 'magzen'), esc_url( 'http://wordpress.org/') );
 								printf( '<span class="sep"> .</span>' );
-								printf( __( 'Theme: MagZen by <a href="%1$s" rel="designer">Webulous Themes</a></p>', 'magzen' ), esc_url('http://www.webulousthemes.com/') );
+								printf( __( 'Theme: MagZen by <a href="%1$s" target="_blank" rel="designer">Webulous Themes</a></p>', 'magzen' ), esc_url('http://www.webulousthemes.com/') );
 					 endif;  ?>
 				</div>
 				

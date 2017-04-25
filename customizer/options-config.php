@@ -101,7 +101,7 @@ FEATURES;
 function magzen_theme_page() {
 	add_theme_page( 
 		__( 'Upgrade To MagZenPro','magzen'),
-		__( 'Theme Upgrade','magzen'),
+		__( 'MagZen Theme','magzen'),
 		'edit_theme_options',
 		'magzen_upgrade',
 		'magzen_display_upgrade'
@@ -112,12 +112,75 @@ add_action('admin_menu','magzen_theme_page');
 
 
 function magzen_display_upgrade() {
-	global $magzen_why_upgrade;
-	echo '<div class="wrap">';
-	echo $magzen_why_upgrade;
-	echo '</div>';
-}
 
+    $theme_data = wp_get_theme('magzen');
+    // Check for current viewing tab
+    $tab = null;
+    if ( isset( $_GET['tab'] ) ) {
+        $tab = $_GET['tab'];
+    } else {
+        $tab = null;
+    }
+
+    $current_action_link =  admin_url( 'themes.php?page=magzen_upgrade&tab=pro_features' ); ?>
+
+    <div class="magzen-wrapper about-wrap">
+        <h1><?php printf(esc_html__('Welcome to MagZen - Version %1s', 'magzen'), $theme_data->Version ); ?></h1>
+        <div class="about-text"><?php esc_html_e( 'MagZen is a perfect responsive magazine style WordPress theme. Suitable for news, newspaper, magazine, publishing, business and any kind of sites. Core feature of WordPress  Has 3 Footer Widget Areas.', 'magzen' ); ?></div>
+        <p class="upgrade-btn"><a class="upgrade" href="https://www.webulousthemes.com/magzen/" target="_blank"><i class="fa fa-upload"></i><?php esc_html_e( 'MagZen', 'magzen' ); ?></a></p>
+
+	   <h2 class="nav-tab-wrapper">
+	        <a href="?page=magzen_upgrade" class="nav-tab<?php echo is_null($tab) ? ' nav-tab-active' : null; ?>"><?php esc_html_e( 'MagZen', 'magzen' ) ?></a>
+	        <a href="?page=magzen_upgrade&tab=pro_features" class="nav-tab<?php echo $tab == 'pro_features' ? ' nav-tab-active' : null; ?>"><?php esc_html_e( 'Pro Fearures', 'magzen' );  ?></a>
+	        <?php do_action( 'magzen_admin_more_tabs' ); ?>
+	    </h2>  
+
+
+        <?php if ( is_null( $tab ) ) { ?>
+            <div class="theme_info info-tab-content">
+                <div class="theme_info_column clearfix">
+                    <div class="theme_info_left">
+                        <div class="theme_link">
+                            <h3><?php esc_html_e( 'Theme Customizer', 'magzen' ); ?></h3>
+                            <p class="about"><?php printf(esc_html__('%s supports the Theme Customizer for all theme settings. Click "Customize" to start customize your site.', 'magzen'), $theme_data->Name); ?></p>
+                            <p>
+                                <a href="<?php echo admin_url('customize.php'); ?>" class="button button-primary"><?php esc_html_e('Start Customize', 'magzen'); ?></a>
+                            </p>
+                        </div>
+                        <div class="theme_link">
+                            <h3><?php esc_html_e( 'Theme Documentation', 'magzen' ); ?></h3>
+                            <p class="about"><?php printf(esc_html__('Need any help to setup and configure %s? Please have a look at our documentations instructions.', 'magzen'), $theme_data->Name); ?></p>
+                            <p>
+                                <a href="<?php echo esc_url( 'https://www.webulousthemes.com/magzen-free/' ); ?>" target="_blank" class="button button-secondary"><?php esc_html_e('magzen Documentation', 'magzen'); ?></a>
+                            </p>
+                            <?php do_action( 'magzen_dashboard_theme_links' ); ?>
+                        </div>
+                        <div class="theme_link">
+                            <h3><?php esc_html_e( 'Having Trouble, Need Support?', 'magzen' ); ?></h3>
+                            <p class="about"><?php printf(esc_html__('Support for %s WordPress theme is conducted through Webulous free support ticket system.', 'magzen'), $theme_data->Name); ?></p>
+                            <p>
+                                <a href="<?php echo esc_url('https://www.webulousthemes.com/free-support-request/' ); ?>" target="_blank" class="button button-secondary"><?php echo sprintf( esc_html('Create a support ticket', 'magzen'), $theme_data->Name); ?></a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="theme_info_right">
+                        <img src="<?php echo get_template_directory_uri(); ?>/screenshot.png" alt="Theme Screenshot" />
+                    </div>
+                </div>
+            </div>
+        <?php } ?>
+
+        <?php if ( $tab == 'pro_features' ) { ?>
+            <div class="pro-features-tab info-tab-content"><?php
+			    global $magzen_why_upgrade; ?>
+				<div class="wrap clearfix">
+				    <?php echo $magzen_why_upgrade; ?>
+				</div><?php 
+		} ?>
+    </div><?php
+}
+   
 	$options = array(
 		'capability' => 10,
 		'type' => 'theme_mod',
@@ -153,6 +216,7 @@ function magzen_display_upgrade() {
                                 'label' => __('Enable Numeric Page Navigation', 'magzen'),
                                 'description' => __('Check to display numeric page navigation, instead of Previous Posts / Next Posts links.', 'magzen'),
                                 'default' => 1,  
+                                'sanitize_callback' => 'magzen_boolean',
                             ),
 						),
 					),
@@ -253,7 +317,8 @@ function magzen_display_upgrade() {
 							'enable_magazine_default_content' => array(
                                 'type' => 'checkbox',
                                 'label' => __('Enable Magazine Page Default Content', 'magzen'),
-                                'default' => 0,   
+                                'default' => 0, 
+                                'sanitize_callback' => 'magzen_boolean'  
                             ), 
 						),
 					),
@@ -265,13 +330,15 @@ function magzen_display_upgrade() {
                                 'type' => 'checkbox',
                                 'label' => __(' Enable Author Bio Box below single post', 'magzen'),
                                 'description' => __('Show Author information box below single post.', 'magzen'),
-                                'default' => 0,  
+                                'default' => 0, 
+                                'sanitize_callback' => 'magzen_boolean' 
                             ),
                             'related_posts' => array(
                                 'type' => 'checkbox',
                                 'label' => __('Show Related posts', 'magzen'),
                                 'description' => __('Show related posts.', 'magzen'),
                                 'default' => 0,  
+                                'sanitize_callback' => 'magzen_boolean'
                             ),
                             'related_posts_hierarchy' => array(
                                 'type' => 'radio',
@@ -280,13 +347,15 @@ function magzen_display_upgrade() {
                                     '1' => 'Related Posts By Tags',
                                     '2' => 'Related Posts By Categories',      
                                 ),
-                               'default' => '1',   
+                               'default' => '1', 
+                               'sanitize_callback' => 'absint'  
                             ),
                             'comments' => array(
                                 'type' => 'checkbox',
                                 'label' => __(' Show Comments', 'magzen'),
                                 'description' => __('Show Comments', 'magzen'),
-                                'default' => 1,  
+                                'default' => 1, 
+                                'sanitize_callback' => 'magzen_boolean' 
                             ),
 						),
 					),
@@ -321,7 +390,8 @@ if ( ! function_exists( 'magzen_footer_copyright' ) ) {
         $allowed_tags = array(    
                             'a' => array(
                             	'href' => array(),
-								'title' => array()
+								'title' => array(),
+								'target' => array(),
                             ),
 							'img' => array(
 								'src' => array(),  

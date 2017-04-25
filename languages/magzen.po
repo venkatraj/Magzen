@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MagZen\n"
-"POT-Creation-Date: 2017-04-06 10:08+0530\n"
-"PO-Revision-Date: 2017-04-07 11:34+0530\n"
+"POT-Creation-Date: 2017-04-25 12:33+0530\n"
+"PO-Revision-Date: 2017-04-25 12:33+0530\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: English\n"
@@ -22,37 +22,38 @@ msgstr ""
 
 #: ../footer.php:29
 #, php-format
-msgid "<p>Powered by <a href=\"%1$s\">WordPress</a>"
+msgid "<p>Powered by <a href=\"%1$s\" target=\"_blank\">WordPress</a>"
 msgstr ""
 
 #: ../footer.php:31
 #, php-format
 msgid ""
-"Theme: MagZen by <a href=\"%1$s\" rel=\"designer\">Webulous Themes</a></p>"
+"Theme: MagZen by <a href=\"%1$s\" target=\"_blank\" rel=\"designer"
+"\">Webulous Themes</a></p>"
 msgstr ""
 
-#: ../functions.php:119
+#: ../functions.php:121
 msgid "Top Left"
 msgstr ""
 
-#: ../functions.php:128
+#: ../functions.php:130
 msgid "Top Right"
 msgstr ""
 
-#: ../functions.php:137
+#: ../functions.php:139
 msgid "Header Right"
 msgstr ""
 
-#: ../functions.php:147
+#: ../functions.php:149
 #, php-format
 msgid "Footer %d"
 msgstr ""
 
-#: ../functions.php:157
+#: ../functions.php:159
 msgid "MagZen: Content Area"
 msgstr ""
 
-#: ../functions.php:159
+#: ../functions.php:161
 msgid ""
 "Appears on Front Page and Magazine Page template only. You can use the "
 "MagZen widgets here."
@@ -60,12 +61,12 @@ msgstr ""
 
 #: ../template-magazine.php:36
 msgid ""
-"Please go to <strong>Appearance &#8594; Widgets and add widget to the "
-"'MagZen: content area'.</strong> You can use the <strong>MagZen widget</"
-"strong> to set up magazine page."
+"Please go to <strong>Customize  &#8594; Widgets &#8594; 'MagZen: Content "
+"Area'.</strong> You can use the <strong>MagZen widget</strong> to set up "
+"magazine page."
 msgstr ""
 
-#: ../inc/enqueue.php:39
+#: ../inc/enqueue.php:37
 msgctxt "Font: on or off"
 msgid "on"
 msgstr ""
@@ -89,7 +90,7 @@ msgctxt "Next post link"
 msgid "%title&nbsp;"
 msgstr ""
 
-#: ../inc/template-tags.php:160 ../customizer/options-config.php:235
+#: ../inc/template-tags.php:160 ../customizer/options-config.php:285
 msgid "Home"
 msgstr ""
 
@@ -117,60 +118,60 @@ msgstr ""
 msgid "Error 404"
 msgstr ""
 
-#: ../inc/template-tags.php:291
+#: ../inc/template-tags.php:290
 msgid "Page"
 msgstr ""
 
-#: ../inc/template-tags.php:347 ../inc/template-tags.php:350
+#: ../inc/template-tags.php:346 ../inc/template-tags.php:349
 msgid "No Related Posts Yet!"
 msgstr ""
 
-#: ../inc/template-tags.php:398
-msgid "First"
-msgstr ""
-
-#: ../inc/template-tags.php:415
-msgid "Last"
-msgstr ""
-
-#: ../inc/template-tags.php:427 ../template-parts/content.php:38
+#: ../inc/template-tags.php:362 ../template-parts/content.php:38
 msgid "Read More"
 msgstr ""
 
-#: ../inc/template-tags.php:451
+#: ../inc/template-tags.php:386
 #, php-format
 msgctxt "post author"
-msgid "%s"
+msgid " %s"
 msgstr ""
 
-#: ../inc/template-tags.php:459
+#: ../inc/template-tags.php:394
 msgid "Leave a comment"
 msgstr ""
 
-#: ../inc/template-tags.php:459
+#: ../inc/template-tags.php:394
 msgid "1 Comment"
 msgstr ""
 
-#: ../inc/template-tags.php:459
+#: ../inc/template-tags.php:394
 msgid "% Comments"
 msgstr ""
 
-#: ../inc/template-tags.php:466 ../inc/template-tags.php:473
+#: ../inc/template-tags.php:401 ../inc/template-tags.php:408
 msgid ", "
 msgstr ""
 
-#: ../inc/template-tags.php:468 ../inc/template-tags.php:475
+#: ../inc/template-tags.php:403 ../inc/template-tags.php:410
 #, php-format
 msgid "%1$s "
 msgstr ""
 
-#: ../inc/template-tags.php:481
+#: ../inc/template-tags.php:416
 msgid "Edit"
 msgstr ""
 
-#: ../inc/template-tags.php:501 ../inc/template-tags.php:503
+#: ../inc/template-tags.php:436 ../inc/template-tags.php:438
 #, php-format
 msgid "%1$s"
+msgstr ""
+
+#: ../inc/template-tags.php:479
+#, php-format
+msgid ""
+"Welcome! Thank you for choosing %1$s! To fully take advantage of the best "
+"our theme can offer please make sure you visit our <a href=\"%2$s\">Welcome "
+"page</a>"
 msgstr ""
 
 #: ../inc/widgets/magzen-featured-post.php:20
@@ -227,10 +228,6 @@ msgid ""
 "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
 
-#: ../template-parts/content.php:45
-msgid "Pages: "
-msgstr ""
-
 #: ../template-parts/breadcrumb.php:15
 msgid "You are here"
 msgstr ""
@@ -241,8 +238,8 @@ msgstr ""
 
 #: ../customizer/options-config.php:3
 msgid ""
-"MagZen Pro supports Page Builder. All our shortcodes can be used as widgets "
-"too. You can drag and drop our widgets with page builder visual editor."
+"MagZen Pro supports Page Builder.  You can drag and drop our MagZenPro "
+"widgets with page builder visual editor."
 msgstr ""
 
 #: ../customizer/options-config.php:4
@@ -251,7 +248,7 @@ msgstr ""
 
 #: ../customizer/options-config.php:5
 msgid ""
-"MagZen Pro offers many different page layouts so you can quickly and easily "
+"MagZenPro offers many different page layouts so you can quickly and easily "
 "create your pages with various layout without any hassle!"
 msgstr ""
 
@@ -266,270 +263,241 @@ msgid ""
 msgstr ""
 
 #: ../customizer/options-config.php:8
-msgid "Shortcode Builder"
+msgid "Magazine Style Design"
 msgstr ""
 
 #: ../customizer/options-config.php:9
 msgid ""
-"With our shortcode builder and lots of shortcodes, you can easily create "
-"nested shortcodes and build custom pages!"
+"MagZenPro comes with beautiful and well thought magazine style design that "
+"will make your blog or magazine site stand out and gain more visitors."
 msgstr ""
 
 #: ../customizer/options-config.php:10
-msgid "Multi Portfolio"
-msgstr ""
-
-#: ../customizer/options-config.php:11
-msgid ""
-"7 portfolio layouts with Isotope filtering, 3 blog layouts and multiple "
-"other alternate layouts for interior pages!"
-msgstr ""
-
-#: ../customizer/options-config.php:12
 msgid "Typography"
 msgstr ""
 
-#: ../customizer/options-config.php:13
+#: ../customizer/options-config.php:11
 msgid ""
 "MagZen Pro loves typography, you can choose from over 500+ Google Fonts and "
 "Standard Fonts to customize your site!"
 msgstr ""
 
-#: ../customizer/options-config.php:14
+#: ../customizer/options-config.php:12
 msgid "Awesome Sliders"
 msgstr ""
 
-#: ../customizer/options-config.php:15
+#: ../customizer/options-config.php:13
 msgid ""
 "MagZen Pro includes two types of slider. You can use both Flex and Elastic "
 "sliders anywhere in your site."
 msgstr ""
 
-#: ../customizer/options-config.php:16
+#: ../customizer/options-config.php:14
 msgid "Woo Commerce"
 msgstr ""
 
-#: ../customizer/options-config.php:17
+#: ../customizer/options-config.php:15
 msgid ""
 "MagZen Pro has full design/code integration for WooCommerce, your shop will "
-"look as good as the rest of your site!"
+"look as good as the rest of your site! and <strong>Lot More Options are "
+"available in MagZenPro.</strong>"
 msgstr ""
 
-#: ../customizer/options-config.php:18
+#: ../customizer/options-config.php:16
 msgid "Custom Widget"
 msgstr ""
 
-#: ../customizer/options-config.php:19
+#: ../customizer/options-config.php:17
 msgid ""
 "We offer many custom widgets that are stylized and ready for use. Simply "
 "drag &amp; drop into place to activate!"
 msgstr ""
 
-#: ../customizer/options-config.php:20
+#: ../customizer/options-config.php:18
 msgid "Advanced Admin"
 msgstr ""
 
-#: ../customizer/options-config.php:21
+#: ../customizer/options-config.php:19
 msgid ""
 " you can customize any part of your site quickly and easily using customize "
 "options!"
 msgstr ""
 
-#: ../customizer/options-config.php:22
+#: ../customizer/options-config.php:20
 msgid "Font Awesome"
 msgstr ""
 
-#: ../customizer/options-config.php:23
+#: ../customizer/options-config.php:21
 msgid ""
 "Font Awesome icons are fully integrated into the theme. Use them anywhere in "
 "your site in 6 different sizes!"
 msgstr ""
 
-#: ../customizer/options-config.php:24
+#: ../customizer/options-config.php:22
 msgid "Responsive Layout"
 msgstr ""
 
-#: ../customizer/options-config.php:25
+#: ../customizer/options-config.php:23
 msgid ""
 "MagZen Pro is fully responsive and can adapt to any screen size. Resize your "
 "browser window to view it!"
 msgstr ""
 
-#: ../customizer/options-config.php:26
-msgid "Testimonials"
-msgstr ""
-
-#: ../customizer/options-config.php:27
-msgid ""
-"With our testimonial post type, shortcode and widget, Displaying "
-"testimonials is a breeze."
-msgstr ""
-
-#: ../customizer/options-config.php:28
+#: ../customizer/options-config.php:24
 msgid "Social Media"
 msgstr ""
 
-#: ../customizer/options-config.php:29
+#: ../customizer/options-config.php:25
 msgid ""
 "Want your users to stay in touch? No problem, magzen Pro has Social Media "
 "icons all throughout the theme!"
 msgstr ""
 
-#: ../customizer/options-config.php:30
-msgid "Google Map"
-msgstr ""
-
-#: ../customizer/options-config.php:31
-msgid ""
-"MagZen Pro includes Goole Map as shortcode and widget. So, you can use it "
-"anywhere in your site!"
-msgstr ""
-
-#: ../customizer/options-config.php:32
+#: ../customizer/options-config.php:26
 msgid "View Demo"
 msgstr ""
 
-#: ../customizer/options-config.php:33
+#: ../customizer/options-config.php:27
 msgid "Upgrade To Pro"
 msgstr ""
 
-#: ../customizer/options-config.php:117
-msgid "Upgrade To magzen Pro"
+#: ../customizer/options-config.php:103
+msgid "Upgrade To MagZenPro"
 msgstr ""
 
-#: ../customizer/options-config.php:118
-msgid "Theme Upgrade"
+#: ../customizer/options-config.php:104
+msgid "MagZen Theme"
 msgstr ""
 
-#: ../customizer/options-config.php:141 ../customizer/options-config.php:142
+#: ../customizer/options-config.php:190 ../customizer/options-config.php:191
 msgid "Theme Options"
 msgstr ""
 
-#: ../customizer/options-config.php:145
+#: ../customizer/options-config.php:194
 msgid "General"
 msgstr ""
 
-#: ../customizer/options-config.php:146
+#: ../customizer/options-config.php:195
 msgid "General settings that affects overall site"
 msgstr ""
 
-#: ../customizer/options-config.php:150
+#: ../customizer/options-config.php:199
 msgid "Enable Breadcrumb"
 msgstr ""
 
-#: ../customizer/options-config.php:156
+#: ../customizer/options-config.php:205
 msgid "Select Breadcrumb Character"
 msgstr ""
 
-#: ../customizer/options-config.php:167
+#: ../customizer/options-config.php:216
 msgid "Enable Numeric Page Navigation"
 msgstr ""
 
-#: ../customizer/options-config.php:168
+#: ../customizer/options-config.php:217
 msgid ""
 "Check to display numeric page navigation, instead of Previous Posts / Next "
 "Posts links."
 msgstr ""
 
-#: ../customizer/options-config.php:174
+#: ../customizer/options-config.php:224
 msgid "Header"
 msgstr ""
 
-#: ../customizer/options-config.php:175
+#: ../customizer/options-config.php:225
 msgid "Header options"
 msgstr ""
 
-#: ../customizer/options-config.php:179
+#: ../customizer/options-config.php:229
 msgid "Logo as Title"
 msgstr ""
 
-#: ../customizer/options-config.php:185
+#: ../customizer/options-config.php:235
 msgid "Show site Tagline"
 msgstr ""
 
-#: ../customizer/options-config.php:191
+#: ../customizer/options-config.php:241
 msgid "Show Date in Header"
 msgstr ""
 
-#: ../customizer/options-config.php:197
+#: ../customizer/options-config.php:247
 msgid "Show Search box in Navigation"
 msgstr ""
 
-#: ../customizer/options-config.php:203
+#: ../customizer/options-config.php:253
 msgid "Enable Breaking News"
 msgstr ""
 
-#: ../customizer/options-config.php:209
+#: ../customizer/options-config.php:259
 msgid "Breaking News Title"
 msgstr ""
 
-#: ../customizer/options-config.php:210
+#: ../customizer/options-config.php:260
 msgid "BREAKING NEWS"
 msgstr ""
 
-#: ../customizer/options-config.php:217
+#: ../customizer/options-config.php:267
 msgid "Footer"
 msgstr ""
 
-#: ../customizer/options-config.php:218
+#: ../customizer/options-config.php:268
 msgid "Footer related options"
 msgstr ""
 
-#: ../customizer/options-config.php:222
+#: ../customizer/options-config.php:272
 msgid "Footer Widget Area"
 msgstr ""
 
-#: ../customizer/options-config.php:228
+#: ../customizer/options-config.php:278
 msgid "Footer Copyright Text (Validated that it's HTML Allowed)"
 msgstr ""
 
-#: ../customizer/options-config.php:229
+#: ../customizer/options-config.php:279
 msgid "HTML Allowed. <b>This field is even HTML validated! </b>"
 msgstr ""
 
-#: ../customizer/options-config.php:236
+#: ../customizer/options-config.php:286
 msgid ""
 "Please go to Appearance &#8594; Widgets and add widget to the \"Magazine Page"
 "\" widget area. You can use the MagZen : Magazine Posts Boxed widgets to set "
 "up magazine page."
 msgstr ""
 
-#: ../customizer/options-config.php:269
+#: ../customizer/options-config.php:319
 msgid "Enable Magazine Page Default Content"
 msgstr ""
 
-#: ../customizer/options-config.php:275
+#: ../customizer/options-config.php:326
 msgid "Blog"
 msgstr ""
 
-#: ../customizer/options-config.php:276
+#: ../customizer/options-config.php:327
 msgid "Blog Related Posts options"
 msgstr ""
 
-#: ../customizer/options-config.php:280
+#: ../customizer/options-config.php:331
 msgid " Enable Author Bio Box below single post"
 msgstr ""
 
-#: ../customizer/options-config.php:281
+#: ../customizer/options-config.php:332
 msgid "Show Author information box below single post."
 msgstr ""
 
-#: ../customizer/options-config.php:286
+#: ../customizer/options-config.php:338
 msgid "Show Related posts"
 msgstr ""
 
-#: ../customizer/options-config.php:287
+#: ../customizer/options-config.php:339
 msgid "Show related posts."
 msgstr ""
 
-#: ../customizer/options-config.php:292
+#: ../customizer/options-config.php:345
 msgid "Related Posts Must Be Shown As:"
 msgstr ""
 
-#: ../customizer/options-config.php:301
+#: ../customizer/options-config.php:355
 msgid " Show Comments"
 msgstr ""
 
-#: ../customizer/options-config.php:302
+#: ../customizer/options-config.php:356
 msgid "Show Comments"
 msgstr ""

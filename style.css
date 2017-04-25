@@ -4,7 +4,7 @@ Theme URI: http://www.webulousthemes.com/magzen/
 Author: N. Venkat Raj
 Author URI: http://www.webulousthemes.com/
 Description:  MagZen is a perfect responsive magazine style WordPress theme. Suitable for news, newspaper, magazine, publishing, business and any kind of sites. It uses skeleton framework for grids which keeps minimal css. Stylesheet is generated using SASS and so stays DRY. Core feature of WordPress  Has 3 Footer Widget Areas.
-Version: 1.0.0
+Version: 1.0.1  
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: magzen
@@ -1710,7 +1710,7 @@ ol.comment-list .comment {
     .page-links a:hover {
       color: #c6c2ce; }
 
-blockquote {
+blockquote, q {
   position: relative;
   margin: 0;
   display: inline-block;
@@ -1721,7 +1721,7 @@ blockquote {
   font-family: "Poppins", sans-serif;
   padding: 1% 10px 1% 40px;
   border-radius: 3px; }
-  blockquote:before {
+  blockquote:before, q:before {
     position: absolute;
     content: "\f10d";
     font-size: 25px;
@@ -1730,22 +1730,22 @@ blockquote {
     left: 20px;
     top: calc(1% + 25px);
     color: #757575; }
-  blockquote p {
+  blockquote p, q p {
     margin-bottom: 0;
     font-size: 20px;
     font-size: 2rem;
     padding: 20px;
     color: #757575;
     position: relative; }
-    blockquote p cite {
+    blockquote p cite, q p cite {
       font-style: normal;
       text-transform: uppercase;
       color: #fff; }
-    blockquote p a, blockquote p a:visited {
+    blockquote p a, blockquote p a:visited, q p a, q p a:visited {
       color: #fff;
       font-size: 14px;
       font-size: 1.4rem; }
-    blockquote p a:hover {
+    blockquote p a:hover, q p a:hover {
       color: #757575; }
 
 .related-posts {
