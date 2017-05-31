@@ -48,13 +48,13 @@ gulp.task('clean', function() {
 
 // Default task
 gulp.task('default',['clean'] , function() {
-  gulp.start('styles', 'scripts', 'images');
+  gulp.start('styles', 'images');
 });   
 
 
 //watch task
 gulp.task('watch',function(){  
-   gulp.watch('dist/js/*.js',['scripts']);
+ //  gulp.watch('dist/js/*.js',['scripts']);
    gulp.watch('sass/**/*.scss',['styles']);    
    gulp.watch('dist/images/**/*.+(png|jpg|jpeg|gif|svg)',['images']);
 });

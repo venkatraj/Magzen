@@ -1,1 +1,18 @@
-!function(e){e(function(){e(".flexslider").flexslider()}),e(".newsticker").newsTicker({row_height:35,max_rows:1,speed:500,direction:"down",duration:1e3,autostart:1,pauseOnHover:1})}(jQuery);
+(function($){
+
+	$(function(){
+		$('.flexslider').flexslider();   
+	});
+
+	$('.newsticker').newsTicker({
+      row_height: 35,
+      max_rows: 1,
+      speed: 500,
+      direction: 'down',
+      duration: 1000,
+      autostart: 1,
+      pauseOnHover: 1
+   }); 
+
+
+})(jQuery);

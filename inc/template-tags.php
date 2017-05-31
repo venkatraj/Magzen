@@ -6,7 +6,7 @@
  *
  * @package magzen
  */
-
+ 
 if ( ! function_exists( 'magzen_posted_on' ) ) :
 /**
  * Prints HTML with meta information for the current post-date/time and author.
@@ -195,7 +195,7 @@ endif;
 
 		if (is_home() || is_front_page()) {
 
-			if ($showOnHome == 1) echo '<div id="crumbs"><a href="' . $homeLink . '">' . $text['home'] . '</a></div>';
+			if ($showOnHome == 1) echo '<div id="crumbs"><a href="' . esc_url($homeLink) . '">' . $text['home'] . '</a></div>';
 
 		} else {
 
@@ -359,7 +359,7 @@ endif;
 add_action( 'the_content_more_link', 'magzen_add_more_link_class', 10, 2 );
 if ( ! function_exists( 'magzen_add_more_link_class' ) ) :
 	function magzen_add_more_link_class($link, $text ) {
-		return '<p class="portfolio-readmore"><a class="btn btn-mini more-link" href="'. get_permalink() .'">'.__('Read More','magzen').'</a></p>';
+		return '<p class="portfolio-readmore"><a class="btn btn-mini more-link" href="'. esc_url(get_permalink()) .'">'.__('Read More','magzen').'</a></p>';
 	}
 endif;
 
@@ -475,7 +475,8 @@ if( !function_exists('magzen_one_activation_admin_notice') ) {
  * @return bool|null
  */
 function magzen_admin_notice() { ?>
-    <div class="updated notice notice-success notice-alt is-dismissible">
+    <div class="updated notice notice-alt notice-success is-dismissible"> 
         <p><?php printf( __( 'Welcome! Thank you for choosing %1$s! To fully take advantage of the best our theme can offer please make sure you visit our <a href="%2$s">Welcome page</a>', 'magzen' ), 'MagZen', admin_url( 'themes.php?page=magzen_upgrade' )  ); ?></p>
+        <p><a href="<?php echo esc_url( admin_url( 'themes.php?page=magzen_upgrade' ) ); ?>" class="button" style="text-decoration: none;"><?php _e( 'Get started with MagZen', 'magzen' ); ?></a></p>
     </div><?php
 }

@@ -42,7 +42,6 @@ function magzen_theme_font_url($font) {
 }
 
 function magzen_admin_enqueue_scripts( $hook ) {  
-	if( strpos($hook, 'magzen_upgrade') ) {
 		wp_enqueue_style( 
 			'font-awesome', 
 			get_template_directory_uri() . '/css/font-awesome.min.css', 
@@ -57,6 +56,5 @@ function magzen_admin_enqueue_scripts( $hook ) {
 			'1.0.0', 
 			'all' 
 		);
-	}
 }
 add_action( 'admin_enqueue_scripts', 'magzen_admin_enqueue_scripts' );

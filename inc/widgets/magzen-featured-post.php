@@ -165,7 +165,7 @@ class MagZen_Featured_Post_Widget extends WP_Widget {
 		) );
 
 	?>
-      <?php echo '<p style="display:block; margin: 20px 0px;">Layout will be as below:<br><img  src="'. get_template_directory_uri() .'/images/mag-featured-post.png"></p>';?>
+      <?php echo '<p style="display:block; margin: 20px 0px;">Layout will be as below:<br><img  src="'. esc_url(get_template_directory_uri()) .'/images/mag-featured-post.png"></p>'; ?>
 
 		<p>
 			<label for="<?php echo $this->get_field_id('post_count') ?>"><?php _e('No. of Posts to display', 'magzen') ?></label>

@@ -1,5 +1,47 @@
-.magzen-wrapper.about-wrap .about-text {
-  margin-right: 2rem;
+a[href="themes.php?page=magzen_upgrade"] {
+  font-weight: 700!important; 
+} 
+
+#adminmenu .theme-icon {
+   position: relative;
+  
+}
+.theme-icon {  
+  padding: 6px 7px;
+  display: inline-block;
+  background-color: #d54e21;
+  color: #fff;
+  font-size: 12px;
+ //line-height: 17px;
+  font-weight: 600;
+  margin: 0px 0 0 2px;
+  //vertical-align: top;
+  -webkit-border-radius: 10px;
+  border-radius: 100%;
+  z-index: 26;
+  margin-left: 5px; 
+  transform: rotate(-42deg);
+}
+
+.wp-badge.welcome-logo {
+    background-image: url("../../images/logo.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.about-wrap .about-text {
+    font-weight: 300;
+}
+.about-text p,.pre-description {
+    color: #333;
+    font-size: 18px;
+}
+.about-text p {
+   margin-top: 25px;
+   font-weight: 400;
+}
+.pre-description  {
+  padding-right: 20px;
 }
 
 .info-tab-content {

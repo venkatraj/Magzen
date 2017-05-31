@@ -25,7 +25,7 @@ $magzen_social_media = __( 'Social Media', 'magzen' );
 $magzen_social_media_details = __( 'Want your users to stay in touch? No problem, magzen Pro has Social Media icons all throughout the theme!', 'magzen' ); 
 $magzen_view_demo = __( 'View Demo', 'magzen');
 $magzen_upgrade_to_pro = __( 'Upgrade To Pro', 'magzen' );  
-
+ 
 
 $magzen_why_upgrade = <<< FEATURES
 <div class="one-third column">
@@ -99,9 +99,10 @@ $magzen_why_upgrade = <<< FEATURES
 FEATURES;
 
 function magzen_theme_page() {
+	$title = esc_html(__('MagZen Theme','magzen'));
 	add_theme_page( 
 		__( 'Upgrade To MagZenPro','magzen'),
-		__( 'MagZen Theme','magzen'),
+		$title.'<i class="fa fa-plane theme-icon"></i>', 
 		'edit_theme_options',
 		'magzen_upgrade',
 		'magzen_display_upgrade'
@@ -110,7 +111,7 @@ function magzen_theme_page() {
 
 add_action('admin_menu','magzen_theme_page');
 
-
+ 
 function magzen_display_upgrade() {
 
     $theme_data = wp_get_theme('magzen');
@@ -126,12 +127,13 @@ function magzen_display_upgrade() {
 
     <div class="magzen-wrapper about-wrap">
         <h1><?php printf(esc_html__('Welcome to MagZen - Version %1s', 'magzen'), $theme_data->Version ); ?></h1>
-        <div class="about-text"><?php esc_html_e( 'MagZen is a perfect responsive magazine style WordPress theme. Suitable for news, newspaper, magazine, publishing, business and any kind of sites. Core feature of WordPress  Has 3 Footer Widget Areas.', 'magzen' ); ?></div>
-        <p class="upgrade-btn"><a class="upgrade" href="https://www.webulousthemes.com/magzen/" target="_blank"><i class="fa fa-upload"></i><?php esc_html_e( 'MagZen', 'magzen' ); ?></a></p>
+        <div class="about-text"><?php esc_html_e( 'MagZen is a perfect responsive magazine style WordPress theme. Suitable for news, newspaper, magazine, publishing, business and any kind of sites. It uses skeleton framework for grids which keeps minimal css. Stylesheet is generated using SASS and so stays DRY. Core feature of WordPress  Has 3 Footer Widget Areas.', 'magzen' ); ?></div>
+        <a href="https://webulousthemes.com/" target="_blank" class="wp-badge welcome-logo"></a>  
+        <p class="upgrade-btn"><a class="upgrade" href="https://www.webulousthemes.com/magzen/" target="_blank"><i class="fa fa-upload"></i><?php esc_html_e( ' Buy MagZen Pro - $39', 'magzen' ); ?></a></p>
 
 	   <h2 class="nav-tab-wrapper">
 	        <a href="?page=magzen_upgrade" class="nav-tab<?php echo is_null($tab) ? ' nav-tab-active' : null; ?>"><?php esc_html_e( 'MagZen', 'magzen' ) ?></a>
-	        <a href="?page=magzen_upgrade&tab=pro_features" class="nav-tab<?php echo $tab == 'pro_features' ? ' nav-tab-active' : null; ?>"><?php esc_html_e( 'Pro Fearures', 'magzen' );  ?></a>
+	        <a href="?page=magzen_upgrade&tab=pro_features" class="nav-tab<?php echo $tab == 'pro_features' ? ' nav-tab-active' : null; ?>"><?php esc_html_e( 'PRO Fearures', 'magzen' );  ?></a>
 	        <?php do_action( 'magzen_admin_more_tabs' ); ?>
 	    </h2>  
 
