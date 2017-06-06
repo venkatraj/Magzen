@@ -1,9 +1,4 @@
 (function($){
-
-	$(function(){
-		$('.flexslider').flexslider();   
-	});
-
 	$('.newsticker').newsTicker({
       row_height: 35,
       max_rows: 1,
