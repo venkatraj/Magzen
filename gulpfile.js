@@ -7,7 +7,22 @@ var imagemin = require('gulp-imagemin');
 var cssnano = require('gulp-cssnano');   
 var rename = require('gulp-rename'); 
 var cache = require('gulp-cache');
-var del = require('del');
+var del = require('del');  
+var wpPot = require('gulp-wp-pot'); // For generating the .pot file.
+var sort = require('gulp-sort'); // Recommended to prevent unnecessary changes in pot-file.  
+ 
+           
+/* Translate .pot file */ 
+gulp.task( 'translate', function () {   
+     return gulp.src( './**/*.php')
+       .pipe(sort())
+       .pipe(wpPot( {
+           domain        : 'magzen',
+           destFile      : 'magzen.pot',
+           package       : 'MagZen'
+       } ))
+      .pipe(gulp.dest('languages/magzen.pot'))
+});       
            
      
 //Script task
@@ -42,13 +57,13 @@ gulp.task('images', function() {
 
 // Clean
 gulp.task('clean', function() {
-  return del(['images','js']);    
+  return del(['images']);    
 }); 
 
 
 // Default task
 gulp.task('default',['clean'] , function() {
-  gulp.start('styles', 'images');
+  gulp.start('styles', 'images', 'translate');
 });   
 
 

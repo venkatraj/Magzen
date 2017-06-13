@@ -129,7 +129,7 @@ function magzen_display_upgrade() {
         <h1><?php printf(esc_html__('Welcome to MagZen - Version %1s', 'magzen'), $theme_data->Version ); ?></h1>
         <div class="about-text"><?php esc_html_e( 'MagZen is a perfect responsive magazine style WordPress theme. Suitable for news, newspaper, magazine, publishing, business and any kind of sites. It uses skeleton framework for grids which keeps minimal css. Stylesheet is generated using SASS and so stays DRY. Core feature of WordPress  Has 3 Footer Widget Areas.', 'magzen' ); ?></div>
         <a href="https://webulousthemes.com/" target="_blank" class="wp-badge welcome-logo"></a>  
-        <p class="upgrade-btn"><a class="upgrade" href="https://www.webulousthemes.com/theme/magzen-pro/" target="_blank"><i class="fa fa-upload"></i><?php esc_html_e( 'Buy MagZen Pro - $39', 'magzen' ); ?></a></p>
+        <p class="upgrade-btn"><a class="upgrade" href="https://www.webulousthemes.com/theme/magzen-pro/" target="_blank"><?php esc_html_e( 'Buy MagZen Pro - $39', 'magzen' ); ?></a></p>
 
 	   <h2 class="nav-tab-wrapper">
 	        <a href="?page=magzen_upgrade" class="nav-tab<?php echo is_null($tab) ? ' nav-tab-active' : null; ?>"><?php esc_html_e( 'MagZen', 'magzen' ) ?></a>
@@ -153,7 +153,7 @@ function magzen_display_upgrade() {
                             <h3><?php esc_html_e( 'Theme Documentation', 'magzen' ); ?></h3>
                             <p class="about"><?php printf(esc_html__('Need any help to setup and configure %s? Please have a look at our documentations instructions.', 'magzen'), $theme_data->Name); ?></p>
                             <p>
-                                <a href="<?php echo esc_url( 'https://www.webulousthemes.com/magzen-free/' ); ?>" target="_blank" class="button button-secondary"><?php esc_html_e('magzen Documentation', 'magzen'); ?></a>
+                                <a href="<?php echo esc_url( 'https://www.webulousthemes.com/magzen-free/' ); ?>" target="_blank" class="button button-secondary"><?php esc_html_e('Documentation', 'magzen'); ?></a>
                             </p>
                             <?php do_action( 'magzen_dashboard_theme_links' ); ?>
                         </div>
@@ -167,7 +167,7 @@ function magzen_display_upgrade() {
                     </div>
 
                     <div class="theme_info_right">
-                        <img src="<?php echo get_template_directory_uri(); ?>/screenshot.png" alt="Theme Screenshot" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/screenshot.jpg" alt="Theme Screenshot" />
                     </div>
                 </div>
             </div>

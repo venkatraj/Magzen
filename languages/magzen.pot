@@ -1,0 +1,596 @@
+# Copyright (C) 2017 MagZen
+# This file is distributed under the same license as the MagZen package.
+msgid ""
+msgstr ""
+"Project-Id-Version: MagZen\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: 404.php:17
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:21
+msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+msgstr ""
+
+#: comments.php:31
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:40, comments.php:61
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:43, comments.php:64
+msgid "Older Comments"
+msgstr ""
+
+#: comments.php:44, comments.php:65
+msgid "Newer Comments"
+msgstr ""
+
+#: comments.php:78
+msgid "Comments are closed."
+msgstr ""
+
+#: footer.php:29
+msgid "<p>Powered by <a href=\"%1$s\" target=\"_blank\">WordPress</a>"
+msgstr ""
+
+#: footer.php:31
+msgid "Theme: MagZen by <a href=\"%1$s\" target=\"_blank\" rel=\"designer\">Webulous Themes</a></p>"
+msgstr ""
+
+#: functions.php:47
+msgid "Primary"
+msgstr ""
+
+#: functions.php:112
+msgid "Sidebar"
+msgstr ""
+
+#: functions.php:114
+msgid "Add widgets here."
+msgstr ""
+
+#: functions.php:121
+msgid "Top Left"
+msgstr ""
+
+#: functions.php:130
+msgid "Top Right"
+msgstr ""
+
+#: functions.php:139
+msgid "Header Right"
+msgstr ""
+
+#: functions.php:149
+msgid "Footer %d"
+msgstr ""
+
+#: functions.php:159
+msgid "MagZen: Content Area"
+msgstr ""
+
+#: functions.php:161
+msgid "Appears on Front Page and Magazine Page template only. You can use the MagZen widgets here."
+msgstr ""
+
+#: header.php:24
+msgid "Skip to content"
+msgstr ""
+
+#: search.php:19
+msgid "Search Results for: %s"
+msgstr ""
+
+#: single.php:29
+msgid "About Author:"
+msgstr ""
+
+#: template-magazine.php:36
+msgid "Please go to <strong>Customize  &#8594; Widgets &#8594; 'MagZen: Content Area'.</strong> You can use the <strong>MagZen widget</strong> to set up magazine page."
+msgstr ""
+
+#: customizer/options-config.php:2
+msgid "Page Builder"
+msgstr ""
+
+#: customizer/options-config.php:3
+msgid "MagZen Pro supports Page Builder.  You can drag and drop our MagZenPro widgets with page builder visual editor."
+msgstr ""
+
+#: customizer/options-config.php:4
+msgid "Page Layout"
+msgstr ""
+
+#: customizer/options-config.php:5
+msgid "MagZenPro offers many different page layouts so you can quickly and easily create your pages with various layout without any hassle!"
+msgstr ""
+
+#: customizer/options-config.php:6
+msgid "Unlimited Sidebar"
+msgstr ""
+
+#: customizer/options-config.php:7
+msgid "Unlimited sidebars allows you to create multiple sidebars. Check out our demo site to see how different pages displays different sidebars!"
+msgstr ""
+
+#: customizer/options-config.php:8
+msgid "Magazine Style Design"
+msgstr ""
+
+#: customizer/options-config.php:9
+msgid "MagZenPro comes with beautiful and well thought magazine style design that will make your blog or magazine site stand out and gain more visitors."
+msgstr ""
+
+#: customizer/options-config.php:10
+msgid "Typography"
+msgstr ""
+
+#: customizer/options-config.php:11
+msgid "MagZen Pro loves typography, you can choose from over 500+ Google Fonts and Standard Fonts to customize your site!"
+msgstr ""
+
+#: customizer/options-config.php:12
+msgid "Awesome Sliders"
+msgstr ""
+
+#: customizer/options-config.php:13
+msgid "MagZen Pro includes two types of slider. You can use both Flex and Elastic sliders anywhere in your site."
+msgstr ""
+
+#: customizer/options-config.php:14
+msgid "Woo Commerce"
+msgstr ""
+
+#: customizer/options-config.php:15
+msgid "MagZen Pro has full design/code integration for WooCommerce, your shop will look as good as the rest of your site! and <strong>Lot More Options are available in MagZenPro.</strong>"
+msgstr ""
+
+#: customizer/options-config.php:16
+msgid "Custom Widget"
+msgstr ""
+
+#: customizer/options-config.php:17
+msgid "We offer many custom widgets that are stylized and ready for use. Simply drag &amp; drop into place to activate!"
+msgstr ""
+
+#: customizer/options-config.php:18
+msgid "Advanced Admin"
+msgstr ""
+
+#: customizer/options-config.php:19
+msgid " you can customize any part of your site quickly and easily using customize options!"
+msgstr ""
+
+#: customizer/options-config.php:20
+msgid "Font Awesome"
+msgstr ""
+
+#: customizer/options-config.php:21
+msgid "Font Awesome icons are fully integrated into the theme. Use them anywhere in your site in 6 different sizes!"
+msgstr ""
+
+#: customizer/options-config.php:22
+msgid "Responsive Layout"
+msgstr ""
+
+#: customizer/options-config.php:23
+msgid "MagZen Pro is fully responsive and can adapt to any screen size. Resize your browser window to view it!"
+msgstr ""
+
+#: customizer/options-config.php:24
+msgid "Social Media"
+msgstr ""
+
+#: customizer/options-config.php:25
+msgid "Want your users to stay in touch? No problem, magzen Pro has Social Media icons all throughout the theme!"
+msgstr ""
+
+#: customizer/options-config.php:26
+msgid "View Demo"
+msgstr ""
+
+#: customizer/options-config.php:27
+msgid "Upgrade To Pro"
+msgstr ""
+
+#: customizer/options-config.php:102
+msgid "MagZen Theme"
+msgstr ""
+
+#: customizer/options-config.php:104
+msgid "Upgrade To MagZenPro"
+msgstr ""
+
+#: customizer/options-config.php:129
+msgid "Welcome to MagZen - Version %1s"
+msgstr ""
+
+#: customizer/options-config.php:130
+msgid "MagZen is a perfect responsive magazine style WordPress theme. Suitable for news, newspaper, magazine, publishing, business and any kind of sites. It uses skeleton framework for grids which keeps minimal css. Stylesheet is generated using SASS and so stays DRY. Core feature of WordPress  Has 3 Footer Widget Areas."
+msgstr ""
+
+#: customizer/options-config.php:132
+msgid "Buy MagZen Pro - $39"
+msgstr ""
+
+#: customizer/options-config.php:135
+msgid "MagZen"
+msgstr ""
+
+#: customizer/options-config.php:136
+msgid "PRO Fearures"
+msgstr ""
+
+#: customizer/options-config.php:146
+msgid "Theme Customizer"
+msgstr ""
+
+#: customizer/options-config.php:147
+msgid "%s supports the Theme Customizer for all theme settings. Click \"Customize\" to start customize your site."
+msgstr ""
+
+#: customizer/options-config.php:149
+msgid "Start Customize"
+msgstr ""
+
+#: customizer/options-config.php:153
+msgid "Theme Documentation"
+msgstr ""
+
+#: customizer/options-config.php:154
+msgid "Need any help to setup and configure %s? Please have a look at our documentations instructions."
+msgstr ""
+
+#: customizer/options-config.php:156
+msgid "Documentation"
+msgstr ""
+
+#: customizer/options-config.php:161
+msgid "Having Trouble, Need Support?"
+msgstr ""
+
+#: customizer/options-config.php:162
+msgid "Support for %s WordPress theme is conducted through Webulous free support ticket system."
+msgstr ""
+
+#: customizer/options-config.php:192, customizer/options-config.php:193
+msgid "Theme Options"
+msgstr ""
+
+#: customizer/options-config.php:196
+msgid "General"
+msgstr ""
+
+#: customizer/options-config.php:197
+msgid "General settings that affects overall site"
+msgstr ""
+
+#: customizer/options-config.php:201
+msgid "Enable Breadcrumb"
+msgstr ""
+
+#: customizer/options-config.php:207
+msgid "Select Breadcrumb Character"
+msgstr ""
+
+#: customizer/options-config.php:218
+msgid "Enable Numeric Page Navigation"
+msgstr ""
+
+#: customizer/options-config.php:219
+msgid "Check to display numeric page navigation, instead of Previous Posts / Next Posts links."
+msgstr ""
+
+#: customizer/options-config.php:226
+msgid "Header"
+msgstr ""
+
+#: customizer/options-config.php:227
+msgid "Header options"
+msgstr ""
+
+#: customizer/options-config.php:231
+msgid "Logo as Title"
+msgstr ""
+
+#: customizer/options-config.php:237
+msgid "Show site Tagline"
+msgstr ""
+
+#: customizer/options-config.php:243
+msgid "Show Date in Header"
+msgstr ""
+
+#: customizer/options-config.php:249
+msgid "Show Search box in Navigation"
+msgstr ""
+
+#: customizer/options-config.php:255
+msgid "Enable Breaking News"
+msgstr ""
+
+#: customizer/options-config.php:261
+msgid "Breaking News Title"
+msgstr ""
+
+#: customizer/options-config.php:262
+msgid "BREAKING NEWS"
+msgstr ""
+
+#: customizer/options-config.php:269
+msgid "Footer"
+msgstr ""
+
+#: customizer/options-config.php:270
+msgid "Footer related options"
+msgstr ""
+
+#: customizer/options-config.php:274
+msgid "Footer Widget Area"
+msgstr ""
+
+#: customizer/options-config.php:280
+msgid "Footer Copyright Text (Validated that it's HTML Allowed)"
+msgstr ""
+
+#: customizer/options-config.php:281
+msgid "HTML Allowed. <b>This field is even HTML validated! </b>"
+msgstr ""
+
+#: customizer/options-config.php:287, inc/template-tags.php:160
+msgid "Home"
+msgstr ""
+
+#: customizer/options-config.php:288
+msgid "Please go to Appearance &#8594; Widgets and add widget to the \"Magazine Page\" widget area. You can use the MagZen : Magazine Posts Boxed widgets to set up magazine page."
+msgstr ""
+
+#: customizer/options-config.php:321
+msgid "Enable Magazine Page Default Content"
+msgstr ""
+
+#: customizer/options-config.php:328
+msgid "Blog"
+msgstr ""
+
+#: customizer/options-config.php:329
+msgid "Blog Related Posts options"
+msgstr ""
+
+#: customizer/options-config.php:333
+msgid " Enable Author Bio Box below single post"
+msgstr ""
+
+#: customizer/options-config.php:334
+msgid "Show Author information box below single post."
+msgstr ""
+
+#: customizer/options-config.php:340
+msgid "Show Related posts"
+msgstr ""
+
+#: customizer/options-config.php:341
+msgid "Show related posts."
+msgstr ""
+
+#: customizer/options-config.php:347
+msgid "Related Posts Must Be Shown As:"
+msgstr ""
+
+#: customizer/options-config.php:357
+msgid " Show Comments"
+msgstr ""
+
+#: customizer/options-config.php:358
+msgid "Show Comments"
+msgstr ""
+
+#: inc/enqueue.php:37
+msgctxt "Font: on or off"
+msgid "on"
+msgstr ""
+
+#: inc/template-tags.php:28
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr ""
+
+#: inc/template-tags.php:33
+msgctxt "post author"
+msgid "by %s"
+msgstr ""
+
+#: inc/template-tags.php:50, inc/template-tags.php:56, inc/template-tags.php:401, inc/template-tags.php:408
+msgid ", "
+msgstr ""
+
+#: inc/template-tags.php:52
+msgid "Posted in %1$s"
+msgstr ""
+
+#: inc/template-tags.php:58
+msgid "Tagged %1$s"
+msgstr ""
+
+#. translators: %s: post title
+#: inc/template-tags.php:65
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#: inc/template-tags.php:72, template-parts/content-page.php:36
+msgid "Edit %s"
+msgstr ""
+
+#: inc/template-tags.php:140
+msgid "Post navigation"
+msgstr ""
+
+#: inc/template-tags.php:143
+msgctxt "Previous post link"
+msgid "%title"
+msgstr ""
+
+#: inc/template-tags.php:144
+msgctxt "Next post link"
+msgid "%title&nbsp;"
+msgstr ""
+
+#: inc/template-tags.php:161
+msgid "Archive by Category \"%s\""
+msgstr ""
+
+#: inc/template-tags.php:162
+msgid "Search Results for \"%s\" Query"
+msgstr ""
+
+#: inc/template-tags.php:163
+msgid "Posts Tagged \"%s\""
+msgstr ""
+
+#: inc/template-tags.php:164
+msgid "Articles Posted by %s"
+msgstr ""
+
+#: inc/template-tags.php:165
+msgid "Error 404"
+msgstr ""
+
+#: inc/template-tags.php:290
+msgid "Page"
+msgstr ""
+
+#: inc/template-tags.php:346, inc/template-tags.php:349
+msgid "No Related Posts Yet!"
+msgstr ""
+
+#: inc/template-tags.php:362, template-parts/content.php:38
+msgid "Read More"
+msgstr ""
+
+#: inc/template-tags.php:386
+msgctxt "post author"
+msgid " %s"
+msgstr ""
+
+#: inc/template-tags.php:394
+msgid "Leave a comment"
+msgstr ""
+
+#: inc/template-tags.php:394
+msgid "1 Comment"
+msgstr ""
+
+#: inc/template-tags.php:394
+msgid "% Comments"
+msgstr ""
+
+#: inc/template-tags.php:403, inc/template-tags.php:410
+msgid "%1$s "
+msgstr ""
+
+#: inc/template-tags.php:416
+msgid "Edit"
+msgstr ""
+
+#: inc/template-tags.php:436, inc/template-tags.php:438
+msgid " %1$s"
+msgstr ""
+
+#: inc/template-tags.php:479
+msgid "Welcome! Thank you for choosing %1$s! To fully take advantage of the best our theme can offer please make sure you visit our <a href=\"%2$s\">Welcome page</a>"
+msgstr ""
+
+#: inc/template-tags.php:480
+msgid "Get started with MagZen"
+msgstr ""
+
+#: template-parts/breadcrumb.php:15
+msgid "You are here"
+msgstr ""
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#: template-parts/content-none.php:21
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:25
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:31
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr ""
+
+#: template-parts/content-page.php:24
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/content.php:46
+msgid "Pages: "
+msgstr ""
+
+#: inc/widgets/magzen-featured-post.php:19
+msgid "%s : Featured Post"
+msgstr ""
+
+#: inc/widgets/magzen-featured-post.php:20
+msgid "Displays your latest posts or post from a selected category . Please use this widget  in the MagZen: Content Area."
+msgstr ""
+
+#: inc/widgets/magzen-featured-post.php:40, inc/widgets/magzen-featured-post.php:162
+msgid "latest"
+msgstr ""
+
+#: inc/widgets/magzen-featured-post.php:41, inc/widgets/magzen-featured-post.php:163
+msgid "vertical"
+msgstr ""
+
+#: inc/widgets/magzen-featured-post.php:69
+msgid "Latest Post"
+msgstr ""
+
+#: inc/widgets/magzen-featured-post.php:171
+msgid "No. of Posts to display"
+msgstr ""
+
+#: inc/widgets/magzen-featured-post.php:176
+msgid "Show latest Posts"
+msgstr ""
+
+#: inc/widgets/magzen-featured-post.php:177
+msgid "Show posts from a category"
+msgstr ""
+
+#: inc/widgets/magzen-featured-post.php:182
+msgid " Select Category "
+msgstr ""
+
+#: inc/widgets/magzen-featured-post.php:183
+msgid "All Category"
+msgstr ""
+
+#: inc/widgets/magzen-featured-post.php:187
+msgid "Post Layout"
+msgstr ""
+
+#: inc/widgets/magzen-featured-post.php:195
+msgid "Column"
+msgstr ""
