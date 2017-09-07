@@ -34,7 +34,6 @@ gulp.task('scripts',function(){
 });  
 
 
-  
 //styles task
 gulp.task('styles',function(){  
     gulp.src(['sass/**/*.scss'])

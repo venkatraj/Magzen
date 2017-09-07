@@ -14,5 +14,8 @@ https://codex.wordpress.org/Right-to-Left_Language_Support
      unicode-bidi: embed;
  }
  
+ 
 
-
+.flex-viewport {
+     direction: ltr;
+  }

@@ -103,7 +103,7 @@ function magzen_theme_page() {
 	add_theme_page( 
 		__( 'Upgrade To MagZenPro','magzen'),
 		$title.'<i class="fa fa-plane theme-icon"></i>', 
-		'edit_theme_options',
+		'edit_theme_options', 
 		'magzen_upgrade',
 		'magzen_display_upgrade'
 	);
@@ -184,7 +184,7 @@ function magzen_display_upgrade() {
 }
    
 	$options = array(
-		'capability' => 10,
+		'capability' => 'edit_theme_options',
 		'type' => 'theme_mod',
 		'panels' => apply_filters( 'magzen_customizer_options', array(
 			'magzen' => array(
