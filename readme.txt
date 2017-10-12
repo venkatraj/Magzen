@@ -2,8 +2,8 @@
 Contributors: Webulous
 Tags:  featured-images, right-sidebar, sticky-post, translation-ready, custom-background,  custom-menu,  threaded-comments , blog, news
 Requires at least: 4.0
-Tested up to: 4.8.1
-Stable tag: 1.0.5
+Tested up to: 4.8.2
+Stable tag: 1.0.6
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -25,6 +25,10 @@ MagZen is a perfect responsive magazine style WordPress theme. Suitable for news
 All available options can be used from Appearance->Customize
 
 == Changelog ==
+= 1.0.6 = 
+ * Updated font-awesome icons 
+ * Fix header image issue and add header video option
+
 = 1.0.5 =
 * minor error fix
 
@@ -45,8 +49,9 @@ All available options can be used from Appearance->Customize
 
 == Upgrade Notice ==
 
-= 1.0.5 =
-* minor error fix
+= 1.0.6 = 
+ * Updated font-awesome icons 
+ * Fix header image issue and add header video option
  
 == Resources ==
 * {_s}, GPLv3, http://underscores.me/

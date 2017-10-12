@@ -480,3 +480,15 @@ function magzen_admin_notice() { ?>
         <p><a href="<?php echo esc_url( admin_url( 'themes.php?page=magzen_upgrade' ) ); ?>" class="button" style="text-decoration: none;"><?php _e( 'Get started with MagZen', 'magzen' ); ?></a></p>
     </div><?php
 }
+
+
+add_action('magzen_before_header','magzen_before_header_video');
+if(!function_exists('magzen_before_header_video')){
+	function magzen_before_header_video() {
+		if(function_exists('the_custom_header_markup') ) { ?>
+		    <div class="custom-header-media">
+				<?php the_custom_header_markup(); ?>
+			</div>
+	    <?php } 
+	}
+}

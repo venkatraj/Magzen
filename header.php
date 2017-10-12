@@ -22,7 +22,7 @@
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'magzen' ); ?></a>
-
+    <?php do_action('magzen_before_header'); ?>
 	<header id="masthead" class="site-header" role="banner">
         <?php if( is_active_sidebar( 'top-left' )  || get_theme_mod('header_show_date',true) || is_active_sidebar( 'top-right' ) ): ?>
 			<div class="top-nav">   
@@ -45,9 +45,8 @@
 			</div> <!-- .top-nav -->
 		<?php endif;?>
 
-
-		<div class="branding header-image">
-			<div class="container">
+        <div class="container">
+		   <div class="branding header-image clearfix">
 				<div class="five columns alpha">
 					<div class="site-branding">
 						<?php 
