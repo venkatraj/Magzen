@@ -126,7 +126,7 @@ function magzen_display_upgrade() {
     $current_action_link =  admin_url( 'themes.php?page=magzen_upgrade&tab=pro_features' ); ?>
 
     <div class="magzen-wrapper about-wrap">
-        <h1><?php printf(esc_html__('Welcome to MagZen - Version %1s', 'magzen'), $theme_data->Version ); ?></h1>
+        <h1><?php printf(esc_html__('Welcome to MagZen - Version %1$s', 'magzen'), $theme_data->Version ); ?></h1>
         <div class="about-text"><?php esc_html_e( 'MagZen is a perfect responsive magazine style WordPress theme. Suitable for news, newspaper, magazine, publishing, business and any kind of sites. It uses skeleton framework for grids which keeps minimal css. Stylesheet is generated using SASS and so stays DRY. Core feature of WordPress  Has 3 Footer Widget Areas.', 'magzen' ); ?></div>
         <a href="https://webulousthemes.com/" target="_blank" class="wp-badge welcome-logo"></a>  
         <p class="upgrade-btn"><a class="upgrade" href="https://www.webulousthemes.com/theme/magzen-pro/" target="_blank"><?php esc_html_e( 'Buy MagZen Pro - $39', 'magzen' ); ?></a></p>
@@ -141,6 +141,17 @@ function magzen_display_upgrade() {
         <?php if ( is_null( $tab ) ) { ?>
             <div class="theme_info info-tab-content">
                 <div class="theme_info_column clearfix">
+                	<div id="webulous-create-web">
+						<div id="webulous-mode-wrap">
+						    <h3>New to Creating a Website?</h3> 
+						    <p>We will build you a complete website based on the theme you selected. We will populate content, change colors and do any look and feel customisation work you prefer.</p>
+						</div>
+						<div class="image-wrap">
+							<a href="https://www.webulousthemes.com/checkout?edd_action=add_to_cart&download_id=23052" target="_blank">
+							<?php echo sprintf ( '<img src="'. get_template_directory_uri() .'/images/api.png" alt="%1$s" />',__('Image','magzen') ); ?>
+							</a>
+						</div>
+					</div>
                     <div class="theme_info_left">
                         <div class="theme_link">
                             <h3><?php esc_html_e( 'Theme Customizer', 'magzen' ); ?></h3>

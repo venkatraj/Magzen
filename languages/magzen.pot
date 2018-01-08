@@ -1,4 +1,4 @@
-# Copyright (C) 2017 MagZen
+# Copyright (C) 2018 MagZen
 # This file is distributed under the same license as the MagZen package.
 msgid ""
 msgstr ""
@@ -56,35 +56,35 @@ msgstr ""
 msgid "Primary"
 msgstr ""
 
-#: functions.php:112
+#: functions.php:115
 msgid "Sidebar"
 msgstr ""
 
-#: functions.php:114
+#: functions.php:117
 msgid "Add widgets here."
 msgstr ""
 
-#: functions.php:121
+#: functions.php:124
 msgid "Top Left"
 msgstr ""
 
-#: functions.php:130
+#: functions.php:133
 msgid "Top Right"
 msgstr ""
 
-#: functions.php:139
+#: functions.php:142
 msgid "Header Right"
 msgstr ""
 
-#: functions.php:149
+#: functions.php:152
 msgid "Footer %d"
 msgstr ""
 
-#: functions.php:159
+#: functions.php:162
 msgid "MagZen: Content Area"
 msgstr ""
 
-#: functions.php:161
+#: functions.php:164
 msgid "Appears on Front Page and Magazine Page template only. You can use the MagZen widgets here."
 msgstr ""
 
@@ -236,168 +236,180 @@ msgstr ""
 msgid "PRO Fearures"
 msgstr ""
 
-#: customizer/options-config.php:146
+#: customizer/options-config.php:151
+msgid "Image"
+msgstr ""
+
+#: customizer/options-config.php:157
 msgid "Theme Customizer"
 msgstr ""
 
-#: customizer/options-config.php:147
+#: customizer/options-config.php:158
 msgid "%s supports the Theme Customizer for all theme settings. Click \"Customize\" to start customize your site."
 msgstr ""
 
-#: customizer/options-config.php:149
+#: customizer/options-config.php:160
 msgid "Start Customize"
 msgstr ""
 
-#: customizer/options-config.php:153
+#: customizer/options-config.php:164
 msgid "Theme Documentation"
 msgstr ""
 
-#: customizer/options-config.php:154
+#: customizer/options-config.php:165
 msgid "Need any help to setup and configure %s? Please have a look at our documentations instructions."
 msgstr ""
 
-#: customizer/options-config.php:156
+#: customizer/options-config.php:167
 msgid "Documentation"
 msgstr ""
 
-#: customizer/options-config.php:161
+#: customizer/options-config.php:172
 msgid "Having Trouble, Need Support?"
 msgstr ""
 
-#: customizer/options-config.php:162
+#: customizer/options-config.php:173
 msgid "Support for %s WordPress theme is conducted through Webulous free support ticket system."
 msgstr ""
 
-#: customizer/options-config.php:192, customizer/options-config.php:193
+#: customizer/options-config.php:203, customizer/options-config.php:204
 msgid "Theme Options"
 msgstr ""
 
-#: customizer/options-config.php:196
+#: customizer/options-config.php:207
 msgid "General"
 msgstr ""
 
-#: customizer/options-config.php:197
+#: customizer/options-config.php:208
 msgid "General settings that affects overall site"
 msgstr ""
 
-#: customizer/options-config.php:201
+#: customizer/options-config.php:212
 msgid "Enable Breadcrumb"
 msgstr ""
 
-#: customizer/options-config.php:207
+#: customizer/options-config.php:218
 msgid "Select Breadcrumb Character"
 msgstr ""
 
-#: customizer/options-config.php:218
+#: customizer/options-config.php:229
 msgid "Enable Numeric Page Navigation"
 msgstr ""
 
-#: customizer/options-config.php:219
+#: customizer/options-config.php:230
 msgid "Check to display numeric page navigation, instead of Previous Posts / Next Posts links."
 msgstr ""
 
-#: customizer/options-config.php:226
+#: customizer/options-config.php:237
 msgid "Header"
 msgstr ""
 
-#: customizer/options-config.php:227
+#: customizer/options-config.php:238
 msgid "Header options"
 msgstr ""
 
-#: customizer/options-config.php:231
+#: customizer/options-config.php:242
 msgid "Logo as Title"
 msgstr ""
 
-#: customizer/options-config.php:237
+#: customizer/options-config.php:248
 msgid "Show site Tagline"
 msgstr ""
 
-#: customizer/options-config.php:243
+#: customizer/options-config.php:254
 msgid "Show Date in Header"
 msgstr ""
 
-#: customizer/options-config.php:249
+#: customizer/options-config.php:260
 msgid "Show Search box in Navigation"
 msgstr ""
 
-#: customizer/options-config.php:255
+#: customizer/options-config.php:266
 msgid "Enable Breaking News"
 msgstr ""
 
-#: customizer/options-config.php:261
+#: customizer/options-config.php:272
 msgid "Breaking News Title"
 msgstr ""
 
-#: customizer/options-config.php:262
+#: customizer/options-config.php:273
 msgid "BREAKING NEWS"
 msgstr ""
 
-#: customizer/options-config.php:269
+#: customizer/options-config.php:280
 msgid "Footer"
 msgstr ""
 
-#: customizer/options-config.php:270
+#: customizer/options-config.php:281
 msgid "Footer related options"
 msgstr ""
 
-#: customizer/options-config.php:274
+#: customizer/options-config.php:285
 msgid "Footer Widget Area"
 msgstr ""
 
-#: customizer/options-config.php:280
+#: customizer/options-config.php:291
 msgid "Footer Copyright Text (Validated that it's HTML Allowed)"
 msgstr ""
 
-#: customizer/options-config.php:281
+#: customizer/options-config.php:292
 msgid "HTML Allowed. <b>This field is even HTML validated! </b>"
 msgstr ""
 
-#: customizer/options-config.php:287, inc/template-tags.php:160
+#: customizer/options-config.php:298, inc/template-tags.php:160
 msgid "Home"
 msgstr ""
 
-#: customizer/options-config.php:288
+#: customizer/options-config.php:299
 msgid "Please go to Appearance &#8594; Widgets and add widget to the \"Magazine Page\" widget area. You can use the MagZen : Magazine Posts Boxed widgets to set up magazine page."
 msgstr ""
 
-#: customizer/options-config.php:321
+#: customizer/options-config.php:332
 msgid "Enable Magazine Page Default Content"
 msgstr ""
 
-#: customizer/options-config.php:328
+#: customizer/options-config.php:339
 msgid "Blog"
 msgstr ""
 
-#: customizer/options-config.php:329
+#: customizer/options-config.php:340
 msgid "Blog Related Posts options"
 msgstr ""
 
-#: customizer/options-config.php:333
+#: customizer/options-config.php:344
 msgid " Enable Author Bio Box below single post"
 msgstr ""
 
-#: customizer/options-config.php:334
+#: customizer/options-config.php:345
 msgid "Show Author information box below single post."
 msgstr ""
 
-#: customizer/options-config.php:340
+#: customizer/options-config.php:351
 msgid "Show Related posts"
 msgstr ""
 
-#: customizer/options-config.php:341
+#: customizer/options-config.php:352
 msgid "Show related posts."
 msgstr ""
 
-#: customizer/options-config.php:347
+#: customizer/options-config.php:358
 msgid "Related Posts Must Be Shown As:"
 msgstr ""
 
-#: customizer/options-config.php:357
+#: customizer/options-config.php:368
 msgid " Show Comments"
 msgstr ""
 
-#: customizer/options-config.php:358
+#: customizer/options-config.php:369
 msgid "Show Comments"
+msgstr ""
+
+#: inc/custom-header.php:120
+msgid "Play background video"
+msgstr ""
+
+#: inc/custom-header.php:121
+msgid "Pause background video"
 msgstr ""
 
 #: inc/enqueue.php:37
