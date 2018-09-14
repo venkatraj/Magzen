@@ -14,7 +14,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: 404.php:17
-msgid "Oops! That page can&rsquo;t be found."
+msgid "Oops! That page can't be found."
 msgstr ""
 
 #: 404.php:21
@@ -28,19 +28,19 @@ msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgstr[0] ""
 msgstr[1] ""
 
-#: comments.php:40, comments.php:61
+#: comments.php:40, comments.php:62
 msgid "Comment navigation"
 msgstr ""
 
-#: comments.php:43, comments.php:64
+#: comments.php:43, comments.php:65
 msgid "Older Comments"
 msgstr ""
 
-#: comments.php:44, comments.php:65
+#: comments.php:44, comments.php:66
 msgid "Newer Comments"
 msgstr ""
 
-#: comments.php:78
+#: comments.php:79
 msgid "Comments are closed."
 msgstr ""
 
@@ -93,11 +93,19 @@ msgid "Skip to content"
 msgstr ""
 
 #: search.php:19
-msgid "Search Results for: %s"
+msgid "Search Results For"
 msgstr ""
 
-#: single.php:29
+#: single.php:23
+msgid "Share this on ..."
+msgstr ""
+
+#: single.php:71
 msgid "About Author:"
+msgstr ""
+
+#: template-magazine.php:2
+msgid "Magazine Page"
 msgstr ""
 
 #: template-magazine.php:36
@@ -217,7 +225,7 @@ msgid "Upgrade To MagZenPro"
 msgstr ""
 
 #: customizer/options-config.php:129
-msgid "Welcome to MagZen - Version %1s"
+msgid "Welcome to MagZen - Version %1$s"
 msgstr ""
 
 #: customizer/options-config.php:130
@@ -404,6 +412,38 @@ msgstr ""
 msgid "Show Comments"
 msgstr ""
 
+#: customizer/options-config.php:376
+msgid "Single Blog"
+msgstr ""
+
+#: customizer/options-config.php:377
+msgid "Single Blog page Related Posts options"
+msgstr ""
+
+#: customizer/options-config.php:381
+msgid " Enable Social Sharing Box below single post"
+msgstr ""
+
+#: customizer/options-config.php:387
+msgid " Enable Facebook Sharing option below single post"
+msgstr ""
+
+#: customizer/options-config.php:393
+msgid " Enable Twitter Sharing option below single post"
+msgstr ""
+
+#: customizer/options-config.php:399
+msgid " Enable Linkedin Sharing option below single post"
+msgstr ""
+
+#: customizer/options-config.php:405
+msgid " Enable Google Plus Sharing option below single post"
+msgstr ""
+
+#: customizer/options-config.php:411
+msgid " Enable Email Sharing option below single post"
+msgstr ""
+
 #: inc/custom-header.php:120
 msgid "Play background video"
 msgstr ""
@@ -427,6 +467,7 @@ msgctxt "post author"
 msgid "by %s"
 msgstr ""
 
+#. translators: used between list items, there is a space after the comma
 #: inc/template-tags.php:50, inc/template-tags.php:56, inc/template-tags.php:401, inc/template-tags.php:408
 msgid ", "
 msgstr ""
@@ -540,7 +581,11 @@ msgid "Nothing Found"
 msgstr ""
 
 #: template-parts/content-none.php:21
-msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgid "Ready to publish your first post?"
+msgstr ""
+
+#: template-parts/content-none.php:21
+msgid "Get Started Here"
 msgstr ""
 
 #: template-parts/content-none.php:25
@@ -548,7 +593,7 @@ msgid "Sorry, but nothing matched your search terms. Please try again with some 
 msgstr ""
 
 #: template-parts/content-none.php:31
-msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgid "It seems we can't find what you're looking for. Perhaps searching can help."
 msgstr ""
 
 #: template-parts/content-page.php:24

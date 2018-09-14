@@ -372,7 +372,48 @@ function magzen_display_upgrade() {
                             ),
 						),
 					),
-
+					'single_blog' => array(
+						'title' => __('Single Blog', 'magzen'),
+						'description' => __('Single Blog page Related Posts options', 'magzen'),
+						'fields' => array(
+							'social_sharing_box' => array(
+								'type' => 'checkbox',
+								'label' => __(' Enable Social Sharing Box below single post', 'magzen'),
+								'default' => 0,
+								'sanitize_callback' => 'magzen_boolean',    
+							),
+							'facebook_sb' => array(
+								'type' => 'checkbox',
+								'label' => __(' Enable Facebook Sharing option below single post', 'magzen'),
+								'default' => 0,
+								'sanitize_callback' => 'magzen_boolean',    
+							),
+							'twitter_sb' => array(
+								'type' => 'checkbox',
+								'label' => __(' Enable Twitter Sharing option below single post', 'magzen'),
+								'default' => 0,
+								'sanitize_callback' => 'magzen_boolean',    
+							),
+							'linkedin_sb' => array(
+								'type' => 'checkbox',
+								'label' => __(' Enable Linkedin Sharing option below single post', 'magzen'),
+								'default' => 0,
+								'sanitize_callback' => 'magzen_boolean',    
+							),
+							'google-plus_sb' => array(
+								'type' => 'checkbox',
+								'label' => __(' Enable Google Plus Sharing option below single post', 'magzen'),
+								'default' => 0,
+								'sanitize_callback' => 'magzen_boolean',    
+							),
+							'email_sb' => array(
+								'type' => 'checkbox',
+								'label' => __(' Enable Email Sharing option below single post', 'magzen'),
+								'default' => 0,
+								'sanitize_callback' => 'magzen_boolean',    
+							),
+						),
+					),
 				)
 			),
 		) 

@@ -18,7 +18,7 @@
 		<?php
 		if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
 
-			<p><?php printf( wp_kses( __( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'magzen' ), array( 'a' => array( 'href' => array() ) ) ), esc_url( admin_url( 'post-new.php' ) ) ); ?></p>
+			<p><?php printf('%1$s <a href="%2$s">%3$s</a>',__('Ready to publish your first post?','magzen'),esc_url( admin_url( 'post-new.php' ) ), __('Get Started Here','magzen'));?></p>
 
 		<?php elseif ( is_search() ) : ?>
 
@@ -28,9 +28,8 @@
 
 		else : ?>
 
-			<p><?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'magzen' ); ?></p>
-			<?php
-				get_search_form();
+			<p><?php _e( 'It seems we can\'t find what you\'re looking for. Perhaps searching can help.', 'magzen' ); ?></p>
+			<?php get_search_form();
 
 		endif; ?>
 	</div><!-- .page-content -->

@@ -4,7 +4,7 @@ Theme URI: http://www.webulousthemes.com/magzen/
 Author: N. Venkat Raj
 Author URI: http://www.webulousthemes.com/
 Description:  MagZen is a perfect responsive magazine style WordPress theme. Suitable for news, newspaper, magazine, publishing, business and any kind of sites. It uses skeleton framework for grids which keeps minimal css. Stylesheet is generated using SASS and so stays DRY. Core feature of WordPress  Has 3 Footer Widget Areas.
-Version: 1.0.7
+Version: 1.0.8
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: magzen
@@ -1487,6 +1487,45 @@ object {
 .single .site-main article.post {
   padding-top: 0; }
 
+.share-box .widget-title {
+  margin-bottom: 20px;
+  color: #2c3e50; }
+
+.share-box ul {
+  margin: 0; }
+  .share-box ul li {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    display: inline; }
+    .share-box ul li a {
+      margin-bottom: 5px;
+      border: 1px solid #c6c2ce;
+      background-clip: padding-box;
+      /* stops bg color from leaking outside the border: */
+      border-radius: 5px;
+      width: 50px;
+      height: 50px;
+      color: #2c3e50;
+      margin-right: 5px;
+      display: inline-block;
+      background-color: #fff;
+      text-align: center;
+      line-height: 50px; }
+      .share-box ul li a:hover {
+        color: #fff;
+        background-color: #f15c22;
+        box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15); }
+      .share-box ul li a i {
+        font-size: 23px;
+        font-size: 2.3rem;
+        line-height: 2; }
+
+.share-box {
+  margin-bottom: 20px; }
+  .share-box h4 {
+    margin-bottom: 10px; }
+
 #comments {
   margin-top: 60px; }
 
@@ -1917,6 +1956,75 @@ blockquote, q {
   color: #2c3e50; }
   .blog .entry-title a:hover {
     color: #f15c22; }
+
+/* Gutenberg CSS style */
+#primary ul {
+  list-style-type: disc; }
+
+.wp-block-latest-posts.aligncenter {
+  margin-left: 3em; }
+
+.wp-block-verse {
+  color: #d7d7d7; }
+
+.wp-block-quote {
+  border-left: 4px solid black;
+  padding-left: 5px;
+  margin-top: 0px;
+  padding-top: 0px; }
+  .wp-block-quote:before {
+    content: "";
+    border: 0px; }
+  .wp-block-quote cite {
+    margin: 0px;
+    padding-left: 20px; }
+
+.wp-block-quote.is-large {
+  border: 0px;
+  color: #2c3e50; }
+  .wp-block-quote.is-large cite {
+    text-align: right;
+    display: block;
+    color: #333;
+    font-style: italic;
+    padding-right: 20px; }
+
+.wp-block-pullquote {
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;
+  padding: 0px;
+  padding-bottom: 10px;
+  margin: 0 auto;
+  border-left: none !important;
+  margin-bottom: 20px; }
+  .wp-block-pullquote:before {
+    content: "";
+    border: 0px; }
+
+.wp-block-pullquote.alignleft {
+  margin-right: 25px; }
+
+.wp-block-pullquote.alignright {
+  margin-left: 25px; }
+
+.wp-block-button a:hover {
+  padding: 11px 24px;
+  box-shadow: 3px 3px black;
+  -webkit-box-shadow: 3px 3px black; }
+
+.wp-block-cover-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.wp-block-audio {
+  text-align: center; }
+
+.wp-block-button.aligncenter {
+  margin-bottom: 1.5em; }
+
+.wp-block-table tr:first-child td, .wp-block-table tr:first-child th {
+  border-top: 1px solid #c6c2ce; }
 
 .home .site-content {
   padding-top: 0; }
